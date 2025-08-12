@@ -1,5 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Contact from './Contact/Contact';
+import NosMenus from  './NosMenus/NosMenus';
+import AlainPassard from './AlainPassard/AlainPassard';
+import Reservation from './Reservation/Reservation';
+import LarrièreCuisine from './LarrièreCuisine/LarrièreCuisine';
+
+
 
 function App() {
   return (
