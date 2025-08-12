@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          collaboration entre Wail et Romaissa
+          collaboration entre Wail et Romaissa bisous
         </p>
       </header>
     </div>
