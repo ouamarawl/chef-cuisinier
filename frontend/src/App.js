@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-import Contact from './Contact/Contact';
-import NosMenus from  './NosMenus/NosMenus';
-import AlainPassard from './AlainPassard/AlainPassard';
-import Reservation from './Reservation/Reservation';
-import LarrièreCuisine from './LarrièreCuisine/LarrièreCuisine';
+import Contact from './Pages/Contact/Contact';
+import NosMenus from  './Pages//NosMenus/NosMenus';
+import Alain_Passard from './Pages/AlainPassard/Alain_Passard';
+import Réservation from './Pages/Réservation/Réservation';
+import ArrièreCuisine from './Pages/L’arrièreCuisine/ArrièreCuisine';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './Components/Header/Header';
 
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          collaboration entre Wail et Romaissa bisous
-        </p>
-      </header>
-    </div>
-  );
+    <Router>
+      <Header/>
+      {/* <Routes>
+        <Route path="/" element={<Contact />} />
+        <Route path="/NosMenus" element={<NosMenus />} />
+        <Route path="/Alain_Passard" element={<Alain_Passard />} />
+        <Route path="/Réservation" element={<Réservation />} />
+        <Route path="/ArrièreCuisine" element={<ArrièreCuisine />} />
+      </Routes> */}
+    </Router> 
+     );
 }
 
 export default App;
