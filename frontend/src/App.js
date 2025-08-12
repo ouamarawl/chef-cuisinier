@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Header/>
       {/* <Routes>
-        <Route path="/" element={<Contact />} />
+        <Route path="/" element={<Home />} />
         <Route path="/NosMenus" element={<NosMenus />} />
         <Route path="/Alain_Passard" element={<Alain_Passard />} />
         <Route path="/Réservation" element={<Réservation />} />
