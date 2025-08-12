@@ -61,6 +61,9 @@ function Header() {
           <Link to="/" onClick={toggleSidebar}>Accueil</Link>
           <Link to="/services" onClick={toggleSidebar}>Services</Link>
           <Link to="/contact" onClick={toggleSidebar}>Contact</Link>
+          <Link to="/Alain_Passard" onClick={toggleSidebar}>Alain Passard</Link>
+          <Link to="/Réservation" onClick={toggleSidebar}>Réservation</Link>
+          <Link to="/ArrièreCuisine" onClick={toggleSidebar}>ArrièreCuisine</Link>          
         </nav>
       </div>
 
