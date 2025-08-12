@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Contact from './Pages/Contact/Contact';
 import NosMenus from  './Pages//NosMenus/NosMenus';
@@ -14,13 +13,14 @@ function App() {
   return (
     <Router>
       <Header/>
-      {/* <Routes>
+      {/* 
+        <Routes>
         <Route path="/" element={<Contact />} />
         <Route path="/NosMenus" element={<NosMenus />} />
         <Route path="/Alain_Passard" element={<Alain_Passard />} />
         <Route path="/Réservation" element={<Réservation />} />
         <Route path="/ArrièreCuisine" element={<ArrièreCuisine />} />
-      </Routes> */}
+        </Routes> */}
     </Router> 
      );
 }
