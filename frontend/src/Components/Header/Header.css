@@ -1,15 +1,60 @@
-.header {
+/* ===== NAVBAR ===== */
+.header__container {
+  max-width: 1200px;   /* ou la largeur que tu veux */
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
+  align-items: center;
+  padding: 0 24px;     /* espace à gauche/droite */
+  box-sizing: border-box;
 }
+
+.header {
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease, padding 0.3s ease;
+  z-index: 99999;
+  background: transparent; /* Fond transparent par défaut */
+}
+
+/* État avant scroll */
+.header.scrolled {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header__logo img {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.header.scrolled .header__logo img {
+  opacity: 1;
+}
+/* État après scroll */
+.header.scrolled {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== MENU ===== */
 .header__menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-/* Hamburger Button */
+
+/* Bouton Hamburger */
 .hamburger {
   cursor: pointer;
   display: inline-block;
@@ -25,34 +70,23 @@
   background-color: rgb(4, 4, 4);
   transition: 0.3s;
 }
+
+/* ===== LOGO ===== */
 .header__logo a {
   text-decoration: none;
   font-size: 2.5rem;
 }
+
 .header__logo img {
   margin-top: 25%;
 }
-  
-/* je ne les pas encore tester  */
 
-.header.transparent {
-  background: transparent;
-  transition: background 0.3s ease;
-}
-
-.header.scrolled {
-  background: #333; /* Couleur normale */
-  transition: background 0.3s ease;
-}
-/* je ne les pas encore tester  */
-
-
-
+/* ===== SIDEBAR ===== */
 .sidebar {
-      visibility: hidden;
+  visibility: hidden;
   position: fixed;
   top: 0;
-  left: -250px; /* caché au départ */
+  left: -250px; /* Cachée au départ */
   width: 250px;
   height: 100%;
   background: white;
@@ -62,8 +96,8 @@
 }
 
 .sidebar.open {
-     visibility: visible;
-  left: 0; /* affiché */
+  visibility: visible;
+  left: 0; /* Affiché */
 }
 
 .sidebar nav {
@@ -80,6 +114,7 @@
 
 .sidebar nav a:hover {
   background: #444;
+  color: white;
 }
 
 .close-btn {
@@ -90,6 +125,7 @@
   cursor: pointer;
 }
 
+/* ===== OVERLAY ===== */
 .overlay {
   position: fixed;
   top: 0;
