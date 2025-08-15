@@ -28,7 +28,8 @@ function Header() {
     <>
       <div className={`header ${isScrolled ? "scrolled" : "transparent"}`}>
        <div className="header__container">
-         <div className="header__menu">
+      
+        <div className="header__menu">
           <button
             className={`hamburger ${isSidebarOpen ? "active" : ""}`}
             aria-label="Menu"
@@ -40,16 +41,17 @@ function Header() {
           </button>
           <p className="header__text">menu</p>
         </div>
-
+       
         <div className="header__logo">
           <Link to="/" className="header__logo">
             <img src="/logo.svg" alt="Logo" />
           </Link>
         </div>
-
+        
         <div className="header__language">
           <p>FR/EN</p>
         </div>
+       
        </div>
       </div>
 
