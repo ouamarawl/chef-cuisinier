@@ -13,10 +13,10 @@ function Header() {
   // Détecter le scroll
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
+      if (window.scrollY > 0) {
         setIsScrolled(false);
+      } if (window.scrollY >5) {
+        setIsScrolled(true);
       }
     };
 
@@ -27,6 +27,8 @@ function Header() {
   return (
     <>
       <div className={`header ${isScrolled ? "scrolled" : "transparent"}`}>
+       <div className="header__container">
+      
         <div className="header__menu">
           <button
             className={`hamburger ${isSidebarOpen ? "active" : ""}`}
@@ -39,19 +41,18 @@ function Header() {
           </button>
           <p className="header__text">menu</p>
         </div>
-
-        {/* Logo visible seulement si on a scrollé */}
+       
         <div className="header__logo">
-          {isScrolled && (
-            <Link to="/" className="header__logo">
-              <img src="/logo.svg" alt="Logo" style={{ height: "40px" }} />
-            </Link>
-          )}
+          <Link to="/" className="header__logo">
+            <img src="/logo.svg" alt="Logo" />
+          </Link>
         </div>
-
+        
         <div className="header__language">
           <p>FR/EN</p>
         </div>
+       
+       </div>
       </div>
 
       {/* Sidebar */}
@@ -61,9 +62,6 @@ function Header() {
           <Link to="/" onClick={toggleSidebar}>Accueil</Link>
           <Link to="/services" onClick={toggleSidebar}>Services</Link>
           <Link to="/contact" onClick={toggleSidebar}>Contact</Link>
-          <Link to="/Alain_Passard" onClick={toggleSidebar}>Alain Passard</Link>
-          <Link to="/Réservation" onClick={toggleSidebar}>Réservation</Link>
-          <Link to="/ArrièreCuisine" onClick={toggleSidebar}>ArrièreCuisine</Link>          
         </nav>
       </div>
 
