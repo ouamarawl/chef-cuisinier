@@ -5,7 +5,12 @@ import image2 from "../../assets/image2.jpg";
 import image3 from "../../assets/image3.jpg";
 import image4 from "../../assets/image4.jpg";
 import logo from "../../assets/logo.svg"; // image centrale du slideshow
-import image5 from "../../assets/image5.jpg"; // image d'Alain Passard
+import image5 from "../../assets/image5.jpg";
+import image6 from "../../assets/image6.jpg";
+import image7 from "../../assets/image7.jpg";
+import image8 from "../../assets/image8.jpg";
+import image9 from "../../assets/image9.jpg";
+ // image d'Alain Passard
 
 const images = [
   require("../../assets/image1.jpg"),
@@ -62,7 +67,53 @@ function Home() {
           <button className="discover-btn">DÉCOUVRIR</button>
         </div>
       </section>
+      <section className="presentation-section">
+        <img src={image6} alt="Alain Passard" className="chef-image" />
+        <div className="presentation-text">
+          <h3>L'Arpège</h3>
+          <p>
+            « À l’Arpège, chaque saveur a un passeport, une provenance, nous avons un savoir-faire derrière chaque produit : celui de nos jardiniers, d’un fromager, d’un éleveur, d’un pêcheur… J’aime travailler en confiance !»
+          </p>
+         
+        </div>
+      </section>
+      <section className="presentation-section">
+        <img src={image7} alt="Alain Passard" className="chef-image" />
+        <div className="presentation-text">
+          <h3>NOS MENUS</h3>
+          <p>
+« Le plus beau livre de cuisine a été écrit par la nature. Quel bonheur de se désaltérer en été avec un gaspacho de tomate à la moutarde ou une salade de concombre à la menthe. Quel plaisir de se réchauffer en hiver avec un gratin de céleri rave à la crème ou une soupe de poireau et pommes de terre ! » <br/>Nos menus se laissent guider par les saisons.
+          </p>
+       <div className="menu-links">
+      <a href="/carte">LA CARTE</a> <br/>
+      <a href="/menu-dejeuner">LE MENU DÉJEUNER</a> <br/>
+      <a href="/menu">MENU</a>
     </div>
+        </div>
+      </section>
+      <section className="presentation-section">
+        <img src={image8} alt="Alain Passard" className="chef-image" />
+        <div className="presentation-text">
+          <h3>LES POTAGERS</h3>
+          <p>
+           « Je cultive mes légumes pour conjuguer la main du cuisinier et du jardinier, deux « métiers-passion ». Avec ces jardins, j’ai confié ma créativité à la nature, c’est elle qui dicte mon geste. »</p>
+          <button className="discover-btn">Enfilez vos bottes !</button>
+        </div>
+      </section>
+      <section className="presentation-section">
+        <img src={image9} alt="Alain Passard" className="chef-image" />
+        <div className="presentation-text">
+          <h3>L’ARRIÈRE CUISINE</h3>
+          <p>
+           Livres, collages, lithographies, bronzes… L’Arrière-Cuisine est un lieu d’exposition des créations artistiques du Chef Alain Passard !
+Situé à quelques mètres de l’Arpège, ce lieu révèle son amour du beau geste et l’importance des cinq sens dans ses créations culinaires.
+          </p>
+          <button className="discover-btn">Poussez la porte !</button>
+        </div>
+      </section>
+      
+    </div>
+    
   );
 }
 
