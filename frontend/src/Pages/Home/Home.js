@@ -10,7 +10,7 @@ import image6 from "../../assets/image6.jpg";
 import image7 from "../../assets/image7.jpg";
 import image8 from "../../assets/image8.jpg";
 import image9 from "../../assets/image9.jpg";
-import feuille_d from "../../assets/feuille_d.png"
+import feuille_d from "../../assets/feuille_d.png";
 import feuille_vert_droite from "../../assets/feuille-vert-droite.png"; // feuille verte à droite
 import feuille_noir_gauche from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/feuille-noir-gauche.png"; // feuille verte à droite
 // image d'Alain Passard
@@ -85,8 +85,8 @@ function Home() {
           </p>
         </div>
       </section>
-       <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
-        <img src={feuille_d} id="feuille_d_2" />
+      <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
+      <img src={feuille_d} id="feuille_d_2" />
       <section className="presentation-section">
         <img src={image7} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
@@ -134,6 +134,46 @@ function Home() {
           <button className="discover-btn">Poussez la porte !</button>
         </div>
       </section>
+      <section className="contact-section">
+        <div className="contact-content">
+          <div className="contact-text">
+            <h1>
+              <span className="contact-title">CONTACT</span>
+            </h1>
+            <p className=" contact-info">
+              ARPÈGE <br /> 84, Rue de Varenne <br /> 75007 Paris <br /> + 33
+              (0)1 47 05 09 06
+              <br />
+              restaurant@alain-passard.com <br />
+              <br />
+              Le restaurant est ouvert <br /> du lundi au vendredi
+              <br />, midi et soir.
+              <br />
+              <br /> Nous ne proposons pas
+              <br /> de service voiturier.
+            </p>
+          </div>
+          <div class="ligne"></div>
+        </div>
+        <img src={image1} />
+      </section>
+      <h3
+        style={{
+          fontFamily: "Georgia, serif",
+          fontWeight: "00",
+          fontSize: "200%",
+          letterSpacing: "0.22em",
+          color: "#6c7f68",
+          margin: "6px 0 14px",
+          padding: "0 18px",
+          textTransform: "uppercase",
+          textAlign: "left",
+          marginLeft: "10%",
+          marginBottom: "10%",
+        }}
+      >
+        Suivez le chef @alain_passard
+      </h3>
     </div>
   );
 }
