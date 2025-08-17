@@ -117,8 +117,8 @@
 /* --- TITRE --- */
 .presentation-text h3 {
   font-family: "Georgia", serif;
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 00;
+  font-size:  200%;
   letter-spacing: 0.22em;              /* espacement du titre */
   color: #6c7f68;                      /* vert/gris élégant */
   margin: 6px 0 14px;
@@ -165,7 +165,7 @@
 /* --- TEXTE --- */
 .presentation-section p {
   font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 13px;
+  font-size: 100%;
   line-height: 1.8;
   color: #333;
   max-width: 560px;
@@ -181,7 +181,7 @@
   border: 1px solid #849D75;           /* vert doux */
   color: #849D75;
   font-family: "Georgia", serif;
-  font-size: 14px;
+  font-size: 120%;
   letter-spacing: 0.08em;
   cursor: pointer;
   transition: background-color .25s ease, color .25s ease, border-color .25s ease;
@@ -215,6 +215,57 @@
 .menu-links a:hover {
   color: #000; /* vert plus foncé au survol */
 }
+
+/* les feuilles (wail) */ 
+#feuille_d {
+  position: absolute; /* la feuille se positionne librement */
+    top: 140%;
+    left: 85%;
+    width: 130px;  /* taille de la feuille */
+  z-index: 9999; /* s'assure qu'elle soit toujours au-dessus */
+  pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
+}
+#feuille_vert_droite {
+  position: absolute; /* la feuille se positionne librement */
+      top: 200%;
+    left: 2%;
+    width: 150px;  /* taille de la feuille */
+  z-index: 9999; /* s'assure qu'elle soit toujours au-dessus */
+  pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
+}
+#feuille_noir_gauche {
+   position: absolute; /* la feuille se positionne librement */
+      top: 300%;
+    left: 85%;
+    width: 125px;  /* taille de la feuille */
+  z-index: 9999; /* s'assure qu'elle soit toujours au-dessus */
+  pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
+}
+#feuille_d_2 {
+  position: absolute; /* la feuille se positionne librement */
+    top: 353%;
+    left:9%;
+    width: 130px;  /* taille de la feuille */
+  z-index: 9999; /* s'assure qu'elle soit toujours au-dessus */
+  pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
+}
+#feuille_d_3 {
+  position: absolute; /* la feuille se positionne librement */
+    top: 500%;
+    left: 85%;
+    width: 130px;  /* taille de la feuille */
+  z-index: 9999; /* s'assure qu'elle soit toujours au-dessus */
+  pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
+}
+#feuille_vert_droite_2 {
+  position: absolute; /* la feuille se positionne librement */
+    top: 615%;
+    left: 2%;
+    width: 150px;  /* taille de la feuille */
+  z-index: 9999; /* s'assure qu'elle soit toujours au-dessus */
+   pointer-events: none;
+}
+/* les feuilles (wail) */ 
 
 /* --- RESPONSIVE --- */
 @media (max-width: 980px) {
