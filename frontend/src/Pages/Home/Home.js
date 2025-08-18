@@ -12,7 +12,7 @@ import image8 from "../../assets/image8.jpg";
 import image9 from "../../assets/image9.jpg";
 import feuille_d from "../../assets/feuille_d.png";
 import feuille_vert_droite from "../../assets/feuille-vert-droite.png"; // feuille verte à droite
-import feuille_noir_gauche from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/feuille-noir-gauche.png"; // feuille verte à droite
+import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png"; // feuille noire à gauche
 // image d'Alain Passard
 
 const images = [
