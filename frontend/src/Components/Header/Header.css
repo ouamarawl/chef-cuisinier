@@ -93,7 +93,7 @@
   background: white;
   padding: 1rem;
   transition: left 0.3s ease;
-  z-index: 1000;
+  z-index: 999999;
 }
 
 .sidebar.open {
@@ -114,7 +114,7 @@
 }
 
 .sidebar nav a:hover {
-  background: #444;
+  background:  #849D75;
   color: white;
 }
 

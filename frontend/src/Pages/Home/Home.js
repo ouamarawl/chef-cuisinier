@@ -163,7 +163,7 @@ function Home() {
           fontWeight: "00",
           fontSize: "200%",
           letterSpacing: "0.22em",
-          color: "#6c7f68",
+          color: "#849D75",
           margin: "6px 0 14px",
           padding: "0 18px",
           textTransform: "uppercase",
