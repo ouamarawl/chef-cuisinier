@@ -18,7 +18,6 @@ function App() {
         <Route path="/NosMenus" element={<NosMenus />} />
         <Route path="/Alain_Passard" element={<Alain_Passard />} />
         <Route path="/Réservation" element={<Réservation />} />
-        <Route path="/ArrièreCuisine" element={<ArrièreCuisine />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer /> 
