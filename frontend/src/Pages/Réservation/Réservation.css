@@ -1,0 +1,86 @@
+/* --- CONTAINER --- */
+.zenchef-reservation {
+  max-width: 420px;
+  margin: 120px auto;
+  padding: 32px;
+  background-color: #849D75;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+/* --- TITRE --- */
+.zenchef-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+  color: white;
+}
+
+/* --- POLITIQUE --- */
+.zenchef-policy {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  color: white;
+}
+
+/* --- FORMULAIRE --- */
+.zenchef-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.zenchef-form label {
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.zenchef-form input,
+.zenchef-form select {
+  padding: 10px 12px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.zenchef-form input:focus,
+.zenchef-form select:focus {
+  border-color: #003b4a;
+  outline: none;
+}
+
+/* --- BOUTON --- */
+.zenchef-btn {
+  padding: 12px;
+  background-color: white;
+  color: #849D75;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.zenchef-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* --- ZENCHEF --- */
+.zenchef-powered {
+  margin-top: 28px;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
