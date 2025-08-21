@@ -1,0 +1,72 @@
+/* Alain_Passard.css */
+
+.chef-section {
+  display: flex;
+  height: 100vh;
+  background: #fff;
+   text-align: left;
+}
+
+/* IMAGE À GAUCHE */
+.chefimage {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../assets/image1alain.jpg');
+}
+/* SECTION DROITE */
+.chef-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;   
+  text-align: left;
+  background: #fff;
+
+  
+}
+
+/* NOM */
+.chef-name {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 200;          /* très fin */
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 0.45em;    /* espacement large */
+  color: black;               /* gris foncé, pas noir pur */
+  margin: 0 0 25px 0;
+   margin-bottom: 40px;
+}
+
+/* CITATION */
+.chef-quote {
+ font-family: 'DM Serif Text', serif;
+  font-size: 22px;
+ font-weight: bolder;
+  line-height: 1.5;
+  text-align: left;
+ letter-spacing: .05em;
+    color: #849D75;
+  margin: 0 0 35px 0;
+  margin-bottom: 40px;
+ 
+}
+
+/* SIGNATURE */
+.chef-signature {
+  width: 280px;
+  height: auto;
+  margin-top: 10px;
+  filter: brightness(0) contrast(1.1);
+}
+.titredumilieu{
+  text-transform: uppercase;
+    letter-spacing: .6em;
+font-size: 16px;
+   color: #849D75;
+    text-align: center;
+    font-family: 'DM Serif Text', serif;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}

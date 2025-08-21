@@ -3,7 +3,7 @@ import Contact from './Pages/Contact/Contact';
 import NosMenus from './Pages/NosMenus/NosMenus';
 import Alain_Passard from './Pages/AlainPassard/Alain_Passard';
 import Réservation from './Pages/Réservation/Réservation';
-import ArrièreCuisine from './Pages/ArrièreCuisine/ArrièreCuisine';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Home from './Pages/Home/Home';
