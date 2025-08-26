@@ -29,20 +29,19 @@
 
 /* NOM */
 .chef-name {
-  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 200;          /* très fin */
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: 0.45em;    /* espacement large */
-  color: black;               /* gris foncé, pas noir pur */
-  margin: 0 0 25px 0;
-   margin-bottom: 40px;
+    margin: 110px 0;
+    font-weight: 300;
+    letter-spacing: .4em;
+    font-size: 38px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 0;
 }
 
 /* CITATION */
 .chef-quote {
  font-family: 'DM Serif Text', serif;
-  font-size: 22px;
+  font-size: 30px;
  font-weight: bolder;
   line-height: 1.5;
   text-align: left;
@@ -60,87 +59,146 @@
   margin-top: 10px;
   filter: brightness(0) contrast(1.1);
 }
-.titredumilieu{
-  text-transform: uppercase;
-    letter-spacing: .6em;
-font-size: 16px;
-   color: #849D75;
-    text-align: center;
+.titredumilieu p{
     font-family: 'DM Serif Text', serif;
-    margin-top: 80px;
-    margin-bottom: 100px;
-}
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 80px auto;
-  font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    letter-spacing: .05em;
+    color: #849D75;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4em;    
 }
 
-.carousel-slide {
+/* section-presentation */
+ /* --- SECTION LAYOUT --- */
+.presentation-section-A {
+  display: grid;
+  grid-template-columns: 460px 1fr; /* image fixe + bloc texte fluide */
+  column-gap: 72px;
+  align-items: center; /* centre verticalement par rapport à l'image */
+  padding: 90px 8%;
+  background:white; /* beige très clair */
+}
+
+/* --- IMAGE GAUCHE --- */
+.chef-image {
+  width: 460px;
+  height: 600px; /* proche du rendu de ta photo */
+  object-fit: cover;
+  display: block;
+}
+
+/* --- COLONNE DROITE (ton .presentation-text) --- */
+.presentation-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* contenu centré horizontalement */
+  justify-content: center; /* contenu centré verticalement */
+  min-height: 600px; /* même “hauteur visuelle” que l’image */
+  text-align: center;
+}
+
+/* Logo "Arpège" au-dessus (si tu l’affiches en texte ou image) */
+.presentation-logo {
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #4a4a4a;
+}
+
+/* --- TITRE --- */
+.presentation-text h3 {
+  font-family: "Georgia", serif;
+  font-weight: 00;
+  font-size: 200%;
+  letter-spacing: 0.22em; /* espacement du titre */
+  color: #849D75; /* vert/gris élégant */
+  margin: 6px 0 14px;
   position: relative;
+  padding: 0 18px; /* espace pour les traits */
+  text-transform: uppercase;
+}
+
+/* Traits fins à gauche/droite du titre (comme sur ta capture) */
+.presentation-text h3::before,
+.presentation-text h3::after {
+  content: "";
+  display: inline-block;
+  width: 56px;
+  height: 1px;
+  background: #c7cec2;
+  vertical-align: middle;
+  position: relative;
+}
+
+.presentation-text h3::before {
+  margin-right: 14px;
+}
+.presentation-text h3::after {
+  margin-left: 14px;
+}
+
+/* --- CITATION --- */
+/* --- SECTION PRÉSENTATION --- */
+.presentation-section-A {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 48px;
+  padding: 80px 10%;
+}
+
+/* Alterner les sections : image à droite pour les sections paires */
+.presentation-section-A:nth-of-type(even) {
+  direction: rtl;
+}
+
+.presentation-section-A:nth-of-type(even) .presentation-text,
+.presentation-section-A:nth-of-type(even) .chef-image {
+  direction: ltr;
+}
+
+/* --- TEXTE --- */
+.presentation-section-A p {
+  font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.8;
+  color: #333;
+  max-width: 560px;
+  margin: 8px auto 24px auto;
+  text-align: left;
+}
+
+
+/* caroussel */
+
+.carousel-container {
+  width: 80%;       /* largeur du carrousel */
+  margin: 50px auto;
+}
+
+.slide {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.carousel-image {
+.slide-image {
   width: 100%;
-  height: 500px;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.carousel-text {
-  margin-top: 18px;
-  text-align: left;
-
-}
-
-.dish-name {
-  font-size: 28px;
-  font-weight: 600;
-  color: #849D75;
- margin-bottom: 10px;
-}
-
-.dish-description {
-  font-size: 22px;
-  font-style: italic;
-  color: #849D75;
+.descri {
+  text-align: center;
   margin-top: 10px;
- 
 }
 
-/* 🔄 Navigation flèches */
-.carousel-nav {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  pointer-events: none; /* pour que les boutons ne bloquent pas le clic sur l'image */
-}
 
-.carousel-nav button {
-  pointer-events: all;
- background-color: transparent;
-  border-color: white;
-  color: white;
-  font-size: 32px;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
 
-.carousel-nav button:hover {
-  background-color: white;
-  color: #849D75;
-}
+/* caroussel */
+
 /* .derniertitre{
   text-transform: uppercase;
     letter-spacing: .6em;
@@ -174,3 +232,5 @@ font-size: 16px;
       margin-bottom: 100px;
       font-size: 25px;
   }
+
+  

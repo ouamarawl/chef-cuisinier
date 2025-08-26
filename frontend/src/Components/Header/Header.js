@@ -13,7 +13,7 @@ function Header() {
   // Détecter le scroll
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY >= 0) {
         setIsScrolled(false);
       } if (window.scrollY >5) {
         setIsScrolled(true);
