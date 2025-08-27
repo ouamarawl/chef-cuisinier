@@ -8,15 +8,7 @@ import plat2 from "../../assets/plat2.jpg";
 import feuille_d from "../../assets/feuille_d.png";
 import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
 import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-
+import feille from "../../assets/feuille.png";
 // Images du carrousel
 import plat3 from "../../assets/plat3.jpg";
 import plat4 from "../../assets/plat4.jpg";
@@ -112,12 +104,18 @@ function Alain_Passard() {
           <h3>Tissu animal</h3>
           <p>
             Alain Passard est un chef viscéralement attaché à ses fourneaux
-            <br />depuis près de 35 ans. Le Chef est un grand rôtisseur, il a mis
-            <br />longtemps en pratique ce que sa grand-mère lui a transmis : la
-            <br />passion de la flamme et la cuisson longue des viandes en basse
-            <br />température. Cette passion amènera l’Arpège à devenir l’une des
-            <br />rôtisseries phares de la capitale récompensée de trois étoiles
-            <br />Michelin en 1996.
+            <br />
+            depuis près de 35 ans. Le Chef est un grand rôtisseur, il a mis
+            <br />
+            longtemps en pratique ce que sa grand-mère lui a transmis : la
+            <br />
+            passion de la flamme et la cuisson longue des viandes en basse
+            <br />
+            température. Cette passion amènera l’Arpège à devenir l’une des
+            <br />
+            rôtisseries phares de la capitale récompensée de trois étoiles
+            <br />
+            Michelin en 1996.
           </p>
         </div>
       </section>
@@ -155,30 +153,64 @@ function Alain_Passard() {
         </div>
       </section>
 
-      
-        {/* 🔄 Carrousel des plats */}
-   <section className="carousel-container">
-      <Swiper
-        modules={[Navigation]}
-        navigation={true}
-        spaceBetween={30}
-        slidesPerView={1}
-        loop={true}
-      >
-        {plats.map((plat, idx) => (
-          <SwiperSlide key={idx}>
-            <div className="slide">
-              <img src={plat.image} alt={plat.title} className="slide-image" />
-              <div className="descri">
-                <p className="titre">{plat.title}</p>
-                <p className="description">{plat.description}</p>
+      <div className="last-title">
+        <h3>Plats signatures</h3>
+        <img src={feille} />
+      </div>
+
+      <section className="carousel-container">
+        <button className="prev-btn" onClick={prevSlide}>
+          ❮
+        </button>
+
+        <div className="carousel-track">
+          {plats.map((plat, i) => {
+            let position = "nextSlide";
+            let positionInfo = "nextSlideInfo";
+            if (i === index) {
+              position = "activeSlide";
+              positionInfo = "activeSlideInfo";
+            } else if (
+              i === index - 1 ||
+              (index === 0 && i === plats.length - 1)
+            ) {
+              position = "lastSlide";
+              positionInfo = "lastSlideInfo";
+            } else {
+              positionInfo = "lastSlideInfo2";
+            }
+
+            return (
+              <div key={i} className={`carousel-item ${position}`}>
+                <img src={plat.image} alt={plat.title} />
+                <div key={i} className={`carousel-info ${positionInfo}`}>
+                  <div key={i} className={`ligne_H ${positionInfo}`}></div>
+                  <div
+                    style={{
+                      textAlign: "left",
+                      marginRight: "5%",
+                      marginTop: "-3%",
+                    }}
+                  >
+                    <p key={i} className={`plat_title ${positionInfo}`}>
+                      {plat.title}
+                    </p>
+                    <p key={i} className={`plat_description ${positionInfo}`}>
+                      {plat.description}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </section>
-  {/* 🔄 Carrousel des plats */}
+            );
+          })}
+        </div>
+
+        <button className="next-btn" onClick={nextSlide}>
+          ❯
+        </button>
+      </section>
+
+      {/* 🔄 Carrousel des plats */}
       <div className="derniertitre">
         <h2 id="H2"> Une Obsession 4 saisons / 5 sens</h2> <br />
         <h2 id="H22">
@@ -199,14 +231,3 @@ function Alain_Passard() {
 }
 
 export default Alain_Passard;
-
-
-
-
-
-
-
-
-
-
-

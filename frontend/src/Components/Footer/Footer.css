@@ -8,27 +8,43 @@
 
 .footer-section {
   flex: 1;
-  margin: 10px;
+  margin:  2% 2% 2% 2%;
   min-width: 200px;
+  text-align: center;
 }
 
 .footer-section h3 {
   color: white;
   margin-bottom: 10px;
+  text-align: left;
+  /*  */
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white !important;
+    cursor: default !important;
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
 
 .footer-section ul li {
   margin-bottom: 5px;
+  text-align: left;
 }
 
 .footer-section ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
+  text-align: left;
+  font-size: 20px;
+}
+.footer-section li,.footer-section a {
+   margin-top:5%;
 }
 
 .footer-section ul li a:hover {

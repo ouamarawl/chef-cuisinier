@@ -4,7 +4,7 @@
   display: flex;
   height: 100vh;
   background: #fff;
-   text-align: left;
+  text-align: left;
 }
 
 /* IMAGE À GAUCHE */
@@ -12,7 +12,7 @@
   flex: 1;
   background-size: cover;
   background-position: center;
-  background-image: url('../../assets/image1alain.jpg');
+  background-image: url("../../assets/image1alain.jpg");
 }
 /* SECTION DROITE */
 .chef-content {
@@ -20,36 +20,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;   
+  align-items: center;
   text-align: left;
   background: #fff;
-
-  
 }
 
 /* NOM */
 .chef-name {
-    margin: 110px 0;
-    font-weight: 300;
-    letter-spacing: .4em;
-    font-size: 38px;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 0;
+  margin: 110px 0;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  font-size: 38px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 0;
 }
 
 /* CITATION */
 .chef-quote {
- font-family: 'DM Serif Text', serif;
+  font-family: "DM Serif Text", serif;
   font-size: 30px;
- font-weight: bolder;
+  font-weight: bolder;
   line-height: 1.5;
   text-align: left;
- letter-spacing: .05em;
-    color: #849D75;
+  letter-spacing: 0.05em;
+  color: #849d75;
   margin: 0 0 35px 0;
   margin-bottom: 40px;
- 
 }
 
 /* SIGNATURE */
@@ -59,25 +56,25 @@
   margin-top: 10px;
   filter: brightness(0) contrast(1.1);
 }
-.titredumilieu p{
-    font-family: 'DM Serif Text', serif;
-    font-size: 35px;
-    letter-spacing: .05em;
-    color: #849D75;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .4em;    
+.titredumilieu p {
+  font-family: "DM Serif Text", serif;
+  font-size: 35px;
+  letter-spacing: 0.05em;
+  color: #849d75;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
 }
 
 /* section-presentation */
- /* --- SECTION LAYOUT --- */
+/* --- SECTION LAYOUT --- */
 .presentation-section-A {
   display: grid;
   grid-template-columns: 460px 1fr; /* image fixe + bloc texte fluide */
   column-gap: 72px;
   align-items: center; /* centre verticalement par rapport à l'image */
   padding: 90px 8%;
-  background:white; /* beige très clair */
+  background: white; /* beige très clair */
 }
 
 /* --- IMAGE GAUCHE --- */
@@ -112,7 +109,7 @@
   font-weight: 00;
   font-size: 200%;
   letter-spacing: 0.22em; /* espacement du titre */
-  color: #849D75; /* vert/gris élégant */
+  color: #849d75; /* vert/gris élégant */
   margin: 6px 0 14px;
   position: relative;
   padding: 0 18px; /* espace pour les traits */
@@ -168,69 +165,174 @@
   margin: 8px auto 24px auto;
   text-align: left;
 }
+/* last titele  */
+.last-title {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.last-title h3 {
+    margin: 110px 0px 0px 0px;
+    font-weight: 300;
+    letter-spacing: .4em;
+    font-size: 38px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 9999;
+}
+.last-title img {
+  position: absolute; /* la feuille se positionne librement */
+  /* top: 438%;
+  left: 47%; */
+  top: 202rem;
+  left: 43rem;
+  width: 130px; /* taille de la feuille */
+  z-index:0 ; /* s'assure qu'elle soit toujours au-dessus */
+  pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
+}
 
 
 /* caroussel */
 
 .carousel-container {
-  width: 80%;       /* largeur du carrousel */
-  margin: 50px auto;
-}
-
-.slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.slide-image {
+  position: relative;
   width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 12px;
+  margin:  auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50rem;
 }
 
-.descri {
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transform: scale(0.7) translateX(400px);
+  transition: all 0.6s ease;
   text-align: center;
-  margin-top: 10px;
 }
 
+.carousel-item img {
+  width: 60rem;
+  height: 34rem;
+}
+
+/* Slide active (au centre) */
+.activeSlide {
+  opacity: 1;
+  transform: scale(0.8) translateX(0);
+  height: 50rem;
+  text-align: center;
+}
+
+/* Slide précédent (à gauche) */
+.lastSlide {
+  opacity: 1;
+  transform: scale(0.8) translateX(-68rem);
+}
+
+/* Slide suivant (à droite) */
+.nextSlide {
+  opacity: 1;
+  transform: scale(0.8) translateX(68rem);
+}
+
+/* Flèches */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 28px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: white;
+}
+
+.prev-btn {
+  left: 20px;
+}
+.next-btn {
+  right: 20px;
+}
+
+/* wiwi */
+
+.plat_title {
+  margin-top: 10px;
+  position: relative;
+  font-style: italic;
+  font-size: 27px;
+  font-weight: bold;
+  color: #849d75;
+  left: 12%;
+}
+
+.plat_description {
+  position: relative;
+  font-style: italic;
+  font-size: 27px;
+  color: #849d75;
+  left: 12%;
+}
+
+.ligne_H {
+  background: #849d75;
+  position: relative;
+  width: 4px;
+  height: 80px;
+  left: 5%;
+}
+.lastSlideInfo,.lastSlideInfo2 {
+  background-color: white;
+  color: white;
+}
 
 
 /* caroussel */
 
-/* .derniertitre{
+
+#H2 {
   text-transform: uppercase;
-    letter-spacing: .6em;
-font-size: 16px;
-   color: #849D75;
-    text-align: center;
-    font-family: 'DM Serif Text', serif;
-    margin-top: 80px;
-    margin-bottom: 100px;
-} */
-#H2{
-
-   text-transform: uppercase;
-   letter-spacing: .1em;
-    color: #849D75;
-    text-align: center;
-    font-style: italic;
-    font-family: 'DM Serif Text', serif;
-    margin-top: 80px;
-    margin-bottom: 100px;
- }
-  #H22{
-    text-transform: uppercase;
-    letter-spacing: .4em;
-      color: #849D75;
-      text-align: center;
-      line-height: 1.9;
-      font-style: italic;
-      font-family: 'DM Serif Text', serif;
-      margin-top: 0px;
-      margin-bottom: 100px;
-      font-size: 25px;
-  }
-
-  
+  letter-spacing: 0.1em;
+  color: #849d75;
+  text-align: center;
+  font-style: italic;
+  font-family: "DM Serif Text", serif;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+#H22 {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: #849d75;
+  text-align: center;
+  line-height: 1.9;
+  font-style: italic;
+  font-family: "DM Serif Text", serif;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  font-size: 25px;
+}
