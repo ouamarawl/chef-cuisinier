@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import image1 from "../../assets/image1.jpg";
 import image2 from "../../assets/image2.jpg";
@@ -31,6 +33,20 @@ function Home() {
     }, 5000);
     return () => clearInterval(timer);
   }, []);
+
+    const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+  
+  const navigate = useNavigate(); 
 
   return (
     <div className="home-container">
@@ -69,7 +85,7 @@ function Home() {
             concombre, un melon. J’aime les harmoniser pour créer une cuisine
             désaltérante. »
           </p>
-          <button className="discover-btn">DÉCOUVRIR</button>
+          <button className="discover-btn" onClick={() => navigate('/Alain_Passard')}>DÉCOUVRIR</button>
         </div>
       </section>
       <img src={feuille_vert_droite} id="feuille_vert_droite" />
@@ -87,7 +103,7 @@ function Home() {
       </section>
       <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
       <img src={feuille_d} id="feuille_d_2" />
-      <section className="presentation-section">
+      <section className="presentation-section" id="menu-section">
         <img src={image7} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
           <h3>NOS MENUS</h3>
@@ -131,7 +147,7 @@ function Home() {
             beau geste et l’importance des cinq sens dans ses créations
             culinaires.
           </p>
-          <button className="discover-btn">Poussez la porte !</button>
+           <button className="discover-btn" onClick={() => navigate('/Larriere_cuisinet')}>DÉCOUVRIR</button>
         </div>
       </section>
       <section className="contact-section">

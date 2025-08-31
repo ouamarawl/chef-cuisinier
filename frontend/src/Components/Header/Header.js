@@ -63,7 +63,7 @@ function Header() {
           <Link to="/Alain_Passard" onClick={toggleSidebar}>Alain Passard</Link>
           <Link to="/contact" onClick={toggleSidebar}>Contact</Link>
           <Link to="/Réservation" onClick={toggleSidebar}>Réservation</Link>
-          <Link to="/NosMenus" onClick={toggleSidebar}>Nos Menus</Link>
+         <Link to="/#menu-section" onClick={toggleSidebar}>Nos Menus</Link>
         </nav>
       </div>
 

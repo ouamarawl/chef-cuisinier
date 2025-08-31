@@ -1,0 +1,105 @@
+.larriere-cuisine-container {
+  text-align: center;
+  justify-content: center;
+  margin-top: 15%;
+}
+#signature {
+    margin:"5%"
+}
+.larriere-cuisine-header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+.larriere-cuisine-header h3 {
+  margin: 110px 0px 0px 0px;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  font-size: 38px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 9999;
+}
+.larriere-cuisine-header img {
+  position: absolute; /* la feuille se positionne librement */
+  top: 30%;
+  left: 43%;
+  /* top: 6rem;
+    left: 42rem; */
+  width: 130px; /* taille de la feuille */
+  z-index: 0; /* s'assure qu'elle soit toujours au-dessus */
+  pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
+}
+
+
+.A_decouvrir  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10%;
+}
+.A_decouvrir-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 60%;
+  padding-bottom: 10%;
+  background-color: #849d75;
+  position: relative; /* la feuille se positionne librement */
+  top: 650%;
+  /* left: 0%; */
+  right: 12%;
+}
+.A_decouvrir-text h1 {
+  font-family: "Georgia", serif;
+  font-weight: 00;
+  font-size: 200%;
+  letter-spacing: 0.22em; /* espacement du titre */
+  color: white; /* vert/gris élégant */
+  margin: 0% 0% 0% 7%;
+  position: relative;
+  padding: 0 18px; /* espace pour les traits */
+  text-transform: uppercase;
+  text-align: right;
+}
+.A_decouvrir-text p {
+  font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.8;
+  color: white;
+  max-width: 560px;
+  margin: 8px auto 24px auto;
+  text-align: right;
+}
+.ligne {
+  width: 33%;
+  height: 3px;
+  background: white;
+  position: relative;
+  top: 5rem;
+  left: 0%;
+  right: 2%;
+}
+.A_decouvrir-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  position: relative;
+  top: 4rem;
+  left: -5%;
+  right: 1%;
+}
+.A_decouvrir img {
+  position: absolute; /* la feuille se positionne librement */
+  /* top: 130%; */
+  /* left: 50%; */ 
+    top: 48rem;
+    left: 54rem;
+  width: 35%;
+  height: 60%; /* taille de la feuille */
+  z-index: 9999; /* s'assure qu'elle soit toujours au-dessus */
+}
