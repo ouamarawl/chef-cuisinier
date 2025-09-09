@@ -1,67 +1,87 @@
+/* === Container Principal === */
 .contact_container {
-    text-align: center;
-    justify-content: center;
-    margin-top: 15%;
-
-
+  text-align: center;
+  justify-content: center;
+  margin-top: 15%;
 }
+
 .contact_container h3 {
-    margin: 110px 0;
-    font-weight: 300;
-    letter-spacing: .4em;
-    font-size: 38px;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 9999;
+  margin: 110px 0;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  font-size: 38px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 9999;
 }
+
+/* === Feuille décorative === */
 #feuille_contact {
-  position: absolute; /* la feuille se positionne librement */
+  position: absolute;
   top: 29%;
   left: 45%;
-  width: 130px; /* taille de la feuille */
-  z-index:0 ; /* s'assure qu'elle soit toujours au-dessus */
-  pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
+  width: 130px;
+  z-index: 0;
+  pointer-events: none;
 }
+
+/* === Détails de contact === */
 .contact-detail {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 2rem;
+  text-align: center;
 }
-.block-d, .block-g {
- text-align: left;
- justify-content: center;
+
+/* === Blocs gauche et droite === */
+.block-g,
+.block-d {
+  text-align: left;
+  justify-content: center;
+  flex: 1;
 }
+
+/* === Image dans le bloc gauche === */
 .block-g img {
   height: 38rem;
   width: 32rem;
+  object-fit: cover;
 }
-.block-d h3, .block-g h3 {
+
+/* === Titres des sections === */
+.block-d h3,
+.block-g h3 {
   font-family: "Georgia", serif;
   font-weight: 400;
-  font-size: 200%;
-  letter-spacing: 0.22em; /* espacement du titre */
-  color: #849D75; /* vert/gris élégant */
+  font-size: 2rem;
+  letter-spacing: 0.22em;
+  color: #849D75;
   margin: 6px 0 14px;
-  position: relative;
-  padding: 0 ; /* espace pour les traits */
   text-transform: uppercase;
   text-align: left;
 }
-.block-d p, .block-g p {
-    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 100%;
+
+/* === Paragraphes === */
+.block-d p,
+.block-g p {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
   line-height: 1.8;
   color: #333;
   max-width: 560px;
   margin: 8px auto 24px auto;
   text-align: left;
 }
+
+/* === Ligne décorative === */
 .lign {
-    width: 10rem;
-    height: 5px;
-    background-color: #849D75;
-    position: relative;
-    top: -36rem;
-    left: 32rem;
-    z-index: 0;
+  width: 10rem;
+  height: 5px;
+  background-color: #849D75;
+  position: absolute;
+  top: 5rem;
+  left: calc(50% + 16rem);
+  z-index: 1;
 }
