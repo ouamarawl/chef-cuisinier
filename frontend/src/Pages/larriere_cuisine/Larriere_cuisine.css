@@ -103,3 +103,43 @@
   height: 60%; /* taille de la feuille */
   z-index: 9999; /* s'assure qu'elle soit toujours au-dessus */
 }
+
+.section-oeuvres {
+  display: grid;
+  grid-template-columns: 460px 1fr; /* image fixe + bloc texte fluide */
+  column-gap: 72px;
+  align-items: center; /* centre verticalement par rapport à l'image */
+  padding: 90px 8%;
+}
+.section-oeuvres img {
+  position: absolute;
+  max-width: 220px;
+  border-radius: 6px;
+}
+
+/* Exemple de placement pour chaque image */
+#image15 {
+  top: 0;
+  left: 100px;
+}
+
+#image9 {
+  top: 40px;
+  right: 150px;
+}
+
+#image14 {
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#image12 {
+  top: 380px;
+  left: 80px;
+}
+
+#image13 {
+  top: 400px;
+  right: 120px;
+}
