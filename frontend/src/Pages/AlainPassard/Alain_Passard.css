@@ -12,7 +12,7 @@
   flex: 1;
   background-size: cover;
   background-position: center;
-  background-image: url("../../assets/image1alain.jpg");
+  background-image: url("../../assets/images_athmen/IMAGEJUS.JPG");
 }
 /* SECTION DROITE */
 .chef-content {
@@ -44,9 +44,15 @@
   line-height: 1.5;
   text-align: left;
   letter-spacing: 0.05em;
-  color: #849d75;
+  color: #3A4F63;
   margin: 0 0 35px 0;
   margin-bottom: 40px;
+}
+#vegetal{
+   width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: left center;
 }
 
 /* SIGNATURE */
@@ -60,7 +66,7 @@
   font-family: "DM Serif Text", serif;
   font-size: 35px;
   letter-spacing: 0.05em;
-  color: #849d75;
+  color: #3A4F63;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.4em;
@@ -109,7 +115,7 @@
   font-weight: 00;
   font-size: 200%;
   letter-spacing: 0.22em; /* espacement du titre */
-  color: #849d75; /* vert/gris élégant */
+  color: #3A4F63; /* vert/gris élégant */
   margin: 6px 0 14px;
   position: relative;
   padding: 0 18px; /* espace pour les traits */
@@ -286,7 +292,7 @@
   font-style: italic;
   font-size: 27px;
   font-weight: bold;
-  color: #849d75;
+  color: #3A4F63;
   left: 12%;
 }
 
@@ -294,12 +300,12 @@
   position: relative;
   font-style: italic;
   font-size: 27px;
-  color: #849d75;
+  color: #3A4F63;
   left: 12%;
 }
 
 .ligne_H {
-  background: #849d75;
+  background: #3A4F63;
   position: relative;
   width: 4px;
   height: 80px;
@@ -317,7 +323,7 @@
 #H2 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #849d75;
+  color: #3A4F63;
   text-align: center;
   font-style: italic;
   font-family: "DM Serif Text", serif;
@@ -327,7 +333,7 @@
 #H22 {
   text-transform: uppercase;
   letter-spacing: 0.4em;
-  color: #849d75;
+  color: #3A4F63;
   text-align: center;
   line-height: 1.9;
   font-style: italic;

@@ -33,7 +33,7 @@
 }
 /* Section bienvenue */
 .welcome-section {
-  background-color: #8aa479; /* vert doux */
+  background-color: #3A4F63; /* vert doux */
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -65,7 +65,7 @@
   top: 20px;
   right: 20px;
   background: white;
-  color: #8aa479;
+  color: #3A4F63;
   border-radius: 50%;
   padding: 20px;
   width: 120px;
@@ -95,6 +95,12 @@
   object-fit: cover;
   display: block;
 }
+#image5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 /* --- COLONNE DROITE (ton .presentation-text) --- */
 .presentation-text {
@@ -120,7 +126,7 @@
   font-weight: 00;
   font-size: 200%;
   letter-spacing: 0.22em; /* espacement du titre */
-  color: #849D75; /* vert/gris élégant */
+  color: #3A4F63; /* vert/gris élégant */
   margin: 6px 0 14px;
   position: relative;
   padding: 0 18px; /* espace pour les traits */
@@ -171,7 +177,7 @@
   font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 100%;
   line-height: 1.8;
-  color: #333;
+  color: #4B5563;
   max-width: 560px;
   margin: 8px auto 24px auto;
   text-align: left;
@@ -182,8 +188,8 @@
   display: inline-block;
   padding: 11px 28px;
   background: transparent;
-  border: 1px solid #849d75; /* vert doux */
-  color: #849d75;
+  border: 1px solid #3A4F63; /* vert doux */
+  color: #3A4F63;
   font-family: "Georgia", serif;
   font-size: 120%;
   letter-spacing: 0.08em;
@@ -193,9 +199,9 @@
 }
 
 .discover-btn:hover {
-  background: #849d75;
+  background: #3A4F63;
   color: #fff;
-  border-color: #849d75;
+  border-color: #3A4F63;
 }
 
 /* --- LIENS DE MENU --- */
@@ -211,7 +217,7 @@
 .menu-links a {
   font-family: "Georgia", serif;
   font-size: 16px;
-  color: #849d75; /* vert doux */
+  color: #3A4F63; /* vert doux */
   text-decoration: none;
   letter-spacing: 0.05em;
   transition: color 0.3s ease;
@@ -287,7 +293,7 @@
   width: 80%;
   height: 60%;
   padding-bottom: 10%;
-  background-color: #849d75;
+  background-color: #3A4F63;
   position: relative; /* la feuille se positionne librement */
   top: 650%;
   /* left: 0%; */

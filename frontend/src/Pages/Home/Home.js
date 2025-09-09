@@ -7,11 +7,11 @@ import image2 from "../../assets/image2.jpg";
 import image3 from "../../assets/image3.jpg";
 import image4 from "../../assets/image4.jpg";
 import logo from "../../assets/logo.svg"; // image centrale du slideshow
-import image5 from "../../assets/image5.jpg";
+import image5 from "../../assets/images_athmen/image5.JPG";
 import image6 from "../../assets/image6.jpg";
-import image7 from "../../assets/image7.jpg";
+import image7 from "../../assets/images_plats/image7.PNG";
 import image8 from "../../assets/image8.jpg";
-import image9 from "../../assets/image9.jpg";
+import image9 from "../../assets/images_athmen/image9.JPG";
 import feuille_d from "../../assets/feuille_d.png";
 import feuille_vert_droite from "../../assets/feuille-vert-droite.png"; // feuille verte à droite
 import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png"; // feuille noire à gauche
@@ -75,9 +75,9 @@ function Home() {
       </section>
 
       {/* Section présentation */}
-      <img src={feuille_d} id="feuille_d" />
+      {/* <img src={feuille_d} id="feuille_d" /> */}
       <section className="presentation-section">
-        <img src={image5} alt="Alain Passard" className="chef-image" />
+        <img id="image5" src={image5} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
           <h3>ALAIN PASSARD</h3>
           <p>
@@ -88,7 +88,7 @@ function Home() {
           <button className="discover-btn" onClick={() => navigate('/Alain_Passard')}>DÉCOUVRIR</button>
         </div>
       </section>
-      <img src={feuille_vert_droite} id="feuille_vert_droite" />
+      {/* <img src={feuille_vert_droite} id="feuille_vert_droite" /> */}
       <section className="presentation-section">
         <img src={image6} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
@@ -102,7 +102,7 @@ function Home() {
         </div>
       </section>
       <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
-      <img src={feuille_d} id="feuille_d_2" />
+      {/* <img src={feuille_d} id="feuille_d_2" /> */}
       <section className="presentation-section" id="menu-section">
         <img src={image7} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
@@ -122,7 +122,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <img src={feuille_d} id="feuille_d_3" />
+      {/* <img src={feuille_d} id="feuille_d_3" /> */}
       <section className="presentation-section">
         <img src={image8} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
@@ -135,7 +135,7 @@ function Home() {
           <button className="discover-btn">Enfilez vos bottes !</button>
         </div>
       </section>
-      <img src={feuille_vert_droite} id="feuille_vert_droite_2" />
+      {/* <img src={feuille_vert_droite} id="feuille_vert_droite_2" /> */}
       <section className="presentation-section">
         <img src={image9} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
@@ -171,7 +171,7 @@ function Home() {
           </div>
           <div class="ligne"></div>
         </div>
-        <img src={image1} />
+        {/* <img src={image1} /> */}
       </section>
       <h3
         style={{
@@ -179,7 +179,7 @@ function Home() {
           fontWeight: "00",
           fontSize: "200%",
           letterSpacing: "0.22em",
-          color: "#849D75",
+          color: "#3A4F63",
           margin: "6px 0 14px",
           padding: "0 18px",
           textTransform: "uppercase",

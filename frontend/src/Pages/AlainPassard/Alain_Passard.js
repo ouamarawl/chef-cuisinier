@@ -2,13 +2,15 @@ import "./Alain_Passard.css";
 import React, { useState } from "react";
 import signature from "../../assets/signature.png";
 import "@fontsource/montserrat/200.css";
-import CHEF2 from "../../assets/CHEF2.jpg";
+import CHEF2 from "../../assets/images_athmen/CHEF2.JPG";
 import image5 from "../../assets/image5.jpg";
 import plat2 from "../../assets/plat2.jpg";
 import feuille_d from "../../assets/feuille_d.png";
-import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
+import EVEIL from "../../assets/images_athmen/EVEIL.JPG";
+// import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
 import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import feille from "../../assets/feuille.png";
+import Vegetal from "../../assets/images_plats/Vegetal.PNG";
 // Images du carrousel
 import plat3 from "../../assets/plat3.jpg";
 import plat4 from "../../assets/plat4.jpg";
@@ -120,10 +122,10 @@ function Alain_Passard() {
         </div>
       </section>
 
-      <img src={feuille_vert_droite} id="feuille_vert_droite" />
+      {/* <img src={feuille_vert_droite} id="feuille_vert_droite" /> */}
 
       <section className="presentation-section-A">
-        <img src={image5} alt="Alain Passard" className="chef-image" />
+        <img src={EVEIL} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
           <h3>L’éveil</h3>
           <p>
@@ -136,11 +138,11 @@ function Alain_Passard() {
         </div>
       </section>
 
-      <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
+      {/* <img src={feuille_noir_gauche} id="feuille_noir_gauche" /> */}
       <img src={feuille_d} id="feuille_d_2" />
 
       <section className="presentation-section-A">
-        <img src={plat2} alt="Alain Passard" className="chef-image" />
+        <img id="vegetal" src={Vegetal} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
           <h3>Tissu végétal</h3>
           <p>
