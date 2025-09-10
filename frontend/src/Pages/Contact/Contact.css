@@ -57,7 +57,7 @@
   font-weight: 400;
   font-size: 2rem;
   letter-spacing: 0.22em;
-  color: #849D75;
+  color: #3A4F63;
   margin: 6px 0 14px;
   text-transform: uppercase;
   text-align: left;
@@ -79,7 +79,7 @@
 .lign {
   width: 10rem;
   height: 5px;
-  background-color: #849D75;
+  background-color: #3A4F63;
   position: absolute;
   top: 5rem;
   left: calc(50% + 16rem);

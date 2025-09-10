@@ -4,7 +4,7 @@ import signature from "../../assets/signature.png";
 import "@fontsource/montserrat/200.css";
 import CHEF2 from "../../assets/images_athmen/CHEF2.JPG";
 import image5 from "../../assets/image5.jpg";
-import plat2 from "../../assets/plat2.jpg";
+
 import feuille_d from "../../assets/feuille_d.png";
 import EVEIL from "../../assets/images_athmen/EVEIL.JPG";
 // import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
@@ -12,11 +12,13 @@ import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import feille from "../../assets/feuille.png";
 import Vegetal from "../../assets/images_plats/Vegetal.PNG";
 // Images du carrousel
-import plat3 from "../../assets/plat3.jpg";
-import plat4 from "../../assets/plat4.jpg";
-import plat5 from "../../assets/plat5.jpg";
-import plat6 from "../../assets/plat6.jpg";
-import plat7 from "../../assets/plat7.jpg";
+import plat1 from "../../assets/images_plats/plat1.JPG";
+import plat2 from "../../assets/images_plats/plat2.JPG";
+import plat3 from "../../assets/images_plats/plat3.JPG";
+import plat4 from "../../assets/images_plats/plat4.JPG";
+import plat5 from "../../assets/images_plats/plat5.JPG";
+import plat6 from "../../assets/images_plats/plat6.JPG";
+import plat7 from "../../assets/images_plats/plat7.JPG";
 import plat8 from "../../assets/plat8.jpg";
 import plat9 from "../../assets/plat9.jpg";
 import plat10 from "../../assets/plat10.jpg";
@@ -24,45 +26,45 @@ import plat10 from "../../assets/plat10.jpg";
 function Alain_Passard() {
   const plats = [
     {
-      image: plat3,
+      image: plat1,
       title: "Carpaccio de Saint-Jacques et radis",
       description: "Carpaccio of scallops and radishes",
     },
     {
-      image: plat4,
+      image: plat2,
       title: "Gratin d’oignon",
       description: "Onion gratin",
     },
     {
-      image: plat5,
+      image: plat3,
       title: "Légumes de printemps",
       description: "Spring vegetables",
     },
     {
-      image: plat6,
+      image: plat4,
       title: "Tartare végétal",
       description: "vegetal tartare",
     },
     {
-      image: plat7,
+      image: plat5,
       title: "Corps a corps au foin",
       description: "Hand to hand with hay",
     },
     {
-      image: plat8,
+      image: plat6,
       title: "Chimere agneau pigeon",
       description: "Chimera lamb pigeon",
     },
     {
-      image: plat9,
+      image: plat7,
       title: "Tartelette potageres ",
       description: "vegetable tartlets",
     },
-    {
-      image: plat10,
-      title: "Tarte bouquet de Roses",
-      description: "Rose Bouquet Pie",
-    },
+    // {
+    //   image: plat10,
+    //   title: "Tarte bouquet de Roses",
+    //   description: "Rose Bouquet Pie",
+    // },
   ];
 
   const [index, setIndex] = useState(0);

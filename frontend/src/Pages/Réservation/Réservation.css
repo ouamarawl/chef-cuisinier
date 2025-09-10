@@ -3,7 +3,7 @@
   max-width: 420px;
   margin: 120px auto;
   padding: 32px;
-  background-color: #849D75;
+  background-color: #3A4F63;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   font-family: 'Inter', sans-serif;
@@ -63,7 +63,7 @@
 .zenchef-btn {
   padding: 12px;
   background-color: white;
-  color: #849D75;
+  color: #3A4F63;
   border: none;
   border-radius: 6px;
   font-size: 14px;

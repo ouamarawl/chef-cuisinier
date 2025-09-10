@@ -203,18 +203,18 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  margin:  auto;
+  margin: auto;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50rem;
+height: 30rem;
 }
 
 .carousel-track {
   position: relative;
   width: 100%;
-  height: 680px;
+ height: 500px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,35 +224,50 @@
 .carousel-item {
   position: absolute;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.7);
   opacity: 0;
-  transform: scale(0.7) translateX(400px);
   transition: all 0.6s ease;
   text-align: center;
-}
-
-.carousel-item img {
-  width: 60rem;
-  height: 34rem;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Slide active (au centre) */
 .activeSlide {
   opacity: 1;
-  transform: scale(0.8) translateX(0);
-  height: 50rem;
-  text-align: center;
+  transform: translateX(-50%) scale(1);
+  z-index: 2;
 }
 
 /* Slide précédent (à gauche) */
 .lastSlide {
-  opacity: 1;
-  transform: scale(0.8) translateX(-68rem);
+  opacity: 0.5;
+  transform: translateX(-150%) scale(0.85);
+  z-index: 1;
 }
 
 /* Slide suivant (à droite) */
 .nextSlide {
-  opacity: 1;
-  transform: scale(0.8) translateX(68rem);
+  opacity: 0.5;
+  transform: translateX(50%) scale(0.85);
+  z-index: 1;
+}
+
+/* Image */
+.carousel-item img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px; /* au lieu de 100% ou 800px */
+  max-height: 400px;
+ height: auto;
+  object-fit: contain;
+  object-position: center center;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 /* Flèches */
@@ -284,24 +299,22 @@
   right: 20px;
 }
 
-/* wiwi */
-
+/* Texte */
 .plat_title {
-  margin-top: 10px;
-  position: relative;
+  margin-top: 20px;
   font-style: italic;
-  font-size: 27px;
+  font-size: 28px;
   font-weight: bold;
   color: #3A4F63;
-  left: 12%;
+  text-align: center;
 }
 
 .plat_description {
-  position: relative;
   font-style: italic;
-  font-size: 27px;
+  font-size: 22px;
   color: #3A4F63;
-  left: 12%;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .ligne_H {
