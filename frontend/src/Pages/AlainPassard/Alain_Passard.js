@@ -5,6 +5,8 @@ import "@fontsource/montserrat/200.css";
 import CHEF2 from "../../assets/images_athmen/CHEF2.JPG";
 import image5 from "../../assets/image5.jpg";
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import feuille_d from "../../assets/feuille_d.png";
 import EVEIL from "../../assets/images_athmen/EVEIL.JPG";
 // import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
@@ -24,6 +26,16 @@ import plat9 from "../../assets/plat9.jpg";
 import plat10 from "../../assets/plat10.jpg";
 
 function Alain_Passard() {
+    const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   const plats = [
     {
       image: plat1,
@@ -162,7 +174,7 @@ function Alain_Passard() {
         <img src={feille} />
       </div>
 
-      <section className="carousel-container" id="larriere_cuisine">
+      <section className="carousel-container"   id="larriere_cuisine" >
         <button className="prev-btn" onClick={prevSlide}>
           ❮
         </button>
