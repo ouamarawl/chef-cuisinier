@@ -171,7 +171,7 @@ function Home() {
           </div>
           <div class="ligne"></div>
         </div>
-        {/* <img src={image1} /> */}
+        <img src={image1} />
       </section>
       <h3
         style={{

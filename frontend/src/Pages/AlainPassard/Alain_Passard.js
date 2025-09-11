@@ -162,7 +162,7 @@ function Alain_Passard() {
         <img src={feille} />
       </div>
 
-      <section className="carousel-container">
+      <section className="carousel-container" id="larriere_cuisine">
         <button className="prev-btn" onClick={prevSlide}>
           ❮
         </button>
