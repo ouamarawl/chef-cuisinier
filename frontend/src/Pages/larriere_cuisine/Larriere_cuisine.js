@@ -45,21 +45,21 @@ function Larriere_cuisine() {
       />
 
       <section className="section-oeuvres">
-        <img src={image15} id="image15" />
-        <img src={image9} id="image9" />
-        <img src={image14} id="image14" />
+        <img src={image15} id="image15"/>
+        <img src={image9} id="image9"/>
+        <img src={image14} id="image14"/>
         <img src={image12}  id="image12"/>
-        <img src={image13}  id="image13" />
+        <img src={image13}  id="image13"/>
         
         
-        <div className="presentation-text">
+        <div className="oeuvres-center">
           <h3>LES ŒUVREs DU CHEF</h3>
           <p>
-            Collages, lithographies, bronzes, assiettes… Les oeuvres du Chef
-            Alain Passard sont une traduction en image de sa passion du beau
-            geste : un jeu de couleurs, de textures que l’on retrouve aussi bien
+            Collages, lithographies, bronzes, assiettes… Les oeuvres du Chef <br/>
+            Alain Passard sont une traduction en image de sa passion du beau<br/>
+            geste : un jeu de couleurs, de textures que l’on retrouve aussi bien <br/>
             sous cadre que dans l’assiette. Ils traduisent toute l’influence des
-            légumes dans la cuisine du Chef, l’importance de l’oeil dans la
+            légumes<br/> dans la cuisine du Chef, l’importance de l’oeil dans la
             création d’une recette.
           </p>
           <button className="discover-btn">En savoir plus</button>

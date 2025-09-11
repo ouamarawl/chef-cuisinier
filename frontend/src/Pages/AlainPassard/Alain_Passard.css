@@ -190,8 +190,8 @@
   position: absolute; /* la feuille se positionne librement */
   /* top: 438%;
   left: 47%; */
-  top: 202rem;
-  left: 43rem;
+  top: 218rem;
+  left: 42rem;
   width: 130px; /* taille de la feuille */
   z-index:0 ; /* s'assure qu'elle soit toujours au-dessus */
   pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
@@ -203,18 +203,18 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  margin: auto;
+  margin:  auto;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-height: 30rem;
+  height: 50rem;
 }
 
 .carousel-track {
   position: relative;
   width: 100%;
- height: 500px; 
+  height: 680px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -224,50 +224,46 @@ height: 30rem;
 .carousel-item {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%) scale(0.7);
   opacity: 0;
+  transform: scale(0.7) translateX(400px);
   transition: all 0.6s ease;
   text-align: center;
-  width: 100%;
-  max-width: 900px;
-  padding: 20px;
-  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: auto;
+  height: 34rem;
+  max-width: 60rem;
+  max-width: 34rem;
+  
 }
 
 /* Slide active (au centre) */
 .activeSlide {
   opacity: 1;
-  transform: translateX(-50%) scale(1);
-  z-index: 2;
+  transform: scale(0.8) translateX(0);
+  width: 60rem;
+  height: 34rem;
+  text-align: center;
+  background-color: rgba(205, 194, 162, 0.315);
 }
 
 /* Slide précédent (à gauche) */
 .lastSlide {
-  opacity: 0.5;
-  transform: translateX(-150%) scale(0.85);
-  z-index: 1;
+  opacity: 1;
+  transform: scale(0.8) translateX(-68rem);
+  width: 60rem;
+  height: 34rem;
+  background-color: rgba(205, 194, 162, 0.315);
 }
 
 /* Slide suivant (à droite) */
 .nextSlide {
-  opacity: 0.5;
-  transform: translateX(50%) scale(0.85);
-  z-index: 1;
-}
-
-/* Image */
-.carousel-item img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 600px; /* au lieu de 100% ou 800px */
-  max-height: 400px;
- height: auto;
-  object-fit: contain;
-  object-position: center center;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transform: scale(0.8) translateX(68rem);
+  width: 60rem;
+  height: 34rem;
+  background-color: rgba(205, 194, 162, 0.176);
 }
 
 /* Flèches */
@@ -299,26 +295,28 @@ height: 30rem;
   right: 20px;
 }
 
-/* Texte */
+/* wiwi */
+
 .plat_title {
-  margin-top: 20px;
+  margin-top: 10px;
+  position: relative;
   font-style: italic;
-  font-size: 28px;
+  font-size: 27px;
   font-weight: bold;
-  color: #3A4F63;
-  text-align: center;
+  color:#3A4F63;
+  left: 12%;
 }
 
 .plat_description {
+  position: relative;
   font-style: italic;
-  font-size: 22px;
-  color: #3A4F63;
-  margin-top: 10px;
-  text-align: center;
+  font-size: 27px;
+  color:#3A4F63;
+  left: 12%;
 }
 
 .ligne_H {
-  background: #3A4F63;
+  background:#3A4F63;
   position: relative;
   width: 4px;
   height: 80px;

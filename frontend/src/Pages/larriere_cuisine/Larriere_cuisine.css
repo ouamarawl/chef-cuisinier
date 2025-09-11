@@ -4,13 +4,12 @@
   margin-top: 15%;
 }
 #signature {
-    margin:"5%"
+  margin: "5%";
 }
 .larriere-cuisine-header {
   text-align: center;
   justify-content: center;
   align-items: center;
-  
 }
 .larriere-cuisine-header h3 {
   margin: 110px 0px 0px 0px;
@@ -32,8 +31,7 @@
   pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
 }
 
-
-.A_decouvrir  {
+.A_decouvrir {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +45,7 @@
   width: 80%;
   height: 60%;
   padding-bottom: 10%;
-  background-color: #3A4F63;
+  background-color: #3a4f63;
   position: relative; /* la feuille se positionne librement */
   top: 650%;
   /* left: 0%; */
@@ -96,50 +94,73 @@
 .A_decouvrir img {
   position: absolute; /* la feuille se positionne librement */
   /* top: 130%; */
-  /* left: 50%; */ 
-    top: 48rem;
-    left: 54rem;
+  /* left: 50%; */
+  top: 48rem;
+  left: 54rem;
   width: 35%;
   height: 60%; /* taille de la feuille */
   z-index: 9999; /* s'assure qu'elle soit toujours au-dessus */
 }
 
-.section-oeuvres {
-  display: grid;
-  grid-template-columns: 460px 1fr; /* image fixe + bloc texte fluide */
-  column-gap: 72px;
-  align-items: center; /* centre verticalement par rapport à l'image */
-  padding: 90px 8%;
+.section-oeuvres-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* contenu centré horizontalement */
+  justify-content: center; /* contenu centré verticalement */
+  min-height: 600px; /* même “hauteur visuelle” que l’image */
+  text-align: center;
+  top: 1rem;
+  left: 1rem;
 }
-.section-oeuvres img {
+
+.section-oeuvres {
+  position: relative;
+  /*width: 100%;  */
+  min-height: 700px;
+  margin-bottom: 60px;
+  margin-top: 20%;
+  /* margin-left: 20%; */
+}
+
+/* Images décoratives positionnées autour */
+.section-oeuvres img[id^="image"] {
   position: absolute;
   max-width: 220px;
   border-radius: 6px;
+  z-index: 1;
 }
 
-/* Exemple de placement pour chaque image */
+/* Bloc central toujours centré et au-dessus */
+.oeuvres-center {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 32px 32px 32px;
+  text-align: center;
+  top: 256px;
+  left: -28rem;/* ajuste selon ton design */
+}
+
+/* Exemples de placement pour les images décoratives */
 #image15 {
   top: 0;
   left: 100px;
 }
-
 #image9 {
-  top: 40px;
-  right: 150px;
+  top: -5rem;
+  right: 340px;
 }
-
 #image14 {
-  top: 200px;
-  left: 50%;
+  top: -5rem;
+  left: 31%;
   transform: translateX(-50%);
 }
-
 #image12 {
-  top: 380px;
-  left: 80px;
+  top: 4rem;
+  left: 506px;
 }
-
 #image13 {
-  top: 400px;
-  right: 120px;
+  top: 239px;
+  right: 31rem;
 }
