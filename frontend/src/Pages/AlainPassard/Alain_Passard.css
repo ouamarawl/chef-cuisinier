@@ -1,10 +1,15 @@
 /* Alain_Passard.css */
-
+.Alain_passard {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 .chef-section {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   background: #fff;
   text-align: left;
+  padding-top: 80px; /* espace pour le header */
 }
 
 /* IMAGE À GAUCHE */
@@ -186,16 +191,18 @@
     position: relative;
     z-index: 9999;
 }
+
 .last-title img {
   position: absolute; /* la feuille se positionne librement */
-  /* top: 438%;
-  left: 47%; */
-  top: 218rem;
-  left: 42rem;
+  top: 438%;
+  left: 47%;
+  /* top: 218rem;
+  left: 42rem; */
   width: 130px; /* taille de la feuille */
   z-index:0 ; /* s'assure qu'elle soit toujours au-dessus */
   pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
 }
+
 
 
 /* caroussel */
@@ -326,10 +333,19 @@
   background-color: white;
   color: white;
 }
+.carousel-info {
+ text-align: center;
+ height: 100%;
+}  
 
 
 /* caroussel */
 
+.derniertitre {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
 #H2 {
   text-transform: uppercase;
@@ -352,4 +368,78 @@
   margin-top: 0px;
   margin-bottom: 100px;
   font-size: 25px;
+} 
+@media (max-width: 980px) {
+  .chef-section {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 4%;
+  }
+  .chefimage {
+    width: 100%;
+    min-height: 575px;
+  }
+  .chef-content {
+    width: 100%;
+    min-height:300px;
+  }
+  
+  .chef-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  .presentation-section-A {
+    display: block;
+    padding: 30px 4%;
+  }
+  .carousel-container {
+    height: auto;
+    flex-direction: column;
+  }
+  .carousel-track {
+    height: 80vh;
+  }
+  .carousel-item img, .activeSlide, .lastSlide, .nextSlide {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+  .prev-btn, .next-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .chef-name, .last-title h3 {
+    font-size: 1.2rem;
+    margin: 40px 0 0 0;
+  }
+  .chef-quote, .titredumilieu p {
+    font-size: 1rem;
+  }
+  .presentation-text h3 {
+    font-size: 1rem;
+    padding: 0 8px;
+  }
+  .plat_title, .plat_description {
+    font-size: 1rem;
+    left: 0;
+  }
+  .derniertitre {
+    height: auto;
+    padding: 0 4vw;
+  }
+  #H2 {
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  #H22 {
+    font-size: clamp(0.9rem, 3vw, 1.5rem);
+    margin-bottom: 8vh;
+    letter-spacing: 0.15em;
+    line-height: 1.4;
+  }
 }

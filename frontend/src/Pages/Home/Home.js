@@ -75,7 +75,7 @@ function Home() {
       </section>
 
       {/* Section présentation */}
-      {/* <img src={feuille_d} id="feuille_d" /> */}
+      <img src={feuille_d} id="feuille_d" />
       <section className="presentation-section">
         <img id="image5" src={image5} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
@@ -88,7 +88,7 @@ function Home() {
           <button className="discover-btn" onClick={() => navigate('/Alain_Passard')}>DÉCOUVRIR</button>
         </div>
       </section>
-      {/* <img src={feuille_vert_droite} id="feuille_vert_droite" /> */}
+      <img src={feuille_vert_droite} id="feuille_vert_droite" />
       <section className="presentation-section">
         <img src={image6} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
@@ -102,7 +102,7 @@ function Home() {
         </div>
       </section>
       <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
-      {/* <img src={feuille_d} id="feuille_d_2" /> */}
+      <img src={feuille_d} id="feuille_d_2" />
       <section className="presentation-section" id="menu-section">
         <img src={image7} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
@@ -122,7 +122,7 @@ function Home() {
           </div>
         </div>
       </section>
-      {/* <img src={feuille_d} id="feuille_d_3" /> */}
+      <img src={feuille_d} id="feuille_d_3" />
       <section className="presentation-section">
         <img src={image8} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
@@ -135,7 +135,7 @@ function Home() {
           <button className="discover-btn">Enfilez vos bottes !</button>
         </div>
       </section>
-      {/* <img src={feuille_vert_droite} id="feuille_vert_droite_2" /> */}
+      <img src={feuille_vert_droite} id="feuille_vert_droite_2" />
       <section className="presentation-section">
         <img src={image9} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
@@ -171,22 +171,10 @@ function Home() {
           </div>
           <div class="ligne"></div>
         </div>
-        <img src={image1} />
+        {/* <img src={image1} /> */}
       </section>
-      <h3
-        style={{
-          fontFamily: "Georgia, serif",
-          fontWeight: "00",
-          fontSize: "200%",
-          letterSpacing: "0.22em",
-          color: "#3A4F63",
-          margin: "6px 0 14px",
-          padding: "0 18px",
-          textTransform: "uppercase",
-          textAlign: "left",
-          marginLeft: "10%",
-          marginBottom: "10%",
-        }}
+      <h3 id="suivez_nous"
+       
       >
         Suivez le chef @alain_passard
       </h3>

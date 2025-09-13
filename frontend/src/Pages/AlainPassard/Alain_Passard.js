@@ -9,7 +9,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import feuille_d from "../../assets/feuille_d.png";
 import EVEIL from "../../assets/images_athmen/EVEIL.JPG";
-// import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
+import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
 import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import feille from "../../assets/feuille.png";
 import Vegetal from "../../assets/images_plats/Vegetal.PNG";
@@ -26,7 +26,7 @@ import plat9 from "../../assets/plat9.jpg";
 import plat10 from "../../assets/plat10.jpg";
 
 function Alain_Passard() {
-    const location = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
     if (location.hash) {
@@ -36,6 +36,7 @@ function Alain_Passard() {
       }
     }
   }, [location]);
+
   const plats = [
     {
       image: plat1,
@@ -90,7 +91,7 @@ function Alain_Passard() {
   };
 
   return (
-    <div>
+    <div className="Alain_passard">
       <div className="chef-section">
         <div className="chefimage"></div>
         <div className="chef-content">
@@ -136,7 +137,7 @@ function Alain_Passard() {
         </div>
       </section>
 
-      {/* <img src={feuille_vert_droite} id="feuille_vert_droite" /> */}
+      <img src={feuille_vert_droite} id="feuille_vert_droite" />
 
       <section className="presentation-section-A">
         <img src={EVEIL} alt="Alain Passard" className="chef-image" />
@@ -152,11 +153,16 @@ function Alain_Passard() {
         </div>
       </section>
 
-      {/* <img src={feuille_noir_gauche} id="feuille_noir_gauche" /> */}
+      <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
       <img src={feuille_d} id="feuille_d_2" />
 
       <section className="presentation-section-A">
-        <img id="vegetal" src={Vegetal} alt="Alain Passard" className="chef-image" />
+        <img
+          id="vegetal"
+          src={Vegetal}
+          alt="Alain Passard"
+          className="chef-image"
+        />
         <div className="presentation-text">
           <h3>Tissu végétal</h3>
           <p>
@@ -168,13 +174,13 @@ function Alain_Passard() {
           </p>
         </div>
       </section>
-
+      {/* block */}
       <div className="last-title">
         <h3>Plats signatures</h3>
         <img src={feille} />
       </div>
 
-      <section className="carousel-container"   id="larriere_cuisine" >
+      <section className="carousel-container" id="larriere_cuisine">
         <button className="prev-btn" onClick={prevSlide}>
           ❮
         </button>
@@ -203,9 +209,10 @@ function Alain_Passard() {
                   <div key={i} className={`ligne_H ${positionInfo}`}></div>
                   <div
                     style={{
-                      textAlign: "left",
-                      marginRight: "5%",
+                   
+                      marginRight: "25%",
                       marginTop: "-3%",
+                     
                     }}
                   >
                     <p key={i} className={`plat_title ${positionInfo}`}>
@@ -235,13 +242,14 @@ function Alain_Passard() {
           <br />
           Tissu végétal,École du feu,La main,Le gout,
           <br />
-          La musique,Transmission,Couleurs,Art,Artisans,
+          La musique,Transmission,Couleurs,Art,
           <br />
-          Maison de cuisine,Les Paniers d’Alain,
+          Artisans, Maison de cuisine,Les Paniers d’Alain,
           <br />
           Cuisine de voisinage.
         </h2>
       </div>
+      {/* block */}
     </div>
   );
 }

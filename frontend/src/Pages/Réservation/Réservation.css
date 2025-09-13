@@ -84,3 +84,57 @@
   text-align: center;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .zenchef-reservation {
+    max-width: 80vw;
+    margin: 120px auto;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  .zenchef-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .zenchef-policy {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+  .zenchef-form label {
+    font-size: 12px;
+  }
+  .zenchef-form input,
+  .zenchef-form select {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  .zenchef-btn {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .zenchef-reservation {
+    margin: 120px auto;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  .zenchef-title {
+    font-size: 15px;
+  }
+  .zenchef-policy {
+    font-size: 10px;
+  }
+  .zenchef-form label {
+    font-size: 10px;
+  }
+  .zenchef-form input,
+  .zenchef-form select {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+  .zenchef-btn {
+    font-size: 11px;
+    padding: 8px;
+  }
+}

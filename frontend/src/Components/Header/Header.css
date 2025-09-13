@@ -135,3 +135,56 @@
   height: 100%;
   z-index: 900;
 }
+
+/* ====== 📱 RESPONSIVE ====== */
+
+/* Tablette */
+@media (max-width: 1024px) {
+  .header__container {
+    margin: 0 20px;
+    padding: 0 16px;
+            margin-right: 10%;
+  }
+
+  .header__logo img {
+    height: 4rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .header__container {
+    padding: 8px 12px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+            margin-right: 10%;
+
+  }
+  .logo {
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  .hamburger {
+    top: 16px;
+    right: 16px;
+  }
+  .sidebar {
+    width: 30vw;
+    left: 10vw;
+    padding: 24px 8px;
+  }
+  .sidebar-link {
+    font-size: 1.1rem;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    height: 28px;
+  }
+  .sidebar-link {
+    font-size: 0.9rem;
+  }
+}

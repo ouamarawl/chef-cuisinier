@@ -60,3 +60,55 @@
 
 
 
+/* Tablette */
+@media (max-width: 1024px) {
+  .footer-section {
+    min-width: 40%; /* 2 colonnes */
+  }
+
+  .footer-section h3 {
+    font-size: 2.5vw;
+  }
+
+  .footer-section ul li a {
+    font-size: 2vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    min-width: 80%; /* pleine largeur */
+    margin: 5% 0;
+  }
+
+  .footer-section h3 {
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  .footer-section ul li a {
+    font-size: 3vw;
+    text-align: center;
+  }
+}
+
+/* Très petit écran */
+@media (max-width: 480px) {
+  .footer-section {
+    min-width: 100%;
+    margin: 8px 0;
+  }
+  .footer-section h3 {
+    font-size: 5vw;
+  }
+  .footer-section ul li a {
+    font-size: 4vw;
+  }
+}
