@@ -68,7 +68,7 @@ function Larriere_cuisine() {
             création d’une recette.
           </p>
           <button
-            className="discover-btn"
+            className="discover-btn-oeuvres"
             onClick={() => navigate("/Alain_Passard#larriere_cuisine")}
           >
             En savoir plus
