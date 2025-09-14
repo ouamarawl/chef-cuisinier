@@ -14,7 +14,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (location.pathname !== "/contact") {
+      if ((location.pathname !== "/contact")) {
         // 👉 sur les autres pages : visible seulement après scroll > 5px
         if (window.scrollY > 5) {
           setIsScrolled(true);
@@ -27,8 +27,11 @@ function Header() {
     if (location.pathname === "/contact") {
       // 👉 sur la page contact : header toujours visible
       setIsScrolled(true);
-    } if (location.pathname === "/Alain_Passard") {
-      // 👉 sur la page contact : header toujours visible
+    }
+    if (location.pathname === "/Alain_Passard") {
+      setIsScrolled(true);
+    }
+    if (location.pathname === "/Réservation") {
       setIsScrolled(true);
     } else {
       // 👉 réinitialiser le scroll listener sur les autres pages
@@ -69,13 +72,25 @@ function Header() {
 
       {/* Sidebar */}
       <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-        <button className="close-btn" onClick={toggleSidebar}>✖</button>
+        <button className="close-btn" onClick={toggleSidebar}>
+          ✖
+        </button>
         <nav>
-          <Link to="/" onClick={toggleSidebar}>Accueil</Link>
-          <Link to="/Alain_Passard" onClick={toggleSidebar}>Alain Passard</Link>
-          <Link to="/contact" onClick={toggleSidebar}>Contact</Link>
-          <Link to="/Réservation" onClick={toggleSidebar}>Réservation</Link>
-          <Link to="/#menu-section" onClick={toggleSidebar}>Nos Menus</Link>
+          <Link to="/" onClick={toggleSidebar}>
+            Accueil
+          </Link>
+          <Link to="/Alain_Passard" onClick={toggleSidebar}>
+            Alain Passard
+          </Link>
+          <Link to="/contact" onClick={toggleSidebar}>
+            Contact
+          </Link>
+          <Link to="/Réservation" onClick={toggleSidebar}>
+            Réservation
+          </Link>
+          <Link to="/#menu-section" onClick={toggleSidebar}>
+            Nos Menus
+          </Link>
         </nav>
       </div>
 

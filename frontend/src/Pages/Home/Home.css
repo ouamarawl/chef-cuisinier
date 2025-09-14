@@ -1,3 +1,12 @@
+.home-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+  justify-content: center;
+  /* background: #faf8f5; */
+}
 .slideshow-container {
   position: relative;
   width: 100%;
@@ -33,7 +42,7 @@
 }
 /* Section bienvenue */
 .welcome-section {
-  background-color: #3A4F63; /* vert doux */
+  background-color: #3a4f63; /* vert doux */
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -65,7 +74,7 @@
   top: 20px;
   right: 20px;
   background: white;
-  color: #3A4F63;
+  color: #3a4f63;
   border-radius: 50%;
   padding: 20px;
   width: 120px;
@@ -95,7 +104,7 @@
   object-fit: cover;
   display: block;
 }
-#image5{
+#image5 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +135,7 @@
   font-weight: 00;
   font-size: 200%;
   letter-spacing: 0.22em; /* espacement du titre */
-  color: #3A4F63; /* vert/gris élégant */
+  color: #3a4f63; /* vert/gris élégant */
   margin: 6px 0 14px;
   position: relative;
   padding: 0 18px; /* espace pour les traits */
@@ -177,7 +186,7 @@
   font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 100%;
   line-height: 1.8;
-  color: #4B5563;
+  color: #4b5563;
   max-width: 560px;
   margin: 8px auto 24px auto;
   text-align: left;
@@ -188,8 +197,8 @@
   display: inline-block;
   padding: 11px 28px;
   background: transparent;
-  border: 1px solid #3A4F63; /* vert doux */
-  color: #3A4F63;
+  border: 1px solid #3a4f63; /* vert doux */
+  color: #3a4f63;
   font-family: "Georgia", serif;
   font-size: 120%;
   letter-spacing: 0.08em;
@@ -199,9 +208,9 @@
 }
 
 .discover-btn:hover {
-  background: #3A4F63;
+  background: #3a4f63;
   color: #fff;
-  border-color: #3A4F63;
+  border-color: #3a4f63;
 }
 
 /* --- LIENS DE MENU --- */
@@ -217,7 +226,7 @@
 .menu-links a {
   font-family: "Georgia", serif;
   font-size: 16px;
-  color: #3A4F63; /* vert doux */
+  color: #3a4f63; /* vert doux */
   text-decoration: none;
   letter-spacing: 0.05em;
   transition: color 0.3s ease;
@@ -279,39 +288,57 @@
 /* les feuilles (wail) */
 /* contact (wail) */
 .contact-section {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 80px 10%;
   background: #faf8f5;
+  /* width: 65%; */
+  height: auto;
 }
 .contact-content {
+  position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
-  width: 80%;
-  height: 60%;
-  padding-bottom: 10%;
-  background-color: #3A4F63;
-  position: relative; /* la feuille se positionne librement */
-  top: 650%;
-  /* left: 0%; */
-  right: 12%;
+  width: 85%;
+  height: 100%;
+  /* padding-bottom: 10%; */
+  background-color: #3a4f63;
 }
-.contact-content h1 {
+.contact-section img {
+  position: absolute;
+  bottom: 18vh;
+  right: 12vw;
+  width: 34%;
+  height: 55%;
+  z-index: 9999;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  text-align: right;
+  justify-content: center;
+  position: relative;
+}
+
+.contact-text h1 {
   font-family: "Georgia", serif;
   font-weight: 00;
   font-size: 200%;
-  letter-spacing: 0.22em; /* espacement du titre */
-  color: white; /* vert/gris élégant */
+  letter-spacing: 0.22em;
+  color: white;
   margin: 0% 0% 0% 7%;
   position: relative;
-  padding: 0 18px; /* espace pour les traits */
+  padding: 0 18px;
   text-transform: uppercase;
   text-align: right;
 }
-.contact-content p {
+
+.contact-text p {
   font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 100%;
   line-height: 1.8;
@@ -320,6 +347,7 @@
   margin: 8px auto 24px auto;
   text-align: right;
 }
+
 .ligne {
   width: 33%;
   height: 3px;
@@ -328,25 +356,6 @@
   top: 5rem;
   left: 0%;
   right: 2%;
-}
-
-.contact-text {
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  justify-content: center;
-  position: relative;
-  top: 4rem;
-  left: -5%;
-  right: 1%;
-}
-.contact-section img {
-  position: absolute; /* la feuille se positionne librement */
-  top: 670%;
-  left: 50%;
-  width: 40%;
-  height: 50%; /* taille de la feuille */
-  z-index: 9999; /* s'assure qu'elle soit toujours au-dessus */
 }
 
 /* contact (wail) */
@@ -366,13 +375,45 @@
   .presentation-text {
     min-height: auto;
   }
+  .contact-section {
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact-content {
+    text-align: center;
+    justify-content: center;
+    height: auto;
+  }
+  .contact-section img {
+    height: auto;
+    position: static;
+    width: 100%;
+    order: 1;
+  }
+  .contact-content {
+    order: 2;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+  }
+  .ligne {
+    width: 3px; /* devient fine */
+    height: 100px; /* devient longue */
+    position: relative;
+    top: 0rem;
+    left: 22%;
+    right: 2%;
+  }
 }
+
 #suivez_nous {
   font-family: Georgia, serif;
-  font-weight: 400;         /* 400 = normal */
+  font-weight: 400; /* 400 = normal */
   font-size: 200%;
   letter-spacing: 0.22em;
-  color: #3A4F63;
+  color: #3a4f63;
   margin: 6px 0 14px;
   padding: 0 18px;
   text-transform: uppercase;
@@ -381,7 +422,6 @@
   margin-bottom: 10%;
 }
 
-  
 @media (max-width: 768px) {
   .home-container {
     padding: 0 4px;
@@ -413,19 +453,14 @@
     font-size: 1rem;
     padding: 8px 0;
   }
-  .contact-section {
-    padding: 20px 2%;
-  }
-  .contact-content {
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: 5%;
-    top: auto;
-    right: auto;
-  }
-  .contact-content h1, .contact-content p {
-    text-align: center;
-    margin: 0;
+
+  .ligne {
+    width: 3px;
+    height: 80px;
+    position: relative;
+    top: 0rem;
+    left: 5%;
+    right: 2%;
   }
   #suivez_nous {
     font-size: 1.2rem;
@@ -433,23 +468,14 @@
     margin: 12px 0;
   }
 }
-#feuille_d, #feuille_vert_droite, #feuille_noir_gauche, #feuille_d_2, #feuille_d_3, #feuille_vert_droite_2 {
+#feuille_d,
+#feuille_vert_droite,
+#feuille_noir_gauche,
+#feuille_d_2,
+#feuille_d_3,
+#feuille_vert_droite_2 {
   position: static;
   width: 80px;
   top: auto;
   left: auto;
-}
-.contact-section {
-  padding: 30px 4%;
-}
-.contact-content {
-  flex-direction: column;
-  width: 100%;
-  padding-bottom: 5%;
-  top: auto;
-  right: auto;
-}
-.contact-content h1, .contact-content p {
-  text-align: center;
-  margin: 0;
 }

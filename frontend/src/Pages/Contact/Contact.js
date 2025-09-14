@@ -35,13 +35,13 @@ function Contact() {
         <div className="block-d">
           <h3>Le Restaurant</h3>
           <p>
-            Demandes d’informations, réservations, bons cadeaux… <br/> 
+            Demandes d’informations, réservations,<br/>  bons cadeaux… 
             Nos
-            réceptionnistes sont à votre disposition du lundi <br/>
-            au vendredi de 09H
-            à 17h00 Arpège 84 rue de Varenne,<br/>
-             Paris 7e Téléphone : + 33 (0)1 47<br/>
-            05 09 06 Mail : restaurant@alain-passard.com
+            réceptionnistes<br/> sont à votre disposition <br/>du lundi 
+            au vendredi de 09H<br/>
+            à 17h00 Arpège 84 rue<br/> de Varenne,
+             Paris 7e Téléphone : + 33 (0)1 47
+            05 09 06<br/> Mail : restaurant@alain-passard.com
           </p>
            <br/>
           <br/>
@@ -49,13 +49,13 @@ function Contact() {
           <br/>
           <h3>Bureau</h3>
           <p>
-            Les équipes du bureau sont à votre disposition pour toute <br/>demande
-            concernant : – Évènements en France et à l’international <br/>
-            – Presse –
-            Communication & Marketing – Collaborations & Partenariats <br/>
-            – Requêtes
-            spéciales à l’attention du Chef Passard Email :<br/>
-            bureau@alain-passard.com Demande relative à la <br/>comptabilité :
+            Les équipes du bureau sont à votre <br/>disposition pour toute demande
+            concernant :<br/> – Évènements en France <br/>et à l’international 
+            – Presse – <br/>
+            Communication & Marketing – <br/>Collaborations & Partenariats 
+            – Requêtes<br/>
+            spéciales à l’attention du <br/>Chef Passard Email :
+            bureau@alain-passard.com<br/> Demande relative à la comptabilité :<br/>
             comptabilite@alain-passard.com
           </p>
            <br/>
@@ -65,7 +65,7 @@ function Contact() {
           <h3>Recrutement</h3>
           <p>
             L’Arpège est à la recherche de ses nouveaux talents !<br/> N’hésitez pas
-            à nous transmettre votre candidature spontanée ! Email :<br/>
+            à nous transmettre votre <br/>candidature spontanée ! Email :<br/>
             bureau@alain-passard.com
           </p>
            <br/>

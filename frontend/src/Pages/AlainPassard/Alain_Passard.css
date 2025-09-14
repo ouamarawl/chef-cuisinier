@@ -7,7 +7,7 @@
 .chef-section {
   display: flex;
   min-height: 100vh;
-  background: #fff;
+  background: #faf8f5;
   text-align: left;
   padding-top: 80px; /* espace pour le header */
 }
@@ -27,7 +27,7 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  background: #fff;
+  background: #faf8f5;
 }
 
 /* NOM */
@@ -85,7 +85,7 @@
   column-gap: 72px;
   align-items: center; /* centre verticalement par rapport à l'image */
   padding: 90px 8%;
-  background: white; /* beige très clair */
+  background: #faf8f5; /* beige très clair */
 }
 
 /* --- IMAGE GAUCHE --- */
@@ -181,6 +181,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .last-title h3 {
     margin: 110px 0px 0px 0px;
@@ -194,8 +195,8 @@
 
 .last-title img {
   position: absolute; /* la feuille se positionne librement */
-  top: 438%;
-  left: 47%;
+  top: -23%;
+  left: 44%;
   /* top: 218rem;
   left: 42rem; */
   width: 130px; /* taille de la feuille */
@@ -370,6 +371,10 @@
   font-size: 25px;
 } 
 @media (max-width: 980px) {
+  .Alain_passard {
+    width: 100%;
+    margin: 0%;
+  }
   .chef-section {
     flex-direction: column;
     height: auto;
@@ -377,7 +382,7 @@
   }
   .chefimage {
     width: 100%;
-    min-height: 575px;
+    min-height: 70rem;
   }
   .chef-content {
     width: 100%;
@@ -442,4 +447,8 @@
     letter-spacing: 0.15em;
     line-height: 1.4;
   }
+  .last-title img {
+  width: 19%; 
+
+}
 }
