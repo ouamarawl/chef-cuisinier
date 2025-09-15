@@ -10,6 +10,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .larriere-cuisine-header h3 {
   margin: 110px 0px 0px 0px;
@@ -22,15 +23,22 @@
 }
 .larriere-cuisine-header img {
   position: absolute; /* la feuille se positionne librement */
-  top: 30%;
+  top: -20%;
   left: 43%;
-  /* top: 6rem;
-    left: 42rem; */
   width: 130px; /* taille de la feuille */
   z-index: 0; /* s'assure qu'elle soit toujours au-dessus */
   pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
 }
 /*  */
+.larriere-cuisine-titre {
+  color: #849d75;
+  text-align: center;
+  position: relative;
+  font-family: "DM Serif Text", serif;
+  font-size: 35px;
+  letter-spacing: 0.05em;
+  margin: 10% 10% 2% 10%;
+}
 
 /* contact (wail) */
 .A_decouvrir {
@@ -57,7 +65,7 @@
 .A_decouvrir img {
   position: absolute;
   bottom: 18vh;
-  right: 12vw;
+  right: 8vw;
   width: 34%;
   height: 55%;
   z-index: 9999;
@@ -94,7 +102,7 @@
   text-align: right;
 }
 
-.ligne {
+.ligne2 {
   width: 33%;
   height: 3px;
   background: white;
@@ -216,7 +224,6 @@
 
 @media screen and ((min-width: 1024px) and (max-width: 1220px)) {
   .section-oeuvres {
-    
     margin-top: 15%;
   }
   .oeuvres-center {
@@ -255,8 +262,10 @@
     right: 10vh;
   }
 }
-
 @media (max-width: 1024px) {
+  .larriere-cuisine-container {
+    margin-top: 25%;
+  }
   .A_decouvrir {
     height: auto;
     text-align: center;
@@ -280,7 +289,7 @@
     margin-right: 0%;
     width: 100%;
   }
-  .ligne {
+  .ligne2 {
     width: 3px; /* devient fine */
     height: 100px; /* devient longue */
     position: relative;
@@ -289,9 +298,23 @@
     right: 2%;
   }
   .larriere-cuisine-header h3 {
-    font-size: 28px;
+    font-size: 4vh;
     margin: 60px 0 0 0;
   }
+  .larriere-cuisine-header img {
+    position: absolute; /* la feuille se positionne librement */
+    top: -58%;
+    left: 42%;
+    width: 130px; /* taille de la feuille */
+    z-index: 0; /* s'assure qu'elle soit toujours au-dessus */
+    pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
+  }
+  .larriere-cuisine-titre {
+
+  font-size: 120%;
+  letter-spacing: 0.05em;
+  margin: 10% 10% 2% 10%;
+}
 }
 @media screen and ((min-width: 1000px) and (max-width:1020px)) {
   .oeuvres-center {
@@ -332,15 +355,15 @@
 }
 @media screen and ((min-width: 900px) and (max-width:1000px)) {
   .oeuvres-center {
-        top: 35vh;
-        left: 0vh;
-        margin-bottom: 10%;
+    top: 35vh;
+    left: 0vh;
+    margin-bottom: 10%;
   }
   #image15 {
-        top: 16vh;
-        height: 18vh;
-        width: 13vh;
-        left: 9vh;
+    top: 16vh;
+    height: 18vh;
+    width: 13vh;
+    left: 9vh;
   }
   #image9 {
     top: -6vh;
@@ -367,19 +390,18 @@
     width: 16vh;
     right: 10vh;
   }
-  
 }
 @media screen and ((min-width: 768px) and (max-width:900px)) {
   .oeuvres-center {
-        top: 40vh;
-        left: 0vh;
-        margin-bottom: 10%;
+    top: 40vh;
+    left: 0vh;
+    margin-bottom: 10%;
   }
   #image15 {
-        top: 20vh;
-        height: 16vh;
-        width: 12vh;
-        left: 9vh;
+    top: 20vh;
+    height: 16vh;
+    width: 12vh;
+    left: 9vh;
   }
   #image9 {
     top: -6vh;
@@ -395,10 +417,10 @@
     transform: translateX(-50%);
   }
   #image12 {
-        top: 10vh;
-        height: 14vh;
-        width: 14vh;
-        left: 23vh;
+    top: 10vh;
+    height: 14vh;
+    width: 14vh;
+    left: 23vh;
   }
   #image13 {
     top: 16vh;
@@ -406,20 +428,32 @@
     width: 14vh;
     right: 10vh;
   }
-  
+  .A_decouvrir-text-content h1 {
+    font-size: 8.5vh;
+  }
+
+  .A_decouvrir-text-content p {
+    font-size: 102%;
+  }
+  .ligne2 {
+    width: 3px; /* devient fine */
+    height: 80px; /* devient longue */
+    position: absolute;
+    top: 0rem;
+    left: 5%;
+  }
 }
-/* problemme ici */
-@media screen and ((min-width: 680px)and(max-width: 768px)) {
-   .oeuvres-center {
-        top: 40vh;
-        left: 0vh;
-        margin-bottom: 10%;
+@media screen and ((min-width: 680px) and (max-width: 768px)) {
+  .oeuvres-center {
+    top: 40vh;
+    left: 0vh;
+    margin-bottom: 10%;
   }
   #image15 {
-        top: 20vh;
-        height: 16vh;
-        width: 12vh;
-        left: 9vh;
+    top: 20vh;
+    height: 16vh;
+    width: 12vh;
+    left: 9vh;
   }
   #image9 {
     top: -6vh;
@@ -435,10 +469,10 @@
     transform: translateX(-50%);
   }
   #image12 {
-        top: 10vh;
-        height: 14vh;
-        width: 14vh;
-        left: 23vh;
+    top: 10vh;
+    height: 14vh;
+    width: 14vh;
+    left: 20vh;
   }
   #image13 {
     top: 16vh;
@@ -446,15 +480,28 @@
     width: 14vh;
     right: 10vh;
   }
-}
-/* problemme ici */
-@media screen and ((min-width:650px) and (max-width:680px) ){
- .oeuvres-center {
-        top: 40vh;
-        left: 1vh;
-        margin-bottom: 10%;
+  .A_decouvrir-text-content h1 {
+    font-size: 8vh;
   }
-    .section-oeuvres {
+
+  .A_decouvrir-text-content p {
+    font-size: 92%;
+  }
+  .ligne2 {
+    width: 3px; /* devient fine */
+    height: 80px; /* devient longue */
+    position: absolute;
+    top: 0rem;
+    left: 2%;
+  }
+}
+@media screen and ((min-width: 650px) and (max-width:680px)) {
+  .oeuvres-center {
+    top: 40vh;
+    left: 1vh;
+    margin-bottom: 10%;
+  }
+  .section-oeuvres {
     padding: 20px 2%;
     display: block;
     margin-top: 15%;
@@ -469,21 +516,20 @@
   }
 
   .oeuvres-center p {
-  font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 100%;
-  line-height: 1.8;
-  color: #3a4f63;
-  max-width: 560px;
-  margin: 8px auto 24px auto;
-  text-align: center;
+    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.8;
+    color: #3a4f63;
+    max-width: 560px;
+    margin: 8px auto 24px auto;
+    text-align: center;
   }
 
-
   #image15 {
-        top: 20vh;
-        height: 16vh;
-        width: 12vh;
-        left: 9vh;
+    top: 20vh;
+    height: 16vh;
+    width: 12vh;
+    left: 9vh;
   }
   #image9 {
     top: -6vh;
@@ -499,25 +545,40 @@
     transform: translateX(-50%);
   }
   #image12 {
-        top: 10vh;
-        height: 14vh;
-        width: 14vh;
-        left: 42vh;
+    top: 10vh;
+    height: 14vh;
+    width: 14vh;
+    left: 20vh;
   }
   #image13 {
-        top: 21vh;
-        height: 14vh;
-        width: 14vh;
-        right: 7vh;
+    top: 21vh;
+    height: 14vh;
+    width: 14vh;
+    right: 7vh;
+  }
+  .A_decouvrir-text-content h1 {
+    font-size: 7vh;
+  }
+
+  .A_decouvrir-text-content p {
+    font-size: 82%;
+  }
+  .ligne2 {
+    width: 3px; /* devient fine */
+    height: 80px; /* devient longue */
+    position: absolute;
+    top: 0rem;
+    left: 2%;
   }
 }
-@media screen and ( (max-width:650px) ){
-   .oeuvres-center {
-        top: 40vh;
-        left: 1vh;
-        margin-bottom: 10%;
+@media screen and ((min-width: 600px) and (max-width:650px)) {
+  .oeuvres-center {
+    top: 40vh;
+    left: 1vh;
+    margin-bottom: 10%;
   }
-    .section-oeuvres {
+  .section-oeuvres {
+    position: relative;
     padding: 20px 2%;
     display: block;
     margin-top: 15%;
@@ -532,19 +593,100 @@
   }
 
   .oeuvres-center p {
-  font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 100%;
-  line-height: 1.8;
-  color: #3a4f63;
-  max-width: 560px;
-  margin: 8px auto 24px auto;
-  text-align: center;
+    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.8;
+    color: #3a4f63;
+    max-width: 560px;
+    margin: 8px auto 24px auto;
+    text-align: center;
   }
   #image15 {
-        top: 20vh;
-        height: 16vh;
-        width: 12vh;
-        left: 2vh;
+    position: absolute;
+    top: 20vh;
+    height: 16vh;
+    width: 12vh;
+    left: 2vh;
+  }
+  #image9 {
+    position: absolute;
+    top: -6vh;
+    height: 14vh;
+    width: 14vh;
+    right: 0vh;
+  }
+  #image14 {
+    position: absolute;
+    top: -5vh;
+    height: 14vh;
+    width: 14vh;
+    left: 8vh;
+    transform: translateX(-50%);
+  }
+  #image12 {
+    position: absolute;
+    top: 10vh;
+    height: 14vh;
+    width: 14vh;
+    left: 20vh;
+  }
+
+  #image13 {
+    position: absolute;
+    top: 21vh;
+    height: 14vh;
+    width: 14vh;
+    right: 1vh;
+  }
+  .A_decouvrir-text-content h1 {
+    font-size: 6vh;
+  }
+
+  .A_decouvrir-text-content p {
+    font-size: 72%;
+  }
+  .ligne2 {
+    width: 3px; /* devient fine */
+    height: 80px; /* devient longue */
+    position: absolute;
+    top: 0rem;
+    left: 2%;
+  }
+}
+@media screen and ((max-width: 600px)) {
+  .oeuvres-center {
+    top: 40vh;
+    left: 1vh;
+    margin-bottom: 10%;
+  }
+  .section-oeuvres {
+    padding: 20px 2%;
+    display: block;
+    margin-top: 15%;
+  }
+  .oeuvres-center h3 {
+    font-size: 120%;
+  }
+  .discover-btn-oeuvres {
+    width: 84%;
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  .oeuvres-center p {
+    font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.8;
+    color: #3a4f63;
+    max-width: 560px;
+    margin: 8px auto 24px auto;
+    text-align: center;
+  }
+  #image15 {
+    top: 20vh;
+    height: 16vh;
+    width: 12vh;
+    left: 2vh;
   }
   #image9 {
     top: -6vh;
@@ -559,97 +701,98 @@
     left: 8vh;
     transform: translateX(-50%);
   }
-    #image12 {
-        top: 10vh;
-        height: 14vh;
-        width: 14vh;
-        left: 16vh;
-    }
-
-  #image13 {
-        top: 21vh;
-        height: 14vh;
-        width: 14vh;
-        right: 1vh;
-  
-}
-  
-}
-@media screen and ( (max-width:650px) ){
-   .oeuvres-center {
-        top: 40vh;
-        left: 1vh;
-        margin-bottom: 10%;
-  }
-    .section-oeuvres {
-    padding: 20px 2%;
-    display: block;
-    margin-top: 15%;
-  }
-  .oeuvres-center h3 {
-    font-size: 120%;
-  }
-  .discover-btn-oeuvres {
-    width: 84%;
-    font-size: 1rem;
-    padding: 8px 0;
-  }
-
-  .oeuvres-center p {
-  font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 100%;
-  line-height: 1.8;
-  color: #3a4f63;
-  max-width: 560px;
-  margin: 8px auto 24px auto;
-  text-align: center;
-  }
-  #image15 {
-        top: 20vh;
-        height: 16vh;
-        width: 12vh;
-        left: 2vh;
-  }
-  #image9 {
-    top: -6vh;
+  #image12 {
+    top: 10vh;
     height: 14vh;
     width: 14vh;
-    right: 0vh;
+    left: 16vh;
   }
-  #image14 {
-    top: -5vh;
-    height: 14vh;
-    width: 14vh;
-    left: 8vh;
-    transform: translateX(-50%);
-  }
-    #image12 {
-        top: 10vh;
-        height: 14vh;
-        width: 14vh;
-        left: 16vh;
-    }
 
   #image13 {
-        top: 21vh;
-        height: 14vh;
-        width: 14vh;
-        right: 1vh;
-  
-}
-  
+    top: 21vh;
+    height: 14vh;
+    width: 14vh;
+    right: 1vh;
+  }
+  .A_decouvrir-text-content h1 {
+    font-size: 5vh;
+  }
+
+  .A_decouvrir-text-content p {
+    font-size: 62%;
+  }
+  .ligne2 {
+    width: 3px; /* devient fine */
+    height: 80px; /* devient longue */
+    position: absolute;
+    top: 0rem;
+    left: 2%;
+  }
 }
 
 @media (max-width: 480px) {
+  .section-oeuvres {
+    position: relative;
+  }
   .larriere-cuisine-header h3 {
-    font-size: 20px;
+    font-size: 6vh;
     margin: 30px 0 0 0;
   }
+  .larriere-cuisine-header img {
+    position: absolute; /* la feuille se positionne librement */
+    top: -4%;
+    left: 28%;
+    width: 185px;
+    z-index: 0; /* s'assure qu'elle soit toujours au-dessus */
+    pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
+  }
+  .larriere-cuisine-titre {
+
+  font-size: 130%;
+  letter-spacing: 0.05em;
+  margin: 10% 10% 2% 10%;
+}
   .A_decouvrir-text {
     padding-bottom: 2%;
   }
   .A_decouvrir img {
     width: 100%;
     margin-top: 10px;
+  }
+  #image12 {
+    top: 10vh;
+    height: 14vh;
+    width: 14vh;
+    left: 16vh;
+  }
+  .A_decouvrir-text-content h1 {
+    font-size: 180%;
+  }
+
+  .A_decouvrir-text-content p {
+    font-size: 50%;
+  }
+  .ligne2 {
+    width: 3px; /* devient fine */
+    height: 80px; /* devient longue */
+    position: absolute;
+    top: 0rem;
+    left: 2%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .A_decouvrir-text-content h1 {
+    font-size: 3vh;
+  }
+
+  .A_decouvrir-text-content p {
+    font-size: 50%;
+  }
+  .ligne2 {
+    width: 3px; /* devient fine */
+    height: 80px; /* devient longue */
+    position: absolute;
+    top: 0rem;
+    left: 2%;
   }
 }

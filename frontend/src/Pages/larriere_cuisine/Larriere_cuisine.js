@@ -15,7 +15,7 @@ import image9 from "../../assets/image9.jpg";
 import { useNavigate } from "react-router-dom";
 
 function Larriere_cuisine() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="larriere-cuisine-container">
       <div className="larriere-cuisine-header">
@@ -23,17 +23,7 @@ function Larriere_cuisine() {
         <img src={feille} />
       </div>
 
-      <h3
-        style={{
-          color: "#849D75",
-          textAlign: "center",
-          position: "relative",
-          fontFamily: "DM Serif Text , serif",
-          fontSize: "35px",
-          letterSpacing: ".05em",
-          margin: "10% 10% 2% 10%",
-        }}
-      >
+      <h3 className="larriere-cuisine-titre">
         Je suis né dans une famille très artistique, une famille où la main
         était <br /> partout : une grand-mère cuisinière, un grand-père
         sculpteur, une mère <br />
@@ -95,7 +85,7 @@ function Larriere_cuisine() {
               <br /> <br />
             </p>
           </div>
-          <div class="ligne"></div>
+          <div class="ligne2"></div>
         </div>
         <img src={image1} />
       </section>

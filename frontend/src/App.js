@@ -22,7 +22,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Larriere_cuisinet" element={<Larriere_cuisine />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

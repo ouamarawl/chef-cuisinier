@@ -415,6 +415,21 @@
     height: 40px;
     font-size: 20px;
   }
+    .derniertitre {
+    height: auto;
+    padding: 0 4vw;
+  }
+  #H2 {
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  #H22 {
+    font-size: clamp(0.9rem, 3vw, 1.5rem);
+    margin-bottom: 8vh;
+    letter-spacing: 0.15em;
+    line-height: 1.4;
+  }
 }
 @media (max-width: 600px) {
   .chef-name, .last-title h3 {
@@ -451,4 +466,22 @@
   width: 19%; 
 
 }
+}
+@media screen and (max-width: 450px) {
+  .derniertitre {
+    height: auto;
+    padding: 0 4vw;
+  }
+  #H2 {
+    font-size: clamp(-1rem, 4vw, 2rem);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  #H22 {
+    font-size: clamp(-0.1rem, 3vw, 1.5rem);
+    margin-bottom: 8vh;
+    letter-spacing: 0.15em;
+    line-height: 1.4;
+  }
+  
 }
