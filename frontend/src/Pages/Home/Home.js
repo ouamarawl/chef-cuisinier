@@ -9,7 +9,7 @@ import image4 from "../../assets/image4.jpg";
 import logo from "../../assets/logo.svg"; // image centrale du slideshow
 import image5 from "../../assets/images_athmen/image5.JPG";
 import image6 from "../../assets/image6.jpg";
-import image7 from "../../assets/images_plats/image7.PNG";
+import image7 from "../../assets/images_plats/plat7.jpg";
 import image8 from "../../assets/image8.jpg";
 import image9 from "../../assets/images_athmen/image9.JPG";
 import feuille_d from "../../assets/feuille_d.png";
@@ -132,7 +132,7 @@ function Home() {
             jardinier, deux « métiers-passion ». Avec ces jardins, j’ai confié
             ma créativité à la nature, c’est elle qui dicte mon geste. »
           </p>
-          <button className="discover-btn">Enfilez vos bottes !</button>
+          {/* <button className="discover-btn">Enfilez vos bottes !</button> */}
         </div>
       </section>
       <img src={feuille_vert_droite} id="feuille_vert_droite_2" />
