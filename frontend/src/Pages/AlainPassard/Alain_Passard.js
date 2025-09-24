@@ -13,19 +13,7 @@ import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
 import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import feille from "../../assets/feuille.png";
 import Vegetal from "../../assets/images_plats/Vegetal.jpg";
-// Images du carrousel
-// Génération automatique des imports des plats
-const plats = [];
-for (let i = 1; i <= 62; i++) {
-  if (i !== 21) { // exclure plat21 s'il n'existe pas
-    plats.push({
-      image: require(`../../assets/images_plats/plat${i}.jpg`),
-      title: `Plat ${i}`,
-      description: `Dish ${i}`,
-    });
-  }
-}
-
+import plats from "../../data_plat";
 
 function Alain_Passard() {
   const location = useLocation();
@@ -39,9 +27,7 @@ function Alain_Passard() {
     }
   }, [location]);
 
-
-
-
+  
   const [index, setIndex] = useState(0);
 
   const nextSlide = () => {
@@ -51,6 +37,8 @@ function Alain_Passard() {
   const prevSlide = () => {
     setIndex((prev) => (prev - 1 + plats.length) % plats.length);
   };
+  console.log("PLATS :", plats);
+
 
   return (
     <div className="Alain_passard">
@@ -177,7 +165,8 @@ function Alain_Passard() {
                      
                     }}
                   >
-                    <p key={i} className={`plat_title ${positionInfo}`}>
+                    <p key={i} className={`
+                       ${positionInfo}`}>
                       {plat.title}
                     </p>
                     <p key={i} className={`plat_description ${positionInfo}`}>
