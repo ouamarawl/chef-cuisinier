@@ -1,45 +1,62 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
+
+import LanguageContext from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/LanguageContext.js";
+
 
 function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { language, setLanguage } = useContext(LanguageContext);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
+  const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
   const location = useLocation();
+
+  const toggleLanguage = () => {
+    setLanguage(language === "fr" ? "en" : "fr");
+  };
 
   useEffect(() => {
     const handleScroll = () => {
-      if ((location.pathname !== "/contact")) {
-        // 👉 sur les autres pages : visible seulement après scroll > 5px
-        if (window.scrollY > 5) {
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }
+      if (location.pathname !== "/contact") {
+        if (window.scrollY > 5) setIsScrolled(true);
+        else setIsScrolled(false);
       }
     };
 
-    if (location.pathname === "/contact") {
-      // 👉 sur la page contact : header toujours visible
-      setIsScrolled(true);
-    }
-    if (location.pathname === "/Alain_Passard") {
-      setIsScrolled(true);
-    }
-    if (location.pathname === "/Réservation") {
+    if (
+      location.pathname === "/contact" ||
+      location.pathname === "/Alain_Passard" ||
+      location.pathname === "/Réservation"
+    ) {
       setIsScrolled(true);
     } else {
-      // 👉 réinitialiser le scroll listener sur les autres pages
       window.addEventListener("scroll", handleScroll);
     }
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]);
+
+  // Textes selon la langue
+  const text = {
+    fr: {
+      menu: "menu",
+      home: "Accueil",
+      chef: "CHEF ATHMANE",
+      contact: "Contact",
+      reservation: "Réservation",
+      menus: "Nos Menus",
+    },
+    en: {
+      menu: "menu",
+      home: "Home",
+      chef: "CHEF ATHMANE",
+      contact: "Contact",
+      reservation: "Reservation",
+      menus: "Our Menus",
+    },
+  };
 
   return (
     <>
@@ -55,7 +72,7 @@ function Header() {
               <span></span>
               <span></span>
             </button>
-            <p className="header__text">menu</p>
+            <p className="header__text">{text[language].menu}</p>
           </div>
 
           <div className="header__logo">
@@ -64,9 +81,10 @@ function Header() {
             </Link>
           </div>
 
-          <div className="header__language">
-            <p>FR/EN</p>
-          </div>
+         <div className="header__language" onClick={toggleLanguage}>
+  <p>{language === "fr" ? "FR / EN" : "EN / FR"}</p>
+</div>
+
         </div>
       </div>
 
@@ -77,24 +95,23 @@ function Header() {
         </button>
         <nav>
           <Link to="/" onClick={toggleSidebar}>
-            Accueil
+            {text[language].home}
           </Link>
           <Link to="/Athmane_ouamara" onClick={toggleSidebar}>
-           CHEF ATHMENE 
+            {text[language].chef}
           </Link>
           <Link to="/contact" onClick={toggleSidebar}>
-            Contact
+            {text[language].contact}
           </Link>
           <Link to="/Réservation" onClick={toggleSidebar}>
-            Réservation
+            {text[language].reservation}
           </Link>
           <Link to="/#menu-section" onClick={toggleSidebar}>
-            Nos Menus
+            {text[language].menus}
           </Link>
         </nav>
       </div>
 
-      {/* Overlay */}
       {isSidebarOpen && <div className="overlay" onClick={toggleSidebar}></div>}
     </>
   );

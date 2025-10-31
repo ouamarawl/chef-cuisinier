@@ -24,51 +24,57 @@ const Reservation = () => {
       });
 
       const result = await response.text();
-      setStatus("✅ Réservation envoyée avec succès !");
+      setStatus("✅ Reservation successfully sent!");
       console.log(result);
     } catch (error) {
-      console.error("Erreur :", error);
-      setStatus("❌ Une erreur est survenue.");
+      console.error("Error:", error);
+      setStatus("❌ An error occurred.");
     }
   };
 
   return (
     <section className="zenchef-reservation">
-      <h2 className="zenchef-title">Réserver une table</h2>
+      <h2 className="zenchef-title">Book a Table with Chef Athmane</h2>
 
       <p className="zenchef-policy">
-        Selon notre politique en vigueur, vous avez la possibilité d'annuler ou modifier sans frais votre réservation jusqu'à 48 heures avant la date de votre venue.<br />
-        Merci de nous contacter au <strong>+33 1 47 05 09 06</strong>.
+        Experience the authentic taste of Chef <strong>Athmane Ouamara</strong> — 
+        a journey from Algeria to Chicago, blending passion, fire, and flavor. <br />
+        You can cancel or modify your reservation free of charge up to 
+        48 hours before your visit. <br />
+        For any request, please contact us at 
+        <strong> +33 1 47 05 09 06</strong>.
       </p>
 
       <form className="zenchef-form" onSubmit={handleSubmit}>
         <label>
-          Nombre de couverts :
+          Number of guests:
           <select value={guests} onChange={(e) => setGuests(e.target.value)}>
             {[...Array(6)].map((_, i) => (
               <option key={i + 1} value={i + 1}>
-                {i + 1} couverts
+                {i + 1} guests
               </option>
             ))}
           </select>
         </label>
 
         <label>
-          Date :
+          Date:
           <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
         </label>
 
         <label>
-          Horaire :
+          Time:
           <input type="time" value={time} onChange={(e) => setTime(e.target.value)} />
         </label>
 
-        <button type="submit" className="zenchef-btn">Réserver</button>
+        <button type="submit" className="zenchef-btn">Book Now</button>
       </form>
 
       {status && <p className="status-message">{status}</p>}
 
-      <p className="zenchef-powered">Rendu possible par <strong>Zenchef</strong></p>
+      <p className="zenchef-powered">
+        Powered by <strong>Zenchef</strong>
+      </p>
     </section>
   );
 };

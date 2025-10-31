@@ -13,55 +13,50 @@ import image14 from "../../assets/image14.jpg";
 import image15 from "../../assets/image15.jpg";
 import image9 from "../../assets/image9.jpg";
 import { useNavigate } from "react-router-dom";
-import athman_4 from "../../assets/images_athmen/athmane_4.jpg";
 
 function Larriere_cuisine() {
   const navigate = useNavigate();
   return (
     <div className="larriere-cuisine-container">
       <div className="larriere-cuisine-header">
-        <h3>L’Arrière Cuisine</h3>
+        <h3>The Back Kitchen</h3>
         <img src={feille} />
       </div>
 
       <h3 className="larriere-cuisine-titre">
-        Né en Algérie, j’ai grandi dans une culture où la cuisine était un art
-        de vivre, un héritage de famille et une passion transmise avec le cœur.
-        <br />
-        De l’Algérie à Dubaï, de New York à Chicago, mon parcours est un voyage
-        culinaire à travers les saveurs du monde.
+        I was born into a very artistic family, a family where the hands were
+        everywhere: a grandmother who was a cook, a grandfather who was a
+        sculptor, a mother passionate about sewing, and a father who was a
+        musician.
       </h3>
       <img
         id="signature"
         src={signature}
-        alt="Signature Chef Athman"
+        alt="Chef Athman Signature"
         className="chef-signature"
       />
 
       <section className="section-oeuvres">
         <img src={image15} id="image15" />
-        <img src={athman_4} id="image9" />
+        <img src={image9} id="image9" />
         <img src={image14} id="image14" />
         <img src={image12} id="image12" />
         <img src={image13} id="image13" />
 
         <div className="oeuvres-center">
-          <h3>LES ŒUVRES DU CHEF</h3>
+          <h3>THE CHEF’S WORKS</h3>
           <p>
-            La cuisine du Chef Athman est un langage artistique où chaque plat
-            raconte une histoire — celle d’un voyage, d’une culture, d’un
-            souvenir. <br />
-            Formé auprès de grands noms à Dubaï, New York et Chicago, il puise
-            son inspiration dans ses racines algériennes pour créer une cuisine
-            authentique, généreuse et contemporaine. <br />
-            Ses assiettes sont des œuvres qui marient le feu, la précision et la
-            passion du goût.
+            Collages, lithographs, bronzes, plates... The works of Chef Athman
+            are a visual translation of his passion for beauty and skill: a play
+            of colors and textures that can be found both in frames and on the
+            plate. They reflect the influence of nature and the importance of
+            the eye in the creation of a recipe.
           </p>
           <button
             className="discover-btn-oeuvres"
             onClick={() => navigate("/Chef_Athman#larriere_cuisine")}
           >
-            En savoir plus
+            Learn more
           </button>
         </div>
       </section>
@@ -70,26 +65,20 @@ function Larriere_cuisine() {
         <div className="A_decouvrir-text">
           <div className="A_decouvrir-text-content">
             <h1>
-              <span className="">Découvrir</span>
+              <span>Discover</span>
             </h1>
             <p className="A_decouvrir-paragraph">
-              L’univers du Chef Athman est une rencontre entre tradition et
-              modernité. <br />
-              Ses créations, inspirées de son parcours entre l’Afrique du Nord et
-              les grandes cuisines du monde, dévoilent une signature
-              audacieuse et élégante. <br />
-              <br />
-              Chaque plat est une exploration sensorielle — un hommage à la
-              flamme, à la terre et aux racines. <br />
-              <br />
-              Le Chef partage aujourd’hui son art à travers des dîners privés et
-              des collaborations culinaires exclusives. <br />
-              <br />
-              CHICAGO, USA <br />
-              Pour toute demande : sur rendez-vous uniquement.
+              Many surprising creations by Chef Athman are still waiting to be
+              discovered! <br /> <br /> Feel free to open the door to the Back
+              Kitchen to (re)discover the full creative universe of the Chef!
+              <br /> <br /> BACK KITCHEN <br /> 57, rue de Bourgogne
+              <br /> 75007 Paris
+              <br /> <br /> From Monday to Friday, 10 AM to 6 PM, by
+              appointment.
+              <br /> <br />
             </p>
           </div>
-          <div className="ligne2"></div>
+          <div class="ligne2"></div>
         </div>
         <img src={image1} />
       </section>

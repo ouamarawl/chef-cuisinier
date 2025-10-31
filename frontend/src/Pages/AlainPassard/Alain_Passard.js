@@ -12,7 +12,7 @@ import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import feille from "../../assets/feuille.png";
 import Vegetal from "../../assets/images_plats/Vegetal.jpg";
 import plats from "../../data_plat";
- import athman15 from "../../assets/images_athmen/athmane15.PNG";
+import athman15 from "../../assets/images_athmen/athmane15.PNG";
 
 function Alain_Passard() {
   const location = useLocation();
@@ -45,8 +45,8 @@ function Alain_Passard() {
         <div className="chef-content">
           <h2 className="chef-name">ATHMENE OUAMARA</h2>
           <p className="chef-quote">
-            « Cooking is not just about taste — it's about emotion, travel, and
-            identity. »
+            “Cooking isn’t just about flavor — it’s about emotion, travel, and
+            identity.”
           </p>
           <img
             src={signature}
@@ -58,7 +58,7 @@ function Alain_Passard() {
 
       <div className="titredumilieu">
         <span>
-          <p> «From Algeria to Chicago — The Journey of a Global Chef»</p>
+          <p>“From Algeria to Chicago — The Journey of a World-Class Chef”</p>
         </span>
       </div>
 
@@ -68,10 +68,10 @@ function Alain_Passard() {
         <div className="presentation-text">
           <h3>🇩🇿 Algeria — Where It All Began</h3>
           <p>
-            I grew up in Algeria, where the kitchen was the heart of every home.
-            That’s where I learned the fundamentals: honest flavors, the beauty
-            of family gatherings, and the discipline that comes with real
-            hospitality. The beginning was humble, but the dream was anything
+            I was born and raised in Algeria, where the kitchen was the heart of
+            every home. It’s where I learned the essentials: honest flavors, the
+            warmth of family gatherings, and the discipline behind true
+            hospitality. The beginnings were humble, but the dream was anything
             but small.
           </p>
         </div>
@@ -85,10 +85,11 @@ function Alain_Passard() {
         <div className="presentation-text">
           <h3>🇦🇪 Dubai — A Taste of Luxury</h3>
           <p>
-            My journey took me to Dubai, where I joined Emaar and had the honor
-            of cooking for high-profile guests — even the President of the UAE.
-            Working at the Taj Hotel taught me how food can be more than a meal
-            — it can be an experience that people feel, not just taste.
+            My path led me to Dubai, where I joined Emaar and had the privilege
+            of cooking for distinguished guests — including the President of the
+            UAE. Working at the Taj Hotel taught me that food can go far beyond
+            nourishment — it can become an experience that touches people’s
+            hearts.
           </p>
         </div>
       </section>
@@ -107,40 +108,44 @@ function Alain_Passard() {
         <div className="presentation-text">
           <h3>🇺🇸 New York — The School of Excellence</h3>
           <p>
-            From Dubai, I headed to New York to work with world-renowned chef
-            Jean-Georges. That chapter refined my craft — precision, discipline,
-            and respect for every tiny detail that turns a dish into a
-            masterpiece.
+            From Dubai, I moved to New York to work alongside world-renowned
+            chef Jean-Georges. That chapter shaped my craft — teaching me
+            precision, discipline, and the respect for every small detail that
+            transforms a dish into a true masterpiece.
           </p>
         </div>
       </section>
 
       {/* 🏙️ Chicago */}
       <section className="presentation-section-A">
-        <img src={athman15} alt="Athmane Ouamara in Chicago" className="chef-image" />
+        <img
+          src={athman15}
+          alt="Athmane Ouamara in Chicago"
+          className="chef-image"
+        />
         <div className="presentation-text">
           <h3>🏙️ Chicago — Where the Dream Grows</h3>
           <p>
-            Today, I’ve made Chicago my home. I cooked at La Salle Hotel before
-            joining the team of legendary Italian chef Fabio Viviani. Here, I
-            developed my signature style — simple, bold flavors that blend my
-            Algerian roots with a global touch. I became known for my grilled
-            meats, especially lamb, which has become my culinary signature.
+            Today, Chicago is where I call home. I worked at La Salle Hotel
+            before joining the team of legendary Italian chef Fabio Viviani.
+            Here, I developed my own culinary identity — bold, refined flavors
+            that blend my Algerian roots with a global perspective. My grilled
+            meats, especially lamb, have become my signature dishes.
           </p>
           <br />
           <p>
             🚀 Algeria → Dubai → New York → Chicago <br />
-            My story isn’t just about places — it’s about passion, resilience,
-            and growing alongside some of the world’s best. Now, as a Private &
-            Luxury Chef, I create exclusive dining experiences and share my
-            journey with the world.
+            My journey isn’t just about places — it’s about passion,
+            perseverance, and evolving alongside some of the world’s greatest
+            chefs. Now, as a Private & Luxury Chef, I craft exclusive dining
+            experiences and share my story through flavor.
           </p>
         </div>
       </section>
 
       {/* block */}
       <div className="last-title">
-        <h3>Plats signatures</h3>
+        <h3>Signature Dishes</h3>
         <img src={feille} />
       </div>
 
@@ -167,7 +172,10 @@ function Alain_Passard() {
             }
 
             return (
-              <div key={plat.title || i} className={`carousel-item ${position}`}>
+              <div
+                key={plat.title || i}
+                className={`carousel-item ${position}`}
+              >
                 <img src={plat.image} alt={plat.title} />
                 <div className={`carousel-info ${positionInfo}`}>
                   <div className={`ligne_H ${positionInfo}`}></div>
@@ -189,7 +197,7 @@ function Alain_Passard() {
       </section>
 
       <div className="derniertitre">
-        <h2 id="H2"> A Journey of Passion and Flavor</h2> <br />
+        <h2 id="H2">A Journey of Passion and Flavor</h2> <br />
         <h2 id="H22">
           Algeria, Dubai, New York, Chicago —
           <br />

@@ -56,62 +56,62 @@ function Home() {
           ></div>
         ))}
         <div className="center-image">
-          <img src={logo} alt="Logo central" />
+          <img src={logo} alt="Central logo" />
         </div>
       </div>
 
-      {/* Section bienvenue */}
+      {/* Welcome Section */}
       <section className="welcome-section">
         <div className="welcome-content">
-          <h2>BIENVENUE</h2>
+          <h2>WELCOME</h2>
           <p className="quote">
-            « La cuisine, c’est l’art de transformer la simplicité en émotion. »
+            “Cooking is the art of turning simplicity into emotion.”
           </p>
           <p className="author">CHEF ATHMANE OUAMARA</p>
         </div>
       </section>
 
-      {/* Présentation du Chef */}
+      {/* Chef Presentation */}
       <img src={feuille_d} id="feuille_d" />
       <section className="presentation-section">
         <img
           id="image5"
           src={image5}
-          alt="Chef Athmane"
+          alt="Chef Athman"
           className="chef-image"
         />
         <div className="presentation-text">
           <h3>ATHMANE OUAMARA</h3>
           <p>
-            Originaire d’Algérie, le Chef Athman a construit son parcours à
-            l’international : de Dubaï à New York, puis à Chicago, où il a
-            collaboré avec les plus grands chefs. <br /> <br />
-            Sa cuisine allie la chaleur des saveurs méditerranéennes à
-            l’élégance de la gastronomie mondiale. Chaque plat qu’il crée est
-            une histoire de passion, de voyage et d’authenticité.
+            Originally from Algeria, Chef Athman built his career
+            internationally—from Dubai to New York, and later in Chicago—where
+            he collaborated with some of the world’s greatest chefs. <br />{" "}
+            <br />
+            His cuisine blends the warmth of Mediterranean flavors with the
+            elegance of global gastronomy. Each dish he creates tells a story of
+            passion, travel, and authenticity.
           </p>
           <button
             className="discover-btn"
             onClick={() => navigate("/Chef_Athman")}
           >
-            DÉCOUVRIR
+            DISCOVER
           </button>
         </div>
       </section>
 
-      {/* Expérience et philosophie */}
+      {/* Experience & Philosophy */}
       <img src={feuille_vert_droite} id="feuille_vert_droite" />
       <section className="presentation-section">
-        <img src={image6} alt="Cuisine du chef" className="chef-image" />
+        <img src={image6} alt="Chef’s cuisine" className="chef-image" />
         <div className="presentation-text">
-          <h3>UNE CUISINE D’EXCELLENCE</h3>
+          <h3>AN EXCEPTIONAL CUISINE</h3>
           <p>
-            Pour le Chef Athman, chaque produit a une âme et une histoire.{" "}
-            <br />
-            Derrière chaque plat, il y a la main d’un artisan, d’un éleveur ou
-            d’un pêcheur. <br /> <br />
-            Sa philosophie : « Le respect du produit, la précision du geste, et
-            l’amour du partage. »
+            For Chef Athman, every ingredient has a soul and a story. <br />
+            Behind each dish lies the hand of a craftsman, a farmer, or a
+            fisherman. <br /> <br />
+            His philosophy: “Respect the product, master the gesture, and cook
+            with love and generosity.”
           </p>
         </div>
       </section>
@@ -120,55 +120,55 @@ function Home() {
       <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
       <img src={feuille_d} id="feuille_d_2" />
       <section className="presentation-section" id="menu-section">
-        <img src={image7} alt="Plat du chef" className="chef-image" />
+        <img src={image7} alt="Chef’s dish" className="chef-image" />
         <div className="presentation-text">
-          <h3>NOS MENUS</h3>
+          <h3>OUR MENUS</h3>
           <p>
-            Inspirés par la nature et les saisons, les menus du Chef Athman
-            célèbrent l’équilibre entre tradition et modernité. <br />
-            De l’agneau grillé signature aux créations végétales, chaque plat
-            révèle une harmonie entre feu, fraîcheur et émotion.
+            Inspired by nature and the seasons, Chef Athman’s menus celebrate
+            the balance between tradition and modernity. <br />
+            From his signature grilled lamb to his plant-based creations, each
+            plate embodies harmony between fire, freshness, and emotion.
           </p>
           <div className="menu-links">
-            <a href="/carte">LA CARTE</a> <br />
-            <a href="/menu-dejeuner">LE MENU DÉJEUNER</a> <br />
-            <a href="/menu">MENU</a>
+            <a href="/carte">THE MENU</a> <br />
+            <a href="/menu-dejeuner">LUNCH MENU</a> <br />
+            <a href="/menu">FULL MENU</a>
           </div>
         </div>
       </section>
 
-      {/* Philosophie et potager */}
+      {/* Philosophy */}
       <img src={feuille_d} id="feuille_d_3" />
       <section className="presentation-section">
-        <img src={image8} alt="Création du chef" className="chef-image" />
+        <img src={image8} alt="Chef’s creation" className="chef-image" />
         <div className="presentation-text">
-          <h3>SA PHILOSOPHIE</h3>
+          <h3>HIS PHILOSOPHY</h3>
           <p>
-            « Cuisiner, c’est comme jouer de la musique : il faut du rythme, du
-            cœur et une touche d’improvisation. » <br />
-            Le Chef Athman transforme des ingrédients simples en une expérience
-            gastronomique unique, guidée par la passion et la créativité.
+            “Cooking is like playing music: it requires rhythm, heart, and a
+            touch of improvisation.” <br />
+            Chef Athman transforms simple ingredients into a unique
+            gastronomic experience guided by passion and creativity.
           </p>
         </div>
       </section>
 
-      {/* Arrière cuisine */}
+      {/* Back Kitchen */}
       <img src={feuille_vert_droite} id="feuille_vert_droite_2" />
       <section className="presentation-section">
-        <img src={image9} alt="Arrière cuisine" className="chef-image" />
+        <img src={image9} alt="Back kitchen" className="chef-image" />
         <div className="presentation-text">
-          <h3>L’ARRIÈRE CUISINE</h3>
+          <h3>THE BACK KITCHEN</h3>
           <p>
-            L’Arrière-Cuisine du Chef Athman est un espace d’expression où
-            l’art, la cuisine et la passion se rencontrent. <br />
-            On y découvre des plats signatures, des collaborations artistiques
-            et des créations qui reflètent son parcours entre Alger et Chicago.
+            Chef Athman’s Back Kitchen is a creative space where art, cuisine,
+            and passion come together. <br />
+            There you’ll find signature dishes, artistic collaborations, and
+            creations reflecting his journey between Algiers and Chicago.
           </p>
           <button
             className="discover-btn"
-            onClick={() => navigate("/Larriere_cuisine")}
+            onClick={() => navigate("/Larriere_cuisinet")}
           >
-            DÉCOUVRIR
+            DISCOVER
           </button>
         </div>
       </section>
@@ -184,12 +184,12 @@ function Home() {
               CHEF ATHMANE <br />
               Chicago, USA <br />
               <br />
-              Disponible pour dîners privés, collaborations et événements
-              gastronomiques. <br />
+              Available for private dinners, collaborations, and gastronomic
+              events. <br />
               <br />
               contact@chefathman.com <br />
               <br />
-              Sur rendez-vous uniquement.
+              By appointment only.
             </p>
           </div>
           <div className="ligne"></div>
@@ -204,7 +204,7 @@ function Home() {
           href="https://www.instagram.com/chefathmane_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           target="blanck"
         >
-          Suivez le chef @CHEFATHMANE_OFFICIAL
+          Follow the chef @CHEFATHMANE_OFFICIAL
         </a>
       </h3>
     </div>
