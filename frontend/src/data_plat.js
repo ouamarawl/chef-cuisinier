@@ -60,6 +60,24 @@ import plat59 from "./assets/images_plats/plat59.jpg";
 import plat60 from "./assets/images_plats/plat60.jpg";
 import plat61 from "./assets/images_plats/plat61.jpg";
 import plat62 from "./assets/images_plats/plat62.jpg";
+import plat63 from "./assets/images_plats/plat63.jpg";
+import plat64 from "./assets/images_plats/plat64.jpg";
+import plat65 from "./assets/images_plats/plat65.jpg";
+import plat66 from "./assets/images_plats/plat66.PNG";
+import plat67 from "./assets/images_plats/plat67.PNG";
+import plat68 from "./assets/images_plats/plat68.jpg";
+// import plat69 from "./assets/images_plats/plat69.jpg"(n'existe pas );
+import plat70 from "./assets/images_plats/plat70.PNG";
+import plat71 from "./assets/images_plats/plat71.PNG";
+import plat72 from "./assets/images_plats/plat72.PNG";
+import plat73 from "./assets/images_plats/plat73.PNG";
+import plat74 from "./assets/images_plats/plat74.PNG";
+import plat75 from "./assets/images_plats/plat75.DNG";
+import plat76 from "./assets/images_plats/plat76.jpg";
+import plat77 from "./assets/images_plats/plat77.jpg";
+import plat78 from "./assets/images_plats/plat78.jpg";
+import plat79 from "./assets/images_plats/plat79.DNG";
+import plat80 from "./assets/images_plats/plat80.jpg";
 
 const plats = [
 //   { image: plat1, title: "Plat 1", description: "Dish 1" },
@@ -124,6 +142,24 @@ const plats = [
 //   { image: plat60, title: "Plat 60", description: "Dish 60" },
 //   { image: plat61, title: "Plat 61", description: "Dish 61" },
 //   { image: plat62, title: "Plat 62", description: "Dish 62" }
+{ image: plat63, title: "Plat 63", description: "Dish 63" },
+{ image: plat64, title: "Plat 64", description: "Dish 64" },
+{ image: plat65, title: "Plat 65", description: "Dish 65" },
+{ image: plat66, title: "Plat 66", description: "Dish 66" },
+{ image: plat67, title: "Plat 67", description: "Dish 67" },
+{ image: plat68, title: "Plat 68", description: "Dish 68" },
+{ image: plat70, title: "Plat 70", description: "Dish 70" },
+{ image: plat71, title: "Plat 71", description: "Dish 71" },
+{ image: plat72, title: "Plat 72", description: "Dish 72" },
+{ image: plat73, title: "Plat 73", description: "Dish 73" },
+{ image: plat74, title: "Plat 74", description: "Dish 74" },
+{ image: plat75, title: "Plat 75", description: "Dish 75" },
+{ image: plat76, title: "Plat 76", description: "Dish 76" },
+{ image: plat77, title: "Plat 77", description: "Dish 77" },
+{ image: plat78, title: "Plat 78", description: "Dish 78" },
+{ image: plat79, title: "Plat 79", description: "Dish 79" },
+{ image: plat80, title: "Plat 80", description: "Dish 80" },
+
 ];
 
 export default plats;
