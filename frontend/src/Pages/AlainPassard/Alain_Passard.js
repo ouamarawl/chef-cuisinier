@@ -1,11 +1,9 @@
 import "./Alain_Passard.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import signature from "../../assets/signature.png";
 import "@fontsource/montserrat/200.css";
-import CHEF2 from "../../assets/images_athmen/CHEF2.JPG";
-import image5 from "../../assets/image5.jpg";
-
-import { useEffect } from "react";
+import athmane14 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane14.png";
+// import image5 from "../../assets/image5.jpg";
 import { useLocation } from "react-router-dom";
 import feuille_d from "../../assets/feuille_d.png";
 import EVEIL from "../../assets/images_athmen/EVEIL.JPG";
@@ -14,6 +12,7 @@ import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import feille from "../../assets/feuille.png";
 import Vegetal from "../../assets/images_plats/Vegetal.jpg";
 import plats from "../../data_plat";
+ import athman15 from "../../assets/images_athmen/athmane15.PNG";
 
 function Alain_Passard() {
   const location = useLocation();
@@ -27,7 +26,6 @@ function Alain_Passard() {
     }
   }, [location]);
 
-  
   const [index, setIndex] = useState(0);
 
   const nextSlide = () => {
@@ -37,23 +35,22 @@ function Alain_Passard() {
   const prevSlide = () => {
     setIndex((prev) => (prev - 1 + plats.length) % plats.length);
   };
-  console.log("PLATS :", plats);
 
+  console.log("PLATS :", plats);
 
   return (
     <div className="Alain_passard">
       <div className="chef-section">
         <div className="chefimage"></div>
         <div className="chef-content">
-          <h2 className="chef-name">ALAIN PASSARD</h2>
+          <h2 className="chef-name">ATHMENE OUAMARA</h2>
           <p className="chef-quote">
-            « Je n'ai pas la même main en été
-            <br /> avec une aubergine qu'en hiver
-            <br /> avec un rutabaga »
+            « Cooking is not just about taste — it's about emotion, travel, and
+            identity. »
           </p>
           <img
             src={signature}
-            alt="Signature Alain Passard"
+            alt="Signature Athmane Ouamara"
             className="chef-signature"
           />
         </div>
@@ -61,44 +58,37 @@ function Alain_Passard() {
 
       <div className="titredumilieu">
         <span>
-          <p> «Chaque jour est le premier jour»</p>
+          <p> «From Algeria to Chicago — The Journey of a Global Chef»</p>
         </span>
       </div>
 
+      {/* 🇩🇿 Algeria */}
       <section className="presentation-section-A">
-        <img src={CHEF2} alt="Alain Passard" className="chef-image" />
+        <img src={athmane14} alt="Athmane Ouamara" className="chef-image" />
         <div className="presentation-text">
-          <h3>Tissu animal</h3>
+          <h3>🇩🇿 Algeria — Where It All Began</h3>
           <p>
-            Alain Passard est un chef viscéralement attaché à ses fourneaux
-            <br />
-            depuis près de 35 ans. Le Chef est un grand rôtisseur, il a mis
-            <br />
-            longtemps en pratique ce que sa grand-mère lui a transmis : la
-            <br />
-            passion de la flamme et la cuisson longue des viandes en basse
-            <br />
-            température. Cette passion amènera l’Arpège à devenir l’une des
-            <br />
-            rôtisseries phares de la capitale récompensée de trois étoiles
-            <br />
-            Michelin en 1996.
+            I grew up in Algeria, where the kitchen was the heart of every home.
+            That’s where I learned the fundamentals: honest flavors, the beauty
+            of family gatherings, and the discipline that comes with real
+            hospitality. The beginning was humble, but the dream was anything
+            but small.
           </p>
         </div>
       </section>
 
       <img src={feuille_vert_droite} id="feuille_vert_droite" />
 
+      {/* 🇦🇪 Dubai */}
       <section className="presentation-section-A">
-        <img src={EVEIL} alt="Alain Passard" className="chef-image" />
+        <img src={EVEIL} alt="Athmane Ouamara" className="chef-image" />
         <div className="presentation-text">
-          <h3>L’éveil</h3>
+          <h3>🇦🇪 Dubai — A Taste of Luxury</h3>
           <p>
-            Au début des années 2000, Le Chef vit une profonde rupture dans sa
-            créativité. Il redécouvre alors le jardin, ses fruits, ses légumes
-            et réalise qu’il ne leur a jamais vraiment laissé une place dans ses
-            assiettes. Il décide alors de changer de métier et de se consacrer
-            au tissu végétal.
+            My journey took me to Dubai, where I joined Emaar and had the honor
+            of cooking for high-profile guests — even the President of the UAE.
+            Working at the Taj Hotel taught me how food can be more than a meal
+            — it can be an experience that people feel, not just taste.
           </p>
         </div>
       </section>
@@ -106,24 +96,48 @@ function Alain_Passard() {
       <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
       <img src={feuille_d} id="feuille_d_2" />
 
+      {/* 🇺🇸 New York */}
       <section className="presentation-section-A">
         <img
           id="vegetal"
           src={Vegetal}
-          alt="Alain Passard"
+          alt="Athmane Ouamara"
           className="chef-image"
         />
         <div className="presentation-text">
-          <h3>Tissu végétal</h3>
+          <h3>🇺🇸 New York — The School of Excellence</h3>
           <p>
-            Depuis, Alain Passard place le légume au centre de ses assiettes.
-            Rapidement, le Chef devient propriétaire de deux potagers qui
-            fourniront exclusivement les légumes 100% naturels de l’Arpège, un
-            accomplissement et une belle manière de redécouvrir la richesse de
-            chaque saison !
+            From Dubai, I headed to New York to work with world-renowned chef
+            Jean-Georges. That chapter refined my craft — precision, discipline,
+            and respect for every tiny detail that turns a dish into a
+            masterpiece.
           </p>
         </div>
       </section>
+
+      {/* 🏙️ Chicago */}
+      <section className="presentation-section-A">
+        <img src={athman15} alt="Athmane Ouamara in Chicago" className="chef-image" />
+        <div className="presentation-text">
+          <h3>🏙️ Chicago — Where the Dream Grows</h3>
+          <p>
+            Today, I’ve made Chicago my home. I cooked at La Salle Hotel before
+            joining the team of legendary Italian chef Fabio Viviani. Here, I
+            developed my signature style — simple, bold flavors that blend my
+            Algerian roots with a global touch. I became known for my grilled
+            meats, especially lamb, which has become my culinary signature.
+          </p>
+          <br />
+          <p>
+            🚀 Algeria → Dubai → New York → Chicago <br />
+            My story isn’t just about places — it’s about passion, resilience,
+            and growing alongside some of the world’s best. Now, as a Private &
+            Luxury Chef, I create exclusive dining experiences and share my
+            journey with the world.
+          </p>
+        </div>
+      </section>
+
       {/* block */}
       <div className="last-title">
         <h3>Plats signatures</h3>
@@ -153,23 +167,13 @@ function Alain_Passard() {
             }
 
             return (
-              <div key={i} className={`carousel-item ${position}`}>
+              <div key={plat.title || i} className={`carousel-item ${position}`}>
                 <img src={plat.image} alt={plat.title} />
-                <div key={i} className={`carousel-info ${positionInfo}`}>
-                  <div key={i} className={`ligne_H ${positionInfo}`}></div>
-                  <div
-                    style={{
-                   
-                      marginRight: "25%",
-                      marginTop: "-3%",
-                     
-                    }}
-                  >
-                    <p key={i} className={`
-                       ${positionInfo}`}>
-                      {plat.title}
-                    </p>
-                    <p key={i} className={`plat_description ${positionInfo}`}>
+                <div className={`carousel-info ${positionInfo}`}>
+                  <div className={`ligne_H ${positionInfo}`}></div>
+                  <div style={{ marginRight: "25%", marginTop: "-3%" }}>
+                    <p className={`${positionInfo}`}>{plat.title}</p>
+                    <p className={`plat_description ${positionInfo}`}>
                       {plat.description}
                     </p>
                   </div>
@@ -184,23 +188,14 @@ function Alain_Passard() {
         </button>
       </section>
 
-      {/* 🔄 Carrousel des plats */}
       <div className="derniertitre">
-        <h2 id="H2"> Une Obsession 4 saisons / 5 sens</h2> <br />
+        <h2 id="H2"> A Journey of Passion and Flavor</h2> <br />
         <h2 id="H22">
-          {" "}
-          Nature,Saisons,Potager,Jardinier,Tissu Animal,
+          Algeria, Dubai, New York, Chicago —
           <br />
-          Tissu végétal,École du feu,La main,Le gout,
-          <br />
-          La musique,Transmission,Couleurs,Art,
-          <br />
-          Artisans, Maison de cuisine,Les Paniers d’Alain,
-          <br />
-          Cuisine de voisinage.
+          A global story built on taste, culture, and excellence.
         </h2>
       </div>
-      {/* block */}
     </div>
   );
 }

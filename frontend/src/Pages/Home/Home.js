@@ -69,7 +69,7 @@ function Home() {
         <div className="welcome-content">
           <h2>BIENVENUE</h2>
           <p className="quote">« Je veux faire du légume un grand cru »</p>
-          <p className="author">Alain Passard</p>
+          <p className="author">ATHMENE OUAMARA</p>
         </div>
         {/* <div className="reserve-btn">RÉSERVER UNE TABLE</div> */}
       </section>
@@ -79,7 +79,7 @@ function Home() {
       <section className="presentation-section">
         <img id="image5" src={image5} alt="Alain Passard" className="chef-image" />
         <div className="presentation-text">
-          <h3>ALAIN PASSARD</h3>
+          <h3>ATHMENE OUAMARA</h3>
           <p>
             « Pour moi, l’été c’est un rendez-vous avec une tomate, un
             concombre, un melon. J’aime les harmoniser pour créer une cuisine
@@ -173,10 +173,8 @@ function Home() {
         </div>
          <img src={image1} /> 
       </section>
-      <h3 id="suivez_nous"
-       
-      >
-        Suivez le chef @alain_passard
+      <h3 id="suivez_nous" >
+        <a style={{textDecoration:'none',color:'#3a4f63' }} href="https://www.instagram.com/chefathmane_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blanck">Suivez le chef @ATHMENNE_OUAMARA</a>
       </h3>
     </div>
   );

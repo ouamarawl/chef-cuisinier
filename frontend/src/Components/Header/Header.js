@@ -79,8 +79,8 @@ function Header() {
           <Link to="/" onClick={toggleSidebar}>
             Accueil
           </Link>
-          <Link to="/Alain_Passard" onClick={toggleSidebar}>
-            Alain Passard
+          <Link to="/Athmane_ouamara" onClick={toggleSidebar}>
+           CHEF ATHMENE 
           </Link>
           <Link to="/contact" onClick={toggleSidebar}>
             Contact

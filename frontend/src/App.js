@@ -17,7 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Alain_Passard" element={<Alain_Passard />} />
+        <Route path="/Athmane_ouamara" element={<Alain_Passard />} />
         <Route path="/Réservation" element={<Réservation />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Larriere_cuisinet" element={<Larriere_cuisine />} />

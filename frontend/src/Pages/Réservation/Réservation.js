@@ -5,10 +5,31 @@ const Reservation = () => {
   const [guests, setGuests] = useState(2);
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
+  const [status, setStatus] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Réservation enregistrée pour ${guests} couverts le ${date || "aujourd'hui"} à ${time}`);
+
+    try {
+      const response = await fetch("L_URL_DU_SCRIPT_DE_TON_AMI", {
+        method: "POST",
+        body: JSON.stringify({
+          guests,
+          date,
+          time,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      const result = await response.text();
+      setStatus("✅ Réservation envoyée avec succès !");
+      console.log(result);
+    } catch (error) {
+      console.error("Erreur :", error);
+      setStatus("❌ Une erreur est survenue.");
+    }
   };
 
   return (
@@ -25,7 +46,9 @@ const Reservation = () => {
           Nombre de couverts :
           <select value={guests} onChange={(e) => setGuests(e.target.value)}>
             {[...Array(6)].map((_, i) => (
-              <option key={i + 1} value={i + 1}>{i + 1} couverts</option>
+              <option key={i + 1} value={i + 1}>
+                {i + 1} couverts
+              </option>
             ))}
           </select>
         </label>
@@ -42,6 +65,8 @@ const Reservation = () => {
 
         <button type="submit" className="zenchef-btn">Réserver</button>
       </form>
+
+      {status && <p className="status-message">{status}</p>}
 
       <p className="zenchef-powered">Rendu possible par <strong>Zenchef</strong></p>
     </section>

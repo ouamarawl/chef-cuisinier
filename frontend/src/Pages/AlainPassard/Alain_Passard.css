@@ -17,7 +17,7 @@
   flex: 1;
   background-size: cover;
   background-position: center;
-  background-image: url("../../assets/images_athmen/IMAGEJUS.JPG");
+  background-image: url("C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/CHEF2.JPG");
 }
 /* SECTION DROITE */
 .chef-content {
@@ -48,10 +48,13 @@
   font-weight: bolder;
   line-height: 1.5;
   text-align: left;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.09em;
   color: #3A4F63;
   margin: 0 0 35px 0;
   margin-bottom: 40px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 #vegetal{
    width: 100%;
