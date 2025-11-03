@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Réservation.css";
+import { addReservation } from "../../firebaseConfig";
 
 const Reservation = () => {
   const [guests, setGuests] = useState(2);
@@ -10,25 +11,27 @@ const Reservation = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch("L_URL_DU_SCRIPT_DE_TON_AMI", {
-        method: "POST",
-        body: JSON.stringify({
-          guests,
-          date,
-          time,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+    if (!date || !time) {
+      setStatus("❌ Please select both date and time.");
+      return;
+    }
 
-      const result = await response.text();
-      setStatus("✅ Reservation successfully sent!");
-      console.log(result);
+    const reservationData = {
+      guests: Number(guests),
+      date,
+      time,
+      createdAt: new Date().toISOString()
+    };
+
+    try {
+      await addReservation(reservationData);
+      setStatus("✅ Reservation successfully saved!");
+      setDate("");
+      setTime("");
+      setGuests(2);
     } catch (error) {
       console.error("Error:", error);
-      setStatus("❌ An error occurred.");
+      setStatus("❌ An error occurred while saving the reservation.");
     }
   };
 

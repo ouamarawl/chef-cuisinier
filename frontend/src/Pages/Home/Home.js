@@ -14,13 +14,18 @@ import image9 from "../../assets/images_athmen/image9.JPG";
 import feuille_d from "../../assets/feuille_d.png";
 import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
 import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
-
+import image_home3 from "../../assets/images_plats/image-home3.jpeg";
+import plat46 from "../../assets/images_plats/plat46.jpg";
+import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
 const images = [
-  require("../../assets/image1.jpg"),
-  require("../../assets/image2.jpg"),
-  require("../../assets/image3.jpg"),
-  require("../../assets/image4.jpg"),
-];
+  // require("../../assets/image1.jpg"),
+  // require("../../assets/image2.jpg"),
+  // require("../../assets/image3.jpg"),
+  // require("../../assets/image4.jpg"),
+  require("../../assets/images_plats/image-home1.jpeg"),
+  require("../../assets/images_plats/image-home2.jpeg"),
+  require("../../assets/images_plats/image-home3.jpeg"),
+]
 
 function Home() {
   const [index, setIndex] = useState(0);
@@ -93,7 +98,7 @@ function Home() {
           </p>
           <button
             className="discover-btn"
-            onClick={() => navigate("/Chef_Athman")}
+            onClick={() => navigate("Athmane_ouamara")}
           >
             DISCOVER
           </button>
@@ -194,7 +199,7 @@ function Home() {
           </div>
           <div className="ligne"></div>
         </div>
-        <img src={image1} />
+        <img src={athmane_2} />
       </section>
 
       {/* Instagram */}

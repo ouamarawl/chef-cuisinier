@@ -3,6 +3,7 @@ import "./Contact.css";
 import feuille_d from "../../assets/feuille_d.png";
 import feille from "../../assets/feuille.png";
 import image11 from "../../assets/image11.jpg";
+import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
 
 function Contact() {
   return (
@@ -11,7 +12,7 @@ function Contact() {
       <img src={feille} id="feuille_contact" />
       <div className="contact-detail">
         <div className="block-g">
-          <img src={image11} />
+          <img src={athmane_2} />
           <div className="lign"></div>
           <h3>Chef Athmane’s Gourmet Boxes</h3>
           <p>

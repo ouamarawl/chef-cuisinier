@@ -68,7 +68,7 @@
   width: 280px;
   height: auto;
   margin-top: 10px;
-  filter: brightness(0) contrast(1.1);
+  /* filter: brightness(0) contrast(1.1); */
 }
 .titredumilieu p {
   font-family: "DM Serif Text", serif;

@@ -303,18 +303,18 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  width: 85%;
-  height: 100%;
+  width: 70%;
+  height: 25rem;
   /* padding-bottom: 10%; */
   background-color: #3a4f63;
 }
 .contact-section img {
-  position: absolute;
-  bottom: 18vh;
-  right: 12vw;
-  width: 34%;
-  height: 55%;
-  z-index: 9999;
+position: absolute;
+    bottom: 13vh;
+    right: 18vw;
+    width: 21%;
+    height: 65%;
+    z-index: 9999;
 }
 .contact-text {
   display: flex;
