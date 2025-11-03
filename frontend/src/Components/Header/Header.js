@@ -1,20 +1,17 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
-
-import LanguageContext from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/LanguageContext.js";
-
 
 function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const { language, setLanguage } = useContext(LanguageContext);
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
   const location = useLocation();
 
+  // Fonction vide - pas de changement de langue
   const toggleLanguage = () => {
-    setLanguage(language === "fr" ? "en" : "fr");
+    // Ne fait rien - fonctionnalité désactivée
   };
 
   useEffect(() => {
@@ -38,26 +35,6 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]);
 
-  // Textes selon la langue
-  const text = {
-    fr: {
-      menu: "menu",
-      home: "Accueil",
-      chef: "CHEF ATHMANE",
-      contact: "Contact",
-      reservation: "Réservation",
-      menus: "Nos Menus",
-    },
-    en: {
-      menu: "menu",
-      home: "Home",
-      chef: "CHEF ATHMANE",
-      contact: "Contact",
-      reservation: "Reservation",
-      menus: "Our Menus",
-    },
-  };
-
   return (
     <>
       <div className={`header ${isScrolled ? "scrolled" : "transparent"}`}>
@@ -72,7 +49,7 @@ function Header() {
               <span></span>
               <span></span>
             </button>
-            <p className="header__text">{text[language].menu}</p>
+            <p className="header__text">menu</p>
           </div>
 
           <div className="header__logo">
@@ -81,10 +58,9 @@ function Header() {
             </Link>
           </div>
 
-         <div className="header__language" onClick={toggleLanguage}>
-  <p>{language === "fr" ? "FR / EN" : "EN / FR"}</p>
-</div>
-
+          <div className="header__language" onClick={toggleLanguage}>
+            <p>FR / EN</p>
+          </div>
         </div>
       </div>
 
@@ -95,19 +71,22 @@ function Header() {
         </button>
         <nav>
           <Link to="/" onClick={toggleSidebar}>
-            {text[language].home}
+            Accueil
           </Link>
           <Link to="/Athmane_ouamara" onClick={toggleSidebar}>
-            {text[language].chef}
+            CHEF ATHMANE
           </Link>
           <Link to="/contact" onClick={toggleSidebar}>
-            {text[language].contact}
+            Contact
           </Link>
           <Link to="/Réservation" onClick={toggleSidebar}>
-            {text[language].reservation}
+            Réservation
           </Link>
           <Link to="/#menu-section" onClick={toggleSidebar}>
-            {text[language].menus}
+            Nos Menus
+          </Link>
+          <Link to="/Buffets" onClick={toggleSidebar}>
+            Buffets
           </Link>
         </nav>
       </div>

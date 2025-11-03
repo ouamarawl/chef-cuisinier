@@ -149,7 +149,7 @@ function Alain_Passard() {
         <img src={feille} />
       </div>
 
-      <section className="carousel-container" id="larriere_cuisine">
+      {/* <section className="carousel-container" id="larriere_cuisine">
         <button className="prev-btn" onClick={prevSlide}>
           ❮
         </button>
@@ -194,14 +194,59 @@ function Alain_Passard() {
         <button className="next-btn" onClick={nextSlide}>
           ❯
         </button>
+      </section> */}
+
+      <section className="carousel-container" id="buffet_carousel">
+        <button className="prev-btn" onClick={prevSlide}>
+          ❮
+        </button>
+
+        <div className="carousel-track">
+          {plats.map((buffet, i) => {
+            // Calcul de la position relative par rapport à l'index actuel
+            let position = "";
+            const diff = i - index;
+            const totalItems = plats.length;
+
+            // Gestion du wrap-around (circulaire)
+            let distance = diff;
+            if (Math.abs(diff) > totalItems / 2) {
+              distance = diff > 0 ? diff - totalItems : diff + totalItems;
+            }
+
+            // Attribution des classes selon la distance (seulement 3 items visibles)
+            if (distance === 0) {
+              position = "center";
+            } else if (distance === -1) {
+              position = "left";
+            } else if (distance === 1) {
+              position = "right";
+            } else {
+              position = "hidden";
+            }
+
+            return (
+              <div key={i} className={`buffet-item ${position}`}>
+                <img src={buffet.image} alt={buffet.title} />
+                <div className="buffet-overlay">
+                  <h3>{buffet.title}</h3>
+                  <p>{buffet.description}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <button className="next-btn" onClick={nextSlide}>
+          ❯
+        </button>
       </section>
 
       <div className="derniertitre">
         <h2 id="H2">A Journey of Passion and Flavor</h2> <br />
         <h2 id="H22">
           Algeria, Dubai, New York, Chicago —
-          <br />
-          A global story built on taste, culture, and excellence.
+          <br />A global story built on taste, culture, and excellence.
         </h2>
       </div>
     </div>

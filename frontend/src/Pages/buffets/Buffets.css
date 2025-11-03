@@ -1,0 +1,349 @@
+.buffet-page {
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+  /* background-color: #fff; */
+  overflow-x: hidden;
+}
+
+/* ========== HERO ========== */
+.buffet-hero {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.buffet-hero-img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.buffet-hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.buffet-hero-text h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.buffet-hero-text p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-top: 0.5rem;
+}
+
+/* ========== PHILOSOPHY ========== */
+.buffet-philosophy {
+  text-align: center;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 3vw, 2rem);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.buffet-philosophy h2 {
+font-family: "Georgia", serif;
+    font-weight: 00;
+    font-size: 200%;
+    letter-spacing: 0.22em;
+    color: #3a4f63;
+    margin: 6px 0 14px;
+    position: relative;
+    padding: 0 18px;
+    text-transform: uppercase;
+}
+
+.buffet-philosophy p {
+font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.8;
+    color: #333;
+    max-width: 560px;
+    margin: 8px auto 24px auto;
+    text-align: left;
+}
+
+/* ========== CAROUSEL ========== */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 85rem;
+  height: clamp(350px, 60vw, 500px);
+  margin: 2rem auto;
+  overflow: hidden;
+  padding: 0 clamp(40px, 8vw, 60px);
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 2vw, 20px);
+}
+
+.buffet-item {
+  position: absolute;
+  width: calc(33.333% - 15px);
+  height: 100%;
+  transition: all 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buffet-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Gauche */
+.buffet-item.left {
+  opacity: 1;
+  left: 0;
+  pointer-events: auto;
+}
+
+/* Centre */
+.buffet-item.center {
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: auto;
+  z-index: 2;
+}
+
+/* Droite */
+.buffet-item.right {
+  opacity: 1;
+  right: 0;
+  pointer-events: auto;
+}
+
+/* Caché */
+.buffet-item.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Overlay */
+.buffet-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  color: white;
+  padding: clamp(15px, 3vw, 20px);
+  border-radius: 0 0 10px 10px;
+  transition: all 0.3s ease;
+}
+
+.buffet-overlay h3 {
+  margin: 0 0 clamp(5px, 1.5vw, 10px) 0;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+}
+
+.buffet-overlay p {
+  margin: 0;
+  font-size: clamp(0.75rem, 1.8vw, 0.9rem);
+  line-height: 1.4;
+}
+
+/* Boutons navigation */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: #faf8f5;
+  /* color: white; */
+  border: none;
+  padding: clamp(10px, 2vw, 15px) clamp(12px, 2.5vw, 20px);
+  font-size: clamp(18px, 3vw, 24px);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.prev-btn {
+  left: clamp(5px, 1.5vw, 10px);
+}
+
+.next-btn {
+  right: clamp(5px, 1.5vw, 10px);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: #fbefde;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* ========== SIGNATURE ========== */
+.buffet-signature {
+  text-align: center;
+  margin: clamp(2rem, 5vw, 4rem) 0;
+  padding: 0 1rem;
+}
+
+.buffet-signature p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buffet-signature img {
+  width: clamp(120px, 20vw, 160px);
+  opacity: 0.9;
+}
+
+/* ========== RESPONSIVE - TABLETTES ========== */
+@media (max-width: 1024px) {
+  .carousel-container {
+    height: clamp(300px, 50vw, 450px);
+    padding: 0 0px;
+  }
+
+  .buffet-item {
+    width: calc(33.333% - 10px);
+  }
+  
+  .buffet-hero-img {
+    height: 60vh;
+  }
+}
+
+/* ========== RESPONSIVE - MOBILE ========== */
+@media (max-width: 768px) {
+  .buffet-hero-img {
+    height: 50vh;
+  }
+
+  .buffet-hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .buffet-hero-text p {
+    font-size: 1rem;
+  }
+
+  .carousel-container {
+    height: 400px;
+    padding: 0 0px;
+  }
+
+  .buffet-item {
+    width: 90%;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+  
+  .buffet-item.left,
+  .buffet-item.right {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
+
+  .buffet-item.center {
+    opacity: 1;
+    pointer-events: auto;
+    display: block;
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 8px 12px;
+    font-size: 20px;
+  }
+
+  .buffet-overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .buffet-overlay p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ========== RESPONSIVE - PETIT MOBILE ========== */
+@media (max-width: 480px) {
+  .buffet-hero-img {
+    height: 40vh;
+  }
+
+  .buffet-hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .buffet-hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-container {
+    height: 350px;
+    padding: 0 0px;
+  }
+
+  .buffet-item {
+    width: 95%;
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 6px 10px;
+    font-size: 18px;
+  }
+
+  .buffet-philosophy {
+    padding: 2rem 1rem;
+  }
+
+  .buffet-overlay {
+    padding: 12px;
+  }
+
+  .buffet-overlay h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .buffet-overlay p {
+    font-size: 0.75rem;
+  }
+
+  .buffet-signature img {
+    width: 100px;
+  }
+}
+
+/* ========== RESPONSIVE - GRAND ÉCRAN ========== */
+@media (min-width: 1400px) {
+  .carousel-container {
+    max-width: 1400px;
+  }
+
+  .buffet-item {
+    width: calc(33.333% - 20px);
+  }
+}
