@@ -6,14 +6,10 @@ import logo from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/che
 function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showReservation, setShowReservation] = useState(window.innerWidth > 480);
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
   const location = useLocation();
-
-  // Fonction vide - pas de changement de langue
-  const toggleLanguage = () => {
-    // Ne fait rien - fonctionnalité désactivée
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,6 +31,16 @@ function Header() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]);
+
+  // Détecter le redimensionnement de la fenêtre
+  useEffect(() => {
+    const handleResize = () => {
+      setShowReservation(window.innerWidth > 480);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
@@ -59,11 +65,13 @@ function Header() {
             </Link>
           </div>
 
-          <div className="header__language">
-             <Link to="/Réservation">
-            Réservation
-          </Link>
-          </div>
+          {showReservation && (
+            <div className={"header__language"}>
+              <Link to="/Réservation">
+                Reservation
+              </Link>
+            </div>
+          )}
         </div>
       </div>
 
@@ -74,7 +82,7 @@ function Header() {
         </button>
         <nav>
           <Link to="/" onClick={toggleSidebar}>
-            Accueil
+            Home
           </Link>
           <Link to="/Athmane_ouamara" onClick={toggleSidebar}>
             CHEF ATHMANE
@@ -83,10 +91,10 @@ function Header() {
             Contact
           </Link>
           <Link to="/Réservation" onClick={toggleSidebar}>
-            Réservation
+            Reservation
           </Link>
           <Link to="/#menu-section" onClick={toggleSidebar}>
-            Nos Menus
+            Our Menus
           </Link>
           <Link to="/Buffets" onClick={toggleSidebar}>
             Buffets

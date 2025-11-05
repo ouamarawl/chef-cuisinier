@@ -6,52 +6,58 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-section {
   flex: 1 1 220px;
   min-width: 220px;
   max-width: 280px;
+  box-sizing: border-box;
 }
 
-/* Style H3 selon vos spécifications */
+/* Style H3 */
 .footer-section h3 {
   font-family: "Georgia", serif;
   font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: 0.12em;
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
+  letter-spacing: 0.1em;
   color: white !important;
   margin: 0 0 20px 0;
-  position: relative;
   padding: 0;
   text-transform: uppercase;
   text-align: left;
   cursor: default !important;
-  line-height: 1.4;
+  line-height: 1.3;
   word-wrap: break-word;
+  hyphens: auto;
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .footer-section ul li {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
-/* Style pour les liens (comme des paragraphes) */
+/* Style pour les liens */
 .footer-section ul li a {
   font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.8;
+  font-size: clamp(0.8rem, 1.5vw, 0.95rem);
+  line-height: 1.6;
   color: #e5e7eb;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   transition: color 0.3s ease;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .footer-section ul li a:hover {
@@ -59,14 +65,15 @@
   text-decoration: underline;
 }
 
-/* Spécifique pour la dernière section (emails) */
+/* Spécifique pour la section des emails */
 .footer-section:last-child {
   min-width: 250px;
 }
 
 .footer-section:last-child ul li a {
-  font-size: 0.85rem;
+  font-size: clamp(0.7rem, 1.2vw, 0.85rem);
   word-break: break-all;
+  line-height: 1.4;
 }
 
 .footer-reservation {
@@ -76,64 +83,71 @@
   margin: 10px;
 }
 
-/* Tablette (1024px et moins) */
+/* Tablette (max 1024px) */
 @media (max-width: 1024px) {
   .footer {
     padding: 35px 20px;
-    gap: 30px;
-    justify-content: space-between;
+    gap: 25px;
   }
 
   .footer-section {
     flex: 1 1 calc(50% - 15px);
     min-width: calc(50% - 15px);
-    max-width: none;
+    max-width: calc(50% - 15px);
   }
 
   .footer-section:last-child {
     min-width: calc(50% - 15px);
+    max-width: calc(50% - 15px);
   }
 
   .footer-section h3 {
-    font-size: 1.15rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 18px;
-  }
-
-  .footer-section ul li a {
-    font-size: 0.9rem;
-  }
-
-  .footer-section:last-child ul li a {
-    font-size: 0.8rem;
+    font-size: clamp(0.85rem, 2.2vw, 1.15rem);
+    letter-spacing: 0.08em;
+    margin-bottom: 15px;
   }
 }
 
-/* Mobile (768px et moins) */
+/* Mobile paysage et tablette portrait (max 900px) */
+@media (max-width: 900px) {
+  .footer {
+    gap: 20px;
+    padding: 30px 15px;
+  }
+
+  .footer-section h3 {
+    font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+    letter-spacing: 0.06em;
+  }
+}
+
+/* Mobile (max 768px) */
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     padding: 30px 20px;
-    gap: 35px;
+    gap: 30px;
   }
 
   .footer-section {
     flex: 1 1 100%;
     min-width: 100%;
-    max-width: none;
+    max-width: 100%;
+    width: 100%;
     text-align: center;
   }
 
   .footer-section:last-child {
     min-width: 100%;
+    max-width: 100%;
   }
 
   .footer-section h3 {
-    font-size: 1.1rem;
-    letter-spacing: 0.08em;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    letter-spacing: 0.05em;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
 
   .footer-section ul {
@@ -141,63 +155,124 @@
   }
 
   .footer-section ul li {
-    margin-bottom: 10px;
-  }
-
-  .footer-section ul li a {
-    font-size: 0.9rem;
+    margin-bottom: 8px;
     text-align: center;
   }
 
-  .footer-section:last-child ul li a {
-    font-size: 0.85rem;
+  .footer-section ul li a {
+    text-align: center;
+    display: inline-block;
   }
 }
 
-/* Très petit écran (480px et moins) */
-@media (max-width: 480px) {
+/* Petit mobile (max 576px) */
+@media (max-width: 576px) {
   .footer {
     padding: 25px 15px;
-    gap: 30px;
+    gap: 25px;
   }
 
   .footer-section h3 {
-    font-size: 1rem;
-    letter-spacing: 0.06em;
-    margin-bottom: 14px;
+    font-size: clamp(0.85rem, 3.5vw, 1rem);
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+    line-height: 1.2;
   }
 
   .footer-section ul li {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   .footer-section ul li a {
-    font-size: 0.85rem;
-    line-height: 1.6;
+    font-size: clamp(0.75rem, 2.8vw, 0.85rem);
+    line-height: 1.5;
   }
 
   .footer-section:last-child ul li a {
-    font-size: 0.75rem;
-    line-height: 1.5;
+    font-size: clamp(0.65rem, 2.5vw, 0.75rem);
+    line-height: 1.4;
   }
 }
 
-/* Extra petit écran (360px et moins) */
-@media (max-width: 360px) {
+/* Très petit mobile (max 480px) */
+@media (max-width: 480px) {
   .footer {
     padding: 20px 12px;
+    gap: 22px;
   }
 
   .footer-section h3 {
-    font-size: 0.9rem;
-    letter-spacing: 0.04em;
+    font-size: clamp(0.8rem, 4vw, 0.95rem);
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    padding: 0 5px;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 5px;
   }
 
   .footer-section ul li a {
-    font-size: 0.8rem;
+    font-size: clamp(0.7rem, 3.2vw, 0.8rem);
+    line-height: 1.4;
+    padding: 2px 0;
   }
 
   .footer-section:last-child ul li a {
-    font-size: 0.7rem;
+    font-size: clamp(0.6rem, 2.8vw, 0.7rem);
+    line-height: 1.3;
+  }
+}
+
+/* Extra petit (max 360px) */
+@media (max-width: 360px) {
+  .footer {
+    padding: 18px 10px;
+    gap: 20px;
+  }
+
+  .footer-section h3 {
+    font-size: clamp(0.75rem, 4.5vw, 0.9rem);
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    padding: 0 3px;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 4px;
+  }
+
+  .footer-section ul li a {
+    font-size: clamp(0.65rem, 3.5vw, 0.75rem);
+    line-height: 1.3;
+  }
+
+  .footer-section:last-child ul li a {
+    font-size: clamp(0.55rem, 3vw, 0.65rem);
+    line-height: 1.2;
+  }
+}
+
+/* iPhone SE et similaires (max 320px) */
+@media (max-width: 320px) {
+  .footer {
+    padding: 15px 8px;
+    gap: 18px;
+  }
+
+  .footer-section h3 {
+    font-size: 0.75rem;
+    letter-spacing: 0.015em;
+    margin-bottom: 7px;
+  }
+
+  .footer-section ul li a {
+    font-size: 0.65rem;
+    line-height: 1.2;
+  }
+
+  .footer-section:last-child ul li a {
+    font-size: 0.55rem;
+    line-height: 1.1;
   }
 }

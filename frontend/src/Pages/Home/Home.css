@@ -469,6 +469,29 @@ position: absolute;
     margin: 12px 0;
   }
 }
+
+@media (max-width:480px) {
+  .contact-text p {
+   font-size: 54%;
+}
+}
+@media (max-width:380px) {
+  .contact-text p {
+   font-size: 6px;
+   margin: 1px 1px 1px 1px;
+}
+.contact-text h1 {
+  font-size: 120%;
+  margin: 7px 1px 12px 1px;
+}
+  #suivez_nous {
+    font-size: 90%;
+    text-align: center;
+    margin: 12px 0;
+  }
+}
+  
+
 #feuille_d,
 #feuille_vert_droite,
 #feuille_noir_gauche,
