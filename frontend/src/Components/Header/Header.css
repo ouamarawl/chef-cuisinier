@@ -174,7 +174,8 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-            margin-right: 10%;
+            margin-right: 0%;
+            margin-left: 0%;
 
   }
   .logo {
