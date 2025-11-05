@@ -78,6 +78,32 @@ import plat77 from "./assets/images_plats/plat77.jpg";
 import plat78 from "./assets/images_plats/plat78.jpg";
 import plat79 from "./assets/images_plats/plat79.DNG";
 import plat80 from "./assets/images_plats/plat80.jpg";
+import plat81 from "./assets/images_plats/plat81.JPG";
+import plat82 from "./assets/images_plats/plat82.JPG";
+import plat83 from "./assets/images_plats/plat83.JPG";
+import plat84 from "./assets/images_plats/plat84.JPG";
+import plat85 from "./assets/images_plats/plat85.JPG";
+import plat86 from "./assets/images_plats/plat86.JPG";
+import plat87 from "./assets/images_plats/plat87.JPG";
+import plat88 from "./assets/images_plats/plat88.JPG";
+import plat89 from "./assets/images_plats/plat89.JPG";
+import plat90 from "./assets/images_plats/plat90.JPG";
+import plat91 from "./assets/images_plats/plat91.JPG";
+import plat92 from "./assets/images_plats/plat92.JPG";
+import plat93 from "./assets/images_plats/plat93.JPG";
+import plat94 from "./assets/images_plats/plat94.JPG";
+import plat95 from "./assets/images_plats/plat95.JPG";
+import plat96 from "./assets/images_plats/plat96.JPG";
+import plat97 from "./assets/images_plats/plat97.JPG";
+// import plat98 from "./assets/images_plats/plat98.JPG"; n'esxiste pas
+import plat99 from "./assets/images_plats/plat99.JPG";
+import plat100 from "./assets/images_plats/plat100.JPG";
+import plat101 from "./assets/images_plats/plat101.JPG";
+import plat102 from "./assets/images_plats/plat102.JPG";
+import plat103 from "./assets/images_plats/plat103.JPG";
+import plat104 from "./assets/images_plats/plat104.JPG";
+
+
 
 const plats = [
 //   { image: plat1, title: "Plat 1", description: "Dish 1" },
@@ -159,6 +185,30 @@ const plats = [
 { image: plat78, title: "Plat 78", description: "Dish 78" },
 { image: plat79, title: "Plat 79", description: "Dish 79" },
 { image: plat80, title: "Plat 80", description: "Dish 80" },
+{ image: plat81, title: "Plat 81", description: "Dish 81" },
+{ image: plat82, title: "Plat 82", description: "Dish 82" },
+{ image: plat83, title: "Plat 83", description: "Dish 83" },
+{ image: plat84, title: "Plat 84", description: "Dish 84" },
+{ image: plat85, title: "Plat 85", description: "Dish 85" },
+{ image: plat86, title: "Plat 86", description: "Dish 86" },
+{ image: plat87, title: "Plat 87", description: "Dish 87" },
+{ image: plat88, title: "Plat 88", description: "Dish 88" },
+{ image: plat89, title: "Plat 89", description: "Dish 89" },
+{ image: plat90, title: "Plat 90", description: "Dish 90" },
+{ image: plat91, title: "Plat 91", description: "Dish 91" },
+{ image: plat92, title: "Plat 92", description: "Dish 92" },
+{ image: plat93, title: "Plat 93", description: "Dish 93" },
+{ image: plat94, title: "Plat 94", description: "Dish 94" },
+{ image: plat95, title: "Plat 95", description: "Dish 95" },
+{ image: plat96, title: "Plat 96", description: "Dish 96" },
+{ image: plat97, title: "Plat 97", description: "Dish 97" },
+// { image: plat98, title: "Plat 98", description: "Dish 98" },
+{ image: plat99, title: "Plat 99", description: "Dish 99" },
+{ image: plat100, title: "Plat 100", description: "Dish 100" },
+{ image: plat101, title: "Plat 101", description: "Dish 101" },
+{ image: plat102, title: "Plat 102", description: "Dish 102" },
+{ image: plat103, title: "Plat 103", description: "Dish 103" },
+{ image: plat104, title: "Plat 104", description: "Dish 104" }
 
 ];
 

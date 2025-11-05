@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
+import logo from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/new_logo2.png";
 
 function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -54,12 +55,14 @@ function Header() {
 
           <div className="header__logo">
             <Link to="/" className="header__logo">
-              <img src="/logo.svg" alt="Logo" />
+              <img src={logo} alt="Logo" />
             </Link>
           </div>
 
-          <div className="header__language" onClick={toggleLanguage}>
-            <p>FR / EN</p>
+          <div className="header__language">
+             <Link to="/Réservation">
+            Réservation
+          </Link>
           </div>
         </div>
       </div>

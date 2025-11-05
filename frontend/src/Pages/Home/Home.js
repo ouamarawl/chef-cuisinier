@@ -5,7 +5,7 @@ import image1 from "../../assets/image1.jpg";
 import image2 from "../../assets/image2.jpg";
 import image3 from "../../assets/image3.jpg";
 import image4 from "../../assets/image4.jpg";
-import logo from "../../assets/logo.svg";
+import logo from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/new_logo.png";
 import image5 from "../../assets/images_athmen/image5.JPG";
 import image6 from "../../assets/image6.jpg";
 import image7 from "../../assets/images_plats/plat7.jpg";
@@ -14,17 +14,16 @@ import image9 from "../../assets/images_athmen/image9.JPG";
 import feuille_d from "../../assets/feuille_d.png";
 import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
 import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
-import image_home3 from "../../assets/images_plats/image-home3.jpeg";
 import plat46 from "../../assets/images_plats/plat46.jpg";
 import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
+ import data_plat from "../../data_plat";
 const images = [
-  // require("../../assets/image1.jpg"),
-  // require("../../assets/image2.jpg"),
-  // require("../../assets/image3.jpg"),
-  // require("../../assets/image4.jpg"),
-  require("../../assets/images_plats/image-home1.jpeg"),
-  require("../../assets/images_plats/image-home2.jpeg"),
-  require("../../assets/images_plats/image-home3.jpeg"),
+  require("../../assets/images_plats/plat87.JPG"),
+  require("../../assets/images_plats/plat92.JPG"),
+  require("../../assets/images_plats/plat97.JPG"),
+  // require("../../assets/images_plats/plat96.JPG"),
+  // require("../../assets/images_plats/plat85.JPG"),
+
 ]
 
 function Home() {

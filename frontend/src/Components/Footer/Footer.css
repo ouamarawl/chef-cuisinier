@@ -1,54 +1,72 @@
 .footer {
   background-color: #3A4F63;
-  padding: 20px;
+  padding: 40px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
 .footer-section {
-  flex: 1;
-  margin:  2% 2% 2% 2%;
-  min-width: 200px;
-  text-align: center;
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 280px;
 }
 
+/* Style H3 selon vos spécifications */
 .footer-section h3 {
-  color: white;
-  margin-bottom: 10px;
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.12em;
+  color: white !important;
+  margin: 0 0 20px 0;
+  position: relative;
+  padding: 0;
+  text-transform: uppercase;
   text-align: left;
-  /*  */
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: white !important;
-    cursor: default !important;
+  cursor: default !important;
+  line-height: 1.4;
+  word-wrap: break-word;
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
-  text-align: left;
+  margin: 0;
 }
 
 .footer-section ul li {
-  margin-bottom: 5px;
-  text-align: left;
+  margin-bottom: 12px;
 }
 
+/* Style pour les liens (comme des paragraphes) */
 .footer-section ul li a {
-  color: white;
+  font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #e5e7eb;
   text-decoration: none;
-  text-align: left;
-  font-size: 20px;
-}
-.footer-section li,.footer-section a {
-   margin-top:5%;
+  display: block;
+  transition: color 0.3s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .footer-section ul li a:hover {
+  color: white;
   text-decoration: underline;
+}
+
+/* Spécifique pour la dernière section (emails) */
+.footer-section:last-child {
+  min-width: 250px;
+}
+
+.footer-section:last-child ul li a {
+  font-size: 0.85rem;
+  word-break: break-all;
 }
 
 .footer-reservation {
@@ -58,57 +76,128 @@
   margin: 10px;
 }
 
-
-
-/* Tablette */
+/* Tablette (1024px et moins) */
 @media (max-width: 1024px) {
+  .footer {
+    padding: 35px 20px;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
   .footer-section {
-    min-width: 40%; /* 2 colonnes */
+    flex: 1 1 calc(50% - 15px);
+    min-width: calc(50% - 15px);
+    max-width: none;
+  }
+
+  .footer-section:last-child {
+    min-width: calc(50% - 15px);
   }
 
   .footer-section h3 {
-    font-size: 2.5vw;
+    font-size: 1.15rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 18px;
   }
 
   .footer-section ul li a {
-    font-size: 2vw;
+    font-size: 0.9rem;
+  }
+
+  .footer-section:last-child ul li a {
+    font-size: 0.8rem;
   }
 }
 
-/* Mobile */
+/* Mobile (768px et moins) */
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: stretch;
+    padding: 30px 20px;
+    gap: 35px;
   }
 
   .footer-section {
-    min-width: 80%; /* pleine largeur */
-    margin: 5% 0;
+    flex: 1 1 100%;
+    min-width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+
+  .footer-section:last-child {
+    min-width: 100%;
   }
 
   .footer-section h3 {
-    font-size: 3.5vw;
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .footer-section ul {
     text-align: center;
   }
 
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+
   .footer-section ul li a {
-    font-size: 3vw;
+    font-size: 0.9rem;
     text-align: center;
+  }
+
+  .footer-section:last-child ul li a {
+    font-size: 0.85rem;
   }
 }
 
-/* Très petit écran */
+/* Très petit écran (480px et moins) */
 @media (max-width: 480px) {
-  .footer-section {
-    min-width: 100%;
-    margin: 8px 0;
+  .footer {
+    padding: 25px 15px;
+    gap: 30px;
   }
+
   .footer-section h3 {
-    font-size: 5vw;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    margin-bottom: 14px;
   }
+
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+
   .footer-section ul li a {
-    font-size: 4vw;
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .footer-section:last-child ul li a {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+/* Extra petit écran (360px et moins) */
+@media (max-width: 360px) {
+  .footer {
+    padding: 20px 12px;
+  }
+
+  .footer-section h3 {
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+  }
+
+  .footer-section ul li a {
+    font-size: 0.8rem;
+  }
+
+  .footer-section:last-child ul li a {
+    font-size: 0.7rem;
   }
 }

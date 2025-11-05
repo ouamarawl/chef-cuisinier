@@ -13,6 +13,7 @@ import image14 from "../../assets/image14.jpg";
 import image15 from "../../assets/image15.jpg";
 import image9 from "../../assets/image9.jpg";
 import { useNavigate } from "react-router-dom";
+import athmane_2 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_2.jpg";
 
 function Larriere_cuisine() {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ function Larriere_cuisine() {
 
       <section className="section-oeuvres">
         <img src={image15} id="image15" />
-        <img src={image9} id="image9" />
+        <img src={athmane_2} id="image9" />
         <img src={image14} id="image14" />
         <img src={image12} id="image12" />
         <img src={image13} id="image13" />
@@ -80,7 +81,7 @@ function Larriere_cuisine() {
           </div>
           <div class="ligne2"></div>
         </div>
-        <img src={image1} />
+        <img src={athmane_2} />
       </section>
     </div>
   );

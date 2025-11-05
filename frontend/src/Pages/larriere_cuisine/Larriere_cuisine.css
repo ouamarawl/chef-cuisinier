@@ -63,12 +63,12 @@
   background-color: #3a4f63;
 }
 .A_decouvrir img {
-  position: absolute;
-  bottom: 18vh;
-  right: 8vw;
-  width: 34%;
-  height: 55%;
-  z-index: 9999;
+    position: absolute;
+    bottom: 15vh;
+    right: 14vw;
+    width: 23%;
+    height: 65%;
+    z-index: 9999;
 }
 .A_decouvrir-text-content {
   display: flex;

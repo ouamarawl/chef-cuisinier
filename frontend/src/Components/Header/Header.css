@@ -28,6 +28,7 @@
 .header.scrolled {
   background: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
 }
 
 .header__logo img {
@@ -61,6 +62,20 @@
   border: none;
   background: none;
 }
+
+/* button de reservation */
+.header__language {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  background: none;
+  font-size: 1.6rem;
+}
+.header__language a {
+  text-decoration: none;
+  color: black;
+}
+
 
 .hamburger span {
   display: block;

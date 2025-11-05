@@ -10,6 +10,7 @@ import buffet6 from "../../assets/Buffets/plat76.jpg";
 import buffet7 from "../../assets/Buffets/plat77.jpg";
 import buffet8 from "../../assets/Buffets/plat78.jpg";
 import buffet9 from "../../assets/Buffets/plat79.DNG";
+ import data_plat from "../../data_plat";
 
 import signature_athmane from "../../assets/signature_athmane.jpg";
 

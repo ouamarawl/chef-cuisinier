@@ -14,6 +14,7 @@ import Vegetal from "../../assets/images_plats/Vegetal.jpg";
 import plats from "../../data_plat";
 import athman15 from "../../assets/images_athmen/athmane15.PNG";
 import signature_athmane from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/signature_athmane.jpg";
+
 function Alain_Passard() {
   const location = useLocation();
 

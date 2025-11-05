@@ -191,7 +191,7 @@ font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
 
 .prev-btn:hover,
 .next-btn:hover {
-  background: #fbefde;
+  background: transparent;
   transform: translateY(-50%) scale(1.1);
 }
 
