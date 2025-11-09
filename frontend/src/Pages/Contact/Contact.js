@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.css";
 import feuille_d from "../../assets/feuille_d.png";
 import feille from "../../assets/feuille.png";
-import image11 from "../../assets/image11.jpg";
+
 import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
 
 function Contact() {

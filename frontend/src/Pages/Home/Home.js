@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./Home.css";
-import image1 from "../../assets/image1.jpg";
-import image2 from "../../assets/image2.jpg";
-import image3 from "../../assets/image3.jpg";
-import image4 from "../../assets/image4.jpg";
-import logo from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/new_logo.png";
+
 import image5 from "../../assets/images_athmen/image5.JPG";
 import image6 from "../../assets/image6.jpg";
 import image7 from "../../assets/images_plats/plat7.jpg";
@@ -17,6 +13,7 @@ import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import plat46 from "../../assets/images_plats/plat46.jpg";
 import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
  import data_plat from "../../data_plat";
+import logo from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/logo.png"
 const images = [
   require("../../assets/images_plats/plat87.JPG"),
   require("../../assets/images_plats/plat92.JPG"),
@@ -34,7 +31,7 @@ function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 1500);
     return () => clearInterval(timer);
   }, []);
 
@@ -134,9 +131,9 @@ function Home() {
             plate embodies harmony between fire, freshness, and emotion.
           </p>
           <div className="menu-links">
-            <a href="/carte">THE MENU</a> <br />
-            <a href="/menu-dejeuner">LUNCH MENU</a> <br />
-            <a href="/menu">FULL MENU</a>
+            <a href="/Menue">THE MENU</a> <br />
+            {/* <a href="/menu-dejeuner">LUNCH MENU</a> <br />
+            <a href="/menu">FULL MENU</a> */}
           </div>
         </div>
       </section>

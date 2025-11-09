@@ -1,17 +1,11 @@
 import React from "react";
 import "./Larriere_cuisine.css";
-import signature from "../../assets/signature.png";
-import image1 from "../../assets/image1.jpg";
-import image2 from "../../assets/image2.jpg";
-import image3 from "../../assets/image3.jpg";
-import image4 from "../../assets/image4.jpg";
 import feille from "../../assets/feuille.png";
-import image8 from "../../assets/image8.jpg";
-import image12 from "../../assets/image12.jpg";
-import image13 from "../../assets/image13.jpg";
-import image14 from "../../assets/image14.jpg";
-import image15 from "../../assets/image15.jpg";
-import image9 from "../../assets/image9.jpg";
+import plat85 from "../../assets/images_plats/plat85.JPG";
+import plat87 from "../../assets/images_plats/plat87.JPG";
+import plat91 from "../../assets/images_plats/plat91.JPG";
+import plat100 from "../../assets/images_plats/plat100.JPG";
+import signature from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/signature_athmane.png";
 import { useNavigate } from "react-router-dom";
 import athmane_2 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_2.jpg";
 
@@ -38,11 +32,11 @@ function Larriere_cuisine() {
       />
 
       <section className="section-oeuvres">
-        <img src={image15} id="image15" />
+        <img src={plat85} id="image15" />
         <img src={athmane_2} id="image9" />
-        <img src={image14} id="image14" />
-        <img src={image12} id="image12" />
-        <img src={image13} id="image13" />
+        <img src={plat87} id="image14" />
+        <img src={plat91} id="image12" />
+        <img src={plat100} id="image13" />
 
         <div className="oeuvres-center">
           <h3>THE CHEF’S WORKS</h3>

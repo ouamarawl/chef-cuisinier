@@ -102,7 +102,11 @@ import plat101 from "./assets/images_plats/plat101.JPG";
 import plat102 from "./assets/images_plats/plat102.JPG";
 import plat103 from "./assets/images_plats/plat103.JPG";
 import plat104 from "./assets/images_plats/plat104.JPG";
-
+import plat105 from "./assets/images_plats/plat105.JPG";
+import plat106 from "./assets/images_plats/plat106.JPG";
+import plat107 from "./assets/images_plats/plat107.JPG";
+import plat108 from "./assets/images_plats/plat108.JPG";
+import plat109 from "./assets/images_plats/plat109.JPG";
 
 
 const plats = [
@@ -208,7 +212,12 @@ const plats = [
 { image: plat101, title: "Plat 101", description: "Dish 101" },
 { image: plat102, title: "Plat 102", description: "Dish 102" },
 { image: plat103, title: "Plat 103", description: "Dish 103" },
-{ image: plat104, title: "Plat 104", description: "Dish 104" }
+{ image: plat104, title: "Plat 104", description: "Dish 104" },
+{ image: plat105, title: "Plat 105", description: "Dish 105" },
+{ image: plat106, title: "Plat 106", description: "Dish 106" },
+{ image: plat107, title: "Plat 107", description: "Dish 107" },
+{ image: plat108, title: "Plat 108", description: "Dish 108" },
+{ image: plat109, title: "Plat 109", description: "Dish 109" }
 
 ];
 

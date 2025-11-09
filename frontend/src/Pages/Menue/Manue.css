@@ -1,0 +1,335 @@
+.Menue {
+  text-align: center;
+}
+.Menue-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.Menue-item {
+  /* border: 1px solid #ccc; */
+
+  padding: 10px;
+  max-width: 20rem;
+  /* box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); */
+  padding: auto;
+}
+.Menue-item img {
+  width: 100%;
+  height: 50%;
+}
+.Menue-item p {
+  font-family: "Montserrat", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.8;
+  color: #4b5563;
+  max-width: 560px;
+  margin: 8px auto 24px auto;
+}
+.Menue-item h1 {
+  font-family: "Georgia", serif;
+  font-weight: 00;
+  font-size: 100%;
+  letter-spacing: 0.22em;
+  color: #3a4f63;
+  margin: 6px 0 14px;
+  position: relative;
+  padding: 0 18px;
+  text-transform: uppercase;
+}
+
+/* ----- En-tête du menu ----- */
+.menue-hero {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.menue-hero-overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.menue-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.menue-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #f3f3f3;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ----- Pied de page du menu ----- */
+.menue-footer {
+  margin-top: 60px;
+  padding: 60px 20px;
+  background-color: #f8f7f4;
+  text-align: center;
+}
+
+.menue-footer h2 {
+  font-family: "Playfair Display", serif;
+  color: #3a4f63;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.menue-footer p {
+  font-family: "Montserrat", sans-serif;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+
+/* ===== SECTION À PROPOS ===== */
+.menue-about {
+  max-width: 900px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.menue-about h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #3a4f63;
+  margin-bottom: 15px;
+}
+.menue-about p {
+  font-family: "Montserrat", sans-serif;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+/* ===== CATÉGORIES ===== */
+.menue-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: #f8f7f4;
+  padding: 60px 20px;
+}
+.category {
+  max-width: 300px;
+  text-align: center;
+}
+.category h3 {
+  font-family: "Georgia", serif;
+  color: #3a4f63;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.category p {
+  font-family: "Montserrat", sans-serif;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* ===== ANIMATION DES PLATS ===== */
+.Menue-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-in-out;
+}
+.Menue-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== FOOTER ===== */
+.menue-footer {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f0efec;
+  margin-top: 80px;
+}
+.menue-footer h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.7rem;
+  color: #3a4f63;
+}
+.menue-footer p {
+  font-family: "Montserrat", sans-serif;
+  color: #4b5563;
+  margin-top: 10px;
+}
+.menue-signature {
+  margin-top: 30px;
+  width: 160px;
+  opacity: 0.8;
+}
+
+
+
+/* ============================= */
+/* 🌐 RESPONSIVE DESIGN */
+/* ============================= */
+
+/* --- Écrans moyens (tablettes) --- */
+@media (max-width: 992px) {
+  .menue-hero {
+    height: 50vh;
+  }
+
+  .menue-title {
+    font-size: 2rem;
+  }
+
+  .menue-subtitle {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+
+  .menue-about {
+    margin: 60px auto;
+    padding: 0 15px;
+  }
+
+  .menue-categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .category {
+    max-width: 80%;
+  }
+
+  .Menue-container {
+    gap: 15px;
+  }
+
+  .Menue-item {
+    max-width: 45%;
+  }
+}
+
+/* --- Écrans petits (mobiles) --- */
+@media (max-width: 600px) {
+  .menue-hero {
+    height: 45vh;
+    padding: 20px;
+  }
+
+  .menue-hero-overlay {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .menue-title {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  .menue-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .menue-about {
+    margin: 50px auto;
+    padding: 0 10px;
+  }
+
+  .menue-about h2 {
+    font-size: 1.5rem;
+  }
+
+  .menue-about p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .menue-categories {
+    padding: 40px 10px;
+  }
+
+  .category {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .Menue-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .Menue-item {
+    max-width: 90%;
+  }
+
+  .Menue-item img {
+    /* height: auto;
+    border-radius: 10px; */
+  }
+
+  .Menue-item h1 {
+    font-size: 1rem;
+  }
+
+  .Menue-item p {
+    font-size: 0.9rem;
+  }
+
+  .menue-footer {
+    padding: 50px 10px;
+  }
+
+  .menue-footer h2 {
+    font-size: 1.3rem;
+  }
+
+  .menue-footer p {
+    font-size: 0.9rem;
+  }
+
+  .menue-signature {
+    width: 130px;
+  }
+}
+
+/* --- Très petits écrans (téléphones anciens, <400px) --- */
+@media (max-width: 400px) {
+  .menue-title {
+    font-size: 1.3rem;
+  }
+
+  .menue-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .Menue-item h1 {
+    font-size: 0.9rem;
+  }
+
+  .Menue-item p {
+    font-size: 0.85rem;
+  }
+
+  .menue-footer h2 {
+    font-size: 1.1rem;
+  }
+
+  .menue-footer p {
+    font-size: 0.85rem;
+  }
+}

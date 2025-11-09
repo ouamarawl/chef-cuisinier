@@ -1,6 +1,5 @@
 import "./Alain_Passard.css";
 import React, { useState, useEffect } from "react";
-import signature from "../../assets/signature.png";
 import "@fontsource/montserrat/200.css";
 import athmane14 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane14.png";
 // import image5 from "../../assets/image5.jpg";
@@ -12,9 +11,14 @@ import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import feille from "../../assets/feuille.png";
 import Vegetal from "../../assets/images_plats/Vegetal.jpg";
 import plats from "../../data_plat";
-import athman15 from "../../assets/images_athmen/athmane15.PNG";
-import signature_athmane from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/signature_athmane.jpg";
-
+import athman15 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane15.PNG";
+import signature_athmane from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/signature_athmane.png";
+import athmane_6 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_6.jpg";
+import athmane_3 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_3.jpg";
+import athmane_4 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_4.jpg";
+import athmane_5 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_5.jpg";
+import athmane_10 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_10.jpg";
+import athmane_11 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_11.jpg";
 function Alain_Passard() {
   const location = useLocation();
 
@@ -143,6 +147,112 @@ function Alain_Passard() {
           </p>
         </div>
       </section>
+
+ {/* 🔪 Skills & Expertise — Section 1 */}
+<section className="presentation-section-A">
+  <img
+    src={athmane_3}
+    alt="Chef Athmane — Art Culinaire"
+    className="chef-image"
+  />
+  <div className="presentation-text">
+    <h3>🎨 Art Culinaire & Innovation</h3>
+    <p>
+      Chef Athmane allie simplicité et sophistication dans chacun de ses plats. 
+      Sa cuisine célèbre des saveurs franches et audacieuses, sublimées par une technique précise 
+      et une inspiration puisée de l’Algérie aux grandes cuisines de Dubaï, New York et Chicago.
+    </p>
+  </div>
+</section>
+<img src={feuille_vert_droite} id="feuille_vert_droite" />
+
+{/* 🔪 Skills & Expertise — Section 2 */}
+<section className="presentation-section-A reverse">
+  <img
+    src={athmane_4}
+    alt="Chef Athmane — Expérience Gastronomique"
+    className="chef-image"
+  />
+  <div className="presentation-text">
+    <h3>🍽️ Expérience Gastronomique de Luxe</h3>
+    <p>
+      Fort de plusieurs années dans des hôtels cinq étoiles et des restaurants d’inspiration Michelin, 
+      Chef Athmane offre des expériences culinaires mémorables, où chaque service raconte une histoire 
+      d’élégance, d’émotion et d’excellence.
+    </p>
+  </div>
+</section>
+<img src={feuille_noir_gauche} id="feuille_noir_gauche" />
+
+{/* 🔪 Skills & Expertise — Section 3 */}
+<section className="presentation-section-A">
+  <img
+    src={athmane_5}
+    alt="Chef Athmane — Leadership"
+    className="chef-image"
+  />
+  <div className="presentation-text">
+    <h3>👨‍🍳 Leadership & Mentorat</h3>
+    <p>
+      En tant que chef exécutif expérimenté, il guide son équipe avec discipline et créativité, 
+      tout en maintenant les plus hauts standards professionnels en cuisine.
+    </p>
+  </div>
+</section>
+<img src={feuille_d} id="feuille_d_2" />
+
+{/* 🔪 Skills & Expertise — Section 4 */}
+<section className="presentation-section-A reverse">
+  <img
+    src={athmane_6}
+    alt="Chef Athmane — Maîtrise des Ingrédients"
+    className="chef-image"
+  />
+  <div className="presentation-text">
+    <h3>🥗 Maîtrise des Ingrédients & Création de Menus</h3>
+    <p>
+      De la viande et des fruits de mer de qualité aux herbes et épices délicates, sa connaissance approfondie 
+      des ingrédients lui permet de créer des menus de saison mettant en avant fraîcheur, finesse et saveur.
+    </p>
+  </div>
+</section>
+<img src={feuille_vert_droite} id="feuille_vert_droite" />
+
+{/* 🔪 Skills & Expertise — Section 5 */}
+<section className="presentation-section-A">
+  <img
+    src={athmane_10}
+    alt="Chef Athmane — Création Visuelle"
+    className="chef-image"
+  />
+  <div className="presentation-text">
+    <h3>📸 Création Visuelle & Médiatisation Culinaire</h3>
+    <p>
+      Chef Athmane combine son art culinaire avec la création de contenu moderne, 
+      capturant la beauté de ses plats par la photographie et la vidéo, et partageant sa passion avec le monde.
+    </p>
+  </div>
+</section>
+<img src={feuille_noir_gauche} id="feuille_noir_gauche" />
+
+{/* 🔪 Skills & Expertise — Section 6 */}
+<section className="presentation-section-A reverse">
+  <img
+    src={athmane_11}
+    alt="Chef Athmane — Services Privés"
+    className="chef-image"
+  />
+  <div className="presentation-text">
+    <h3>🌟 Services Privés & pour Célébrités</h3>
+    <p>
+      Réputé pour sa discrétion et son élégance, il conçoit des expériences culinaires exclusives 
+      pour des clients de prestige, où chaque repas est parfaitement personnalisé.
+    </p>
+  </div>
+</section>
+<img src={feuille_d} id="feuille_d_2" />
+
+
 
       {/* block */}
       <div className="last-title">

@@ -9,6 +9,7 @@ import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 import ScrollToTop from "./ScrollToTop";
 import Buffets from "./Pages/buffets/Buffets";
+import Menue from "./Pages/Menue/Menue";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Larriere_cuisinet" element={<Larriere_cuisine />} />
         <Route path="/Buffets" element={<Buffets />} />
+         <Route path="/Menue" element={<Menue />} />
       </Routes>
       <Footer />
     </Router>

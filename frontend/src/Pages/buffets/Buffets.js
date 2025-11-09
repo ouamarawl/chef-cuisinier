@@ -12,7 +12,7 @@ import buffet8 from "../../assets/Buffets/plat78.jpg";
 import buffet9 from "../../assets/Buffets/plat79.DNG";
  import data_plat from "../../data_plat";
 
-import signature_athmane from "../../assets/signature_athmane.jpg";
+import signature_athmane from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/signature_athmane.png";
 
 const buffets = [
   {
