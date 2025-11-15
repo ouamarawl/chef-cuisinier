@@ -1,18 +1,35 @@
 import React, { useState } from "react";
 import "./Buffets.css";
 import buffetHero from "../../assets/Buffets/plat74.PNG";
-import buffet1 from "../../assets/Buffets/plat70.PNG";
-import buffet2 from "../../assets/Buffets/plat71.PNG";
-import buffet3 from "../../assets/Buffets/plat72.PNG";
-import buffet4 from "../../assets/Buffets/plat73.PNG";
-import buffet5 from "../../assets/Buffets/plat75.DNG";
-import buffet6 from "../../assets/Buffets/plat76.jpg";
-import buffet7 from "../../assets/Buffets/plat77.jpg";
-import buffet8 from "../../assets/Buffets/plat78.jpg";
-import buffet9 from "../../assets/Buffets/plat79.DNG";
- import data_plat from "../../data_plat";
+import buffet1 from "../../assets/Buffets/buffet-1.jpg";
+import buffet2 from "../../assets/Buffets/buffet-2.jpg";
+import buffet3 from "../../assets/Buffets/buffet-3.jpg";
+import buffet4 from "../../assets/Buffets/buffet-4.jpg";
+import buffet5 from "../../assets/Buffets/buffet-5.jpg";
+import buffet6 from "../../assets/Buffets/buffet-6.jpg";
+import buffet7 from "../../assets/Buffets/buffet-7.jpg";
+import buffet8 from "../../assets/Buffets/buffet-8.jpg";
+import buffet9 from "../../assets/Buffets/buffet-9.jpg";
+import buffet10 from "../../assets/Buffets/buffet-10.jpg";
+import buffet11 from "../../assets/Buffets/buffet-11.jpg";
+import buffet12 from "../../assets/Buffets/buffet-12.jpg";
+import buffet13 from "../../assets/Buffets/buffet-13.jpg";
+import buffet14 from "../../assets/Buffets/buffet-14.jpg";
+import buffet15 from "../../assets/Buffets/buffet-15.jpg";
+import buffet16 from "../../assets/Buffets/buffet-16.jpg";
+import buffet17 from "../../assets/Buffets/buffet-17.jpg";
+import buffet18 from "../../assets/Buffets/buffet-18.jpg";
+import buffet19 from "../../assets/Buffets/buffet-19.jpg";
+
+import data_plat from "../../data_plat";
 
 import signature_athmane from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/signature_athmane.png";
+import buffetVideo1 from "../../assets/video/video-buffet-1.MP4";
+import buffetVideo2 from "../../assets/video/video-buffet-2.MOV";
+import buffetVideo3 from "../../assets/video/video-buffet-3.MOV";
+import buffetVideo4 from "../../assets/video/video-buffet-4.MOV";
+import buffetVideo5 from "../../assets/video/video-buffet-5.MOV";
+import buffetVideo6 from "../../assets/video/video-buffet-6.MOV";
 
 const buffets = [
   {
@@ -111,6 +128,47 @@ const Buffet = () => {
         </p>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section className="buffet-videos">
+        <h2>Découvrez Nos Buffets en Vidéo</h2>
+        <p>
+          Laissez-vous transporter par la créativité et la passion du Chef
+          Athmane à travers ces quelques instants capturés en cuisine et lors de
+          nos événements.
+        </p>
+
+        <div className="video-gallery">
+          <div className="video-card">
+            <video src={buffetVideo1} autoPlay loop muted playsInline />
+          </div>
+          <div className="video-card">
+            <video src={buffetVideo2} autoPlay loop muted playsInline />
+          </div>
+          <div className="video-card">
+            <video src={buffetVideo3} autoPlay loop muted playsInline />
+          </div>
+          <div className="video-card">
+            <video src={buffetVideo4} autoPlay loop muted playsInline />
+          </div>
+          <div className="video-card">
+            <video src={buffetVideo5} autoPlay loop muted playsInline />
+          </div>
+          <div className="video-card">
+            <video src={buffetVideo6} autoPlay loop muted playsInline />
+          </div>
+        </div>
+      </section>
+
+      {/* ✨ NOUVELLE SECTION AVANT LE CARROUSEL */}
+      <section className="buffet-intro-carousel">
+        <h2>Un Voyage Visuel à Travers Nos Buffets</h2>
+        <p>
+          Explorez la richesse et la diversité des créations du Chef Athmane à
+          travers cette galerie. Chaque buffet est une œuvre culinaire
+          soigneusement pensée pour éveiller vos sens, alliant esthétique,
+          saveur et émotion dans un équilibre parfait.
+        </p>
+      </section>
       {/* GALLERY SECTION */}
       <section className="carousel-container" id="buffet_carousel">
         <button className="prev-btn" onClick={prevSlide}>

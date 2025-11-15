@@ -1,28 +1,24 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer">
       {/* --- ABOUT SECTION --- */}
       <div className="footer-section">
-        <h3 data-i18n="footer_about_title">ABOUT</h3>
+        <h3 data-i18n="footer_about_title">ABOUT PAGES</h3>
         <ul>
           <li>
-            <a href="#" data-i18n="footer_about_chef">Chef Athmane</a>
+            <Link to="/chef-athmane" data-i18n="footer_about_chef">Chef Athmane</Link>
           </li>
           <li>
-            <a href="#" data-i18n="footer_about_restaurant">The Restaurant</a>
+            <Link to="/menu" data-i18n="footer_about_menus">Our Menus</Link>
           </li>
           <li>
-            <a href="#" data-i18n="footer_about_menus">Our Menus</a>
+            <Link to="/larriere-cuisine" data-i18n="footer_about_kitchen">The Back Kitchen</Link>
           </li>
-          <li>
-            <a href="#" data-i18n="footer_about_garden">The Gardens</a>
-          </li>
-          <li>
-            <a href="#" data-i18n="footer_about_kitchen">The Back Kitchen</a>
-          </li>
+          
         </ul>
       </div>
 
@@ -30,17 +26,11 @@ const Footer = () => {
       <div className="footer-section">
         <h3 data-i18n="footer_contact_title">CONTACT</h3>
         <ul>
-          <li>
-            <a href="#" data-i18n="footer_contact_restaurant">The Restaurant</a>
+           <li>
+            <a href="#">Athmane686@gmail.com</a>
           </li>
           <li>
-            <a href="#" data-i18n="footer_contact_kitchen">The Back Kitchen</a>
-          </li>
-          <li>
-            <a href="#" data-i18n="footer_contact_communication">Communication & Events</a>
-          </li>
-          <li>
-            <a href="#" data-i18n="footer_contact_career">Career</a>
+            <a href="#">2245260067</a>
           </li>
         </ul>
       </div>
@@ -50,10 +40,10 @@ const Footer = () => {
         <h3 data-i18n="footer_legal_title">LEGAL INFORMATION</h3>
         <ul>
           <li>
-            <a href="#" data-i18n="footer_legal_terms">Terms & Conditions</a>
+            <Link to="/conditions" data-i18n="footer_legal_terms">Terms & Conditions</Link>
           </li>
           <li>
-            <a href="#" data-i18n="footer_legal_photos">Photo Credits</a>
+            <Link to="/credits" data-i18n="footer_legal_photos">Photo Credits</Link>
           </li>
         </ul>
       </div>
@@ -63,10 +53,10 @@ const Footer = () => {
         <h3 data-i18n="footer_dev_title">Developed and Created by</h3>
         <ul>
           <li>
-            <a href="#">ouamara.wail.m@gmail.com</a>
+            <Link to="mailto:ouamara.wail.m@gmail.com">ouamara.wail.m@gmail.com</Link>
           </li>
           <li>
-            <a href="#">bakhoucheromaissa22@gmail.com</a>
+            <Link to="mailto:bakhoucheromaissa22@gmail.com">bakhoucheromaissa22@gmail.com</Link>
           </li>
         </ul>
       </div>

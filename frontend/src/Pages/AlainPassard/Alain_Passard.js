@@ -4,10 +4,10 @@ import "@fontsource/montserrat/200.css";
 import athmane14 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane14.png";
 // import image5 from "../../assets/image5.jpg";
 import { useLocation } from "react-router-dom";
-import feuille_d from "../../assets/feuille_d.png";
+// import feuille_d from "../../assets/feuille_d.png";
 import EVEIL from "../../assets/images_athmen/EVEIL.JPG";
-import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
-import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
+// import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
+// import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import feille from "../../assets/feuille.png";
 import Vegetal from "../../assets/images_plats/Vegetal.jpg";
 import plats from "../../data_plat";
@@ -82,7 +82,7 @@ function Alain_Passard() {
         </div>
       </section>
 
-      <img src={feuille_vert_droite} id="feuille_vert_droite" />
+      {/* <img src={feuille_vert_droite} id="feuille_vert_droite" /> */}
 
       {/* 🇦🇪 Dubai */}
       <section className="presentation-section-A">
@@ -99,8 +99,8 @@ function Alain_Passard() {
         </div>
       </section>
 
-      <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
-      <img src={feuille_d} id="feuille_d_2" />
+      {/* <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
+      <img src={feuille_d} id="feuille_d_2" /> */}
 
       {/* 🇺🇸 New York */}
       <section className="presentation-section-A">
@@ -164,7 +164,7 @@ function Alain_Passard() {
     </p>
   </div>
 </section>
-<img src={feuille_vert_droite} id="feuille_vert_droite" />
+{/* <img src={feuille_vert_droite} id="feuille_vert_droite" /> */}
 
 {/* 🔪 Skills & Expertise — Section 2 */}
 <section className="presentation-section-A reverse">
@@ -182,7 +182,7 @@ function Alain_Passard() {
     </p>
   </div>
 </section>
-<img src={feuille_noir_gauche} id="feuille_noir_gauche" />
+{/* <img src={feuille_noir_gauche} id="feuille_noir_gauche" /> */}
 
 {/* 🔪 Skills & Expertise — Section 3 */}
 <section className="presentation-section-A">
@@ -199,7 +199,7 @@ function Alain_Passard() {
     </p>
   </div>
 </section>
-<img src={feuille_d} id="feuille_d_2" />
+{/* <img src={feuille_d} id="feuille_d_2" /> */}
 
 {/* 🔪 Skills & Expertise — Section 4 */}
 <section className="presentation-section-A reverse">
@@ -216,7 +216,7 @@ function Alain_Passard() {
     </p>
   </div>
 </section>
-<img src={feuille_vert_droite} id="feuille_vert_droite" />
+{/* <img src={feuille_vert_droite} id="feuille_vert_droite" /> */}
 
 {/* 🔪 Skills & Expertise — Section 5 */}
 <section className="presentation-section-A">
@@ -233,7 +233,7 @@ function Alain_Passard() {
     </p>
   </div>
 </section>
-<img src={feuille_noir_gauche} id="feuille_noir_gauche" />
+{/* <img src={feuille_noir_gauche} id="feuille_noir_gauche" /> */}
 
 {/* 🔪 Skills & Expertise — Section 6 */}
 <section className="presentation-section-A reverse">
@@ -250,7 +250,7 @@ function Alain_Passard() {
     </p>
   </div>
 </section>
-<img src={feuille_d} id="feuille_d_2" />
+{/* <img src={feuille_d} id="feuille_d_2" /> */}
 
 
 

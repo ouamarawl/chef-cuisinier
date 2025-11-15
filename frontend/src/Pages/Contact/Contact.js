@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import feuille_d from "../../assets/feuille_d.png";
+// import feuille_d from "../../assets/feuille_d.png";
 import feille from "../../assets/feuille.png";
 
 import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";

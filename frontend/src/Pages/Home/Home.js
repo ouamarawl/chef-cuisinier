@@ -7,9 +7,9 @@ import image6 from "../../assets/image6.jpg";
 import image7 from "../../assets/images_plats/plat7.jpg";
 import image8 from "../../assets/image8.jpg";
 import image9 from "../../assets/images_athmen/image9.JPG";
-import feuille_d from "../../assets/feuille_d.png";
-import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
-import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
+// import feuille_d from "../../assets/feuille_d.png";
+// import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
+// import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import plat46 from "../../assets/images_plats/plat46.jpg";
 import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
  import data_plat from "../../data_plat";
@@ -73,7 +73,7 @@ function Home() {
       </section>
 
       {/* Chef Presentation */}
-      <img src={feuille_d} id="feuille_d" />
+      {/* <img src={feuille_d} id="feuille_d" /> */}
       <section className="presentation-section">
         <img
           id="image5"
@@ -102,7 +102,7 @@ function Home() {
       </section>
 
       {/* Experience & Philosophy */}
-      <img src={feuille_vert_droite} id="feuille_vert_droite" />
+      {/* <img src={feuille_vert_droite} id="feuille_vert_droite" /> */}
       <section className="presentation-section">
         <img src={image6} alt="Chef’s cuisine" className="chef-image" />
         <div className="presentation-text">
@@ -118,8 +118,8 @@ function Home() {
       </section>
 
       {/* Menus */}
-      <img src={feuille_noir_gauche} id="feuille_noir_gauche" />
-      <img src={feuille_d} id="feuille_d_2" />
+      {/* <img src={feuille_noir_gauche} id="feuille_noir_gauche" /> */}
+      {/* <img src={feuille_d} id="feuille_d_2" /> */}
       <section className="presentation-section" id="menu-section">
         <img src={image7} alt="Chef’s dish" className="chef-image" />
         <div className="presentation-text">
@@ -139,7 +139,7 @@ function Home() {
       </section>
 
       {/* Philosophy */}
-      <img src={feuille_d} id="feuille_d_3" />
+      {/* <img src={feuille_d} id="feuille_d_3" /> */}
       <section className="presentation-section">
         <img src={image8} alt="Chef’s creation" className="chef-image" />
         <div className="presentation-text">
@@ -154,7 +154,7 @@ function Home() {
       </section>
 
       {/* Back Kitchen */}
-      <img src={feuille_vert_droite} id="feuille_vert_droite_2" />
+      {/* <img src={feuille_vert_droite} id="feuille_vert_droite_2" /> */}
       <section className="presentation-section">
         <img src={image9} alt="Back kitchen" className="chef-image" />
         <div className="presentation-text">
