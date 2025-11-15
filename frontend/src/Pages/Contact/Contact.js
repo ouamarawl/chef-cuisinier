@@ -17,7 +17,7 @@ function Contact() {
           <h3>Chef Athmane’s Gourmet Boxes</h3>
           <p>
             For any request regarding Chef Athmane’s Gourmet Boxes or our gardens: <br />
-            Email: baskets@chef-athmane.com
+            Email: Athmane686@gmail.com
           </p>
           <br />
           <br />
@@ -29,7 +29,7 @@ function Contact() {
             Chef Athmane: “The Creative Kitchen” <br />
             57 rue de Bourgogne, Paris 7th <br />
             Monday to Friday, from 10 a.m. to 6 p.m. <br />
-            Email: studio@chef-athmane.com
+            Email: Athmane686@gmail.com
           </p>
           <br />
           <br />
@@ -46,8 +46,8 @@ function Contact() {
             from 9:00 a.m. to 5:00 p.m. <br />
             Restaurant Athmane <br />
             84 rue de Varenne, Paris 7th <br />
-            Phone: +33 (0)1 47 05 09 06 <br />
-            Email: restaurant@chef-athmane.com
+            Phone: 2245260067 <br />
+            Email: Athmane686@gmail.com
           </p>
           <br />
           <br />
@@ -64,7 +64,7 @@ function Contact() {
             – Special requests for Chef Athmane <br />
             Email: office@chef-athmane.com <br />
             Accounting inquiries: <br />
-            accounting@chef-athmane.com
+            Athmane686@gmail.com
           </p>
           <br />
           <br />
@@ -74,7 +74,7 @@ function Contact() {
           <p>
             Restaurant Athmane is always looking for new talents! <br />
             Feel free to send us your spontaneous application! <br />
-            Email: careers@chef-athmane.com
+            Email: Athmane686@gmail.com
           </p>
           <br />
           <br />

@@ -2,8 +2,8 @@
   background-color: #3A4F63;
   padding: 40px 20px;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 40px;
   width: 100%;

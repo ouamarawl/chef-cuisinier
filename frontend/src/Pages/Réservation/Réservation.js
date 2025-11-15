@@ -45,7 +45,7 @@ const Reservation = () => {
         You can cancel or modify your reservation free of charge up to 
         48 hours before your visit. <br />
         For any request, please contact us at 
-        <strong> +33 1 47 05 09 06</strong>.
+        <strong> 2245260067</strong>.
       </p>
 
       <form className="zenchef-form" onSubmit={handleSubmit}>

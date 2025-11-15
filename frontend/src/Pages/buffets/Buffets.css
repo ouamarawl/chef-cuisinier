@@ -171,7 +171,7 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: #faf8f5;
+  background: transparent;
   /* color: white; */
   border: none;
   padding: clamp(10px, 2vw, 15px) clamp(12px, 2.5vw, 20px);

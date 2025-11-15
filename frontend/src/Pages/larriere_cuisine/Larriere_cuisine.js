@@ -47,12 +47,12 @@ function Larriere_cuisine() {
             plate. They reflect the influence of nature and the importance of
             the eye in the creation of a recipe.
           </p>
-          <button
+          {/* <button
             className="discover-btn-oeuvres"
             onClick={() => navigate("/Chef_Athman#larriere_cuisine")}
           >
             Learn more
-          </button>
+          </button> */}
         </div>
       </section>
 

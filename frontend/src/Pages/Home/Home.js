@@ -188,7 +188,8 @@ function Home() {
               Available for private dinners, collaborations, and gastronomic
               events. <br />
               <br />
-              contact@chefathman.com <br />
+              Athmane686@gmail.com <br />
+              2245260067
               <br />
               By appointment only.
             </p>
