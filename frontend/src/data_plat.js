@@ -107,6 +107,65 @@ import plat106 from "./assets/images_plats/plat106.JPG";
 import plat107 from "./assets/images_plats/plat107.JPG";
 import plat108 from "./assets/images_plats/plat108.JPG";
 import plat109 from "./assets/images_plats/plat109.JPG";
+import plat110 from "./assets/images_plats/plat110.jpeg";
+import plat111 from "./assets/images_plats/plat111.jpeg";
+import plat112 from "./assets/images_plats/plat112.jpeg";
+import plat113 from "./assets/images_plats/plat113.jpeg";
+import plat114 from "./assets/images_plats/plat114.jpeg";
+import plat115 from "./assets/images_plats/plat115.jpeg";
+import plat116 from "./assets/images_plats/plat116.jpeg";
+import plat117 from "./assets/images_plats/plat117.jpeg";
+import plat118 from "./assets/images_plats/plat118.jpeg";
+import plat119 from "./assets/images_plats/plat119.jpeg";
+import plat120 from "./assets/images_plats/plat120.jpeg";
+import plat121 from "./assets/images_plats/plat121.jpeg";
+import plat122 from "./assets/images_plats/plat122.jpeg";
+import plat123 from "./assets/images_plats/plat123.jpeg";
+import plat124 from "./assets/images_plats/plat124.jpeg";
+import plat125 from "./assets/images_plats/plat125.jpeg";
+import plat126 from "./assets/images_plats/plat126.jpeg";
+import plat127 from "./assets/images_plats/plat127.jpeg";
+import plat128 from "./assets/images_plats/plat128.jpeg";
+import plat129 from "./assets/images_plats/plat129.jpeg";
+import plat130 from "./assets/images_plats/plat130.jpeg";
+import plat131 from "./assets/images_plats/plat131.jpeg";
+import plat132 from "./assets/images_plats/plat132.jpeg";
+import plat133 from "./assets/images_plats/plat133.jpeg";
+import plat134 from "./assets/images_plats/plat134.jpeg";
+import plat135 from "./assets/images_plats/plat135.jpeg";
+import plat136 from "./assets/images_plats/plat136.jpeg";
+import plat137 from "./assets/images_plats/plat137.jpeg";
+import plat138 from "./assets/images_plats/plat138.jpeg";
+import plat139 from "./assets/images_plats/plat139.jpeg";
+import plat140 from "./assets/images_plats/plat140.jpeg";
+import plat141 from "./assets/images_plats/plat141.jpeg";
+import plat142 from "./assets/images_plats/plat142.jpeg";
+import plat143 from "./assets/images_plats/plat143.jpeg";
+import plat144 from "./assets/images_plats/plat144.jpeg";
+import plat145 from "./assets/images_plats/plat145.jpeg";
+import plat146 from "./assets/images_plats/plat146.jpeg";
+import plat147 from "./assets/images_plats/plat147.jpeg";
+import plat148 from "./assets/images_plats/plat148.jpeg";
+import plat149 from "./assets/images_plats/plat149.jpeg";
+import plat150 from "./assets/images_plats/plat150.jpeg";
+import plat151 from "./assets/images_plats/plat151.jpeg";
+import plat152 from "./assets/images_plats/plat152.jpeg";
+import plat153 from "./assets/images_plats/plat153.jpeg";
+import plat154 from "./assets/images_plats/plat154.jpeg";
+import plat155 from "./assets/images_plats/plat155.jpeg";
+import plat156 from "./assets/images_plats/plat156.jpeg";
+import plat157 from "./assets/images_plats/plat157.jpeg";
+import plat158 from "./assets/images_plats/plat158.jpeg";
+import plat159 from "./assets/images_plats/plat159.jpeg";
+import plat160 from "./assets/images_plats/plat160.jpeg";
+import plat161 from "./assets/images_plats/plat161.jpeg";
+import plat162 from "./assets/images_plats/plat162.jpeg";
+import plat163 from "./assets/images_plats/plat163.jpeg";
+import plat164 from "./assets/images_plats/plat164.jpeg";
+import plat165 from "./assets/images_plats/plat165.jpeg";
+import plat166 from "./assets/images_plats/plat166.jpeg";
+import plat167 from "./assets/images_plats/plat167.jpeg";
+
 
 
 const plats = [
@@ -121,7 +180,7 @@ const plats = [
 //   { image: plat9, title: "Plat 9", description: "Dish 9" },
 //   { image: plat10, title: "Plat 10", description: "Dish 10" },
 //   { image: plat11, title: "Plat 11", description: "Dish 11" },
-  { image: plat12, title: "Plat 12", description: "Dish 12" },
+  // { image: plat12, title: "Plat 12", description: "Dish 12" },
 //   { image: plat13, title: "Plat 13", description: "Dish 13" },
 //   { image: plat14, title: "Plat 14", description: "Dish 14" },
 //   { image: plat15, title: "Plat 15", description: "Dish 15" },
@@ -135,7 +194,7 @@ const plats = [
 //   { image: plat23, title: "Plat 23", description: "Dish 23" },
 //   { image: plat24, title: "Plat 24", description: "Dish 24" },
 //   { image: plat25, title: "Plat 25", description: "Dish 25" },
-  { image: plat26, title: "Plat 26", description: "Dish 26" },
+  // { image: plat26, title: "Plat 26", description: "Dish 26" },
 //   { image: plat27, title: "Plat 27", description: "Dish 27" },
 //   { image: plat28, title: "Plat 28", description: "Dish 28" },
 //   { image: plat29, title: "Plat 29", description: "Dish 29" },
@@ -172,52 +231,111 @@ const plats = [
 //   { image: plat60, title: "Plat 60", description: "Dish 60" },
 //   { image: plat61, title: "Plat 61", description: "Dish 61" },
 //   { image: plat62, title: "Plat 62", description: "Dish 62" }
-{ image: plat63, title: "Plat 63", description: "Dish 63" },
-{ image: plat64, title: "Plat 64", description: "Dish 64" },
-{ image: plat65, title: "Plat 65", description: "Dish 65" },
-{ image: plat66, title: "Plat 66", description: "Dish 66" },
-{ image: plat67, title: "Plat 67", description: "Dish 67" },
-{ image: plat68, title: "Plat 68", description: "Dish 68" },
-{ image: plat70, title: "Plat 70", description: "Dish 70" },
-{ image: plat71, title: "Plat 71", description: "Dish 71" },
-{ image: plat72, title: "Plat 72", description: "Dish 72" },
-{ image: plat73, title: "Plat 73", description: "Dish 73" },
-{ image: plat74, title: "Plat 74", description: "Dish 74" },
-{ image: plat75, title: "Plat 75", description: "Dish 75" },
-{ image: plat76, title: "Plat 76", description: "Dish 76" },
-{ image: plat77, title: "Plat 77", description: "Dish 77" },
-{ image: plat78, title: "Plat 78", description: "Dish 78" },
-{ image: plat79, title: "Plat 79", description: "Dish 79" },
-{ image: plat80, title: "Plat 80", description: "Dish 80" },
-{ image: plat81, title: "Plat 81", description: "Dish 81" },
-{ image: plat82, title: "Plat 82", description: "Dish 82" },
-{ image: plat83, title: "Plat 83", description: "Dish 83" },
-{ image: plat84, title: "Plat 84", description: "Dish 84" },
-{ image: plat85, title: "Plat 85", description: "Dish 85" },
-{ image: plat86, title: "Plat 86", description: "Dish 86" },
-{ image: plat87, title: "Plat 87", description: "Dish 87" },
-{ image: plat88, title: "Plat 88", description: "Dish 88" },
-{ image: plat89, title: "Plat 89", description: "Dish 89" },
-{ image: plat90, title: "Plat 90", description: "Dish 90" },
-{ image: plat91, title: "Plat 91", description: "Dish 91" },
-{ image: plat92, title: "Plat 92", description: "Dish 92" },
-{ image: plat93, title: "Plat 93", description: "Dish 93" },
-{ image: plat94, title: "Plat 94", description: "Dish 94" },
-{ image: plat95, title: "Plat 95", description: "Dish 95" },
-{ image: plat96, title: "Plat 96", description: "Dish 96" },
-{ image: plat97, title: "Plat 97", description: "Dish 97" },
+// { image: plat63, title: "Plat 63", description: "Dish 63" },
+// { image: plat64, title: "Plat 64", description: "Dish 64" },
+// { image: plat65, title: "Plat 65", description: "Dish 65" },
+// { image: plat66, title: "Plat 66", description: "Dish 66" },
+// { image: plat67, title: "Plat 67", description: "Dish 67" },
+// { image: plat68, title: "Plat 68", description: "Dish 68" },
+// { image: plat70, title: "Plat 70", description: "Dish 70" },
+// { image: plat71, title: "Plat 71", description: "Dish 71" },
+// { image: plat72, title: "Plat 72", description: "Dish 72" },
+// { image: plat73, title: "Plat 73", description: "Dish 73" },
+// { image: plat74, title: "Plat 74", description: "Dish 74" },
+// { image: plat75, title: "Plat 75", description: "Dish 75" },
+// { image: plat76, title: "Plat 76", description: "Dish 76" },
+// { image: plat77, title: "Plat 77", description: "Dish 77" },
+// { image: plat78, title: "Plat 78", description: "Dish 78" },
+// { image: plat79, title: "Plat 79", description: "Dish 79" },
+// { image: plat80, title: "Plat 80", description: "Dish 80" },
+// { image: plat81, title: "Plat 81", description: "Dish 81" },
+// { image: plat82, title: "Plat 82", description: "Dish 82" },
+// { image: plat83, title: "Plat 83", description: "Dish 83" },
+// { image: plat84, title: "Plat 84", description: "Dish 84" },
+// { image: plat85, title: "Plat 85", description: "Dish 85" },
+// { image: plat86, title: "Plat 86", description: "Dish 86" },
+// { image: plat87, title: "Plat 87", description: "Dish 87" },
+// { image: plat88, title: "Plat 88", description: "Dish 88" },
+// { image: plat89, title: "Plat 89", description: "Dish 89" },
+// { image: plat90, title: "Plat 90", description: "Dish 90" },
+// { image: plat91, title: "Plat 91", description: "Dish 91" },
+// { image: plat92, title: "Plat 92", description: "Dish 92" },
+// { image: plat93, title: "Plat 93", description: "Dish 93" },
+// { image: plat94, title: "Plat 94", description: "Dish 94" },
+// { image: plat95, title: "Plat 95", description: "Dish 95" },
+// { image: plat96, title: "Plat 96", description: "Dish 96" },
+// { image: plat97, title: "Plat 97", description: "Dish 97" },
 // { image: plat98, title: "Plat 98", description: "Dish 98" },
-{ image: plat99, title: "Plat 99", description: "Dish 99" },
-{ image: plat100, title: "Plat 100", description: "Dish 100" },
-{ image: plat101, title: "Plat 101", description: "Dish 101" },
-{ image: plat102, title: "Plat 102", description: "Dish 102" },
-{ image: plat103, title: "Plat 103", description: "Dish 103" },
-{ image: plat104, title: "Plat 104", description: "Dish 104" },
-{ image: plat105, title: "Plat 105", description: "Dish 105" },
-{ image: plat106, title: "Plat 106", description: "Dish 106" },
-{ image: plat107, title: "Plat 107", description: "Dish 107" },
-{ image: plat108, title: "Plat 108", description: "Dish 108" },
-{ image: plat109, title: "Plat 109", description: "Dish 109" }
+// { image: plat99, title: "Plat 99", description: "Dish 99" },
+// { image: plat100, title: "Plat 100", description: "Dish 100" },
+// { image: plat101, title: "Plat 101", description: "Dish 101" },
+// { image: plat102, title: "Plat 102", description: "Dish 102" },
+// { image: plat103, title: "Plat 103", description: "Dish 103" },
+// { image: plat104, title: "Plat 104", description: "Dish 104" },
+// { image: plat105, title: "Plat 105", description: "Dish 105" },
+// { image: plat106, title: "Plat 106", description: "Dish 106" },
+// { image: plat107, title: "Plat 107", description: "Dish 107" },
+// { image: plat108, title: "Plat 108", description: "Dish 108" },
+// { image: plat109, title: "Plat 109", description: "Dish 109" },
+{ image: plat110, title: "", description: "Roasted beet salade / whipped goat cheese / orange segments/ beets grumble" },
+// { image: plat111, title: "Plat 111", description: "Dish 111" },
+// { image: plat112, title: "Plat 112", description: "Dish 112" },
+// { image: plat113, title: "Plat 113", description: "Dish 113" },
+// { image: plat114, title: "Plat 114", description: "Dish 114" },
+// { image: plat115, title: "Plat 115", description: "Dish 115" },
+// { image: plat116, title: "Plat 116", description: "Dish 116" },
+{ image: plat117, title: "", description: "Homemade spinach ricotta ravioli" },
+// { image: plat118, title: "Plat 118", description: "Dish 118" },
+// { image: plat119, title: "Plat 119", description: "Dish 119" },
+// { image: plat120, title: "Plat 120", description: "Dish 120" },
+{ image: plat121, title: "", description: "Slow cook short ribs / baby carrots / purple mash potatoes/ homemade jus" },
+// { image: plat122, title: "Plat 122", description: "Dish 122" },
+{ image: plat123, title: "", description: "Better fly pink prawn / lemon potato mousseline/ beet jus reduction / beet foam" },
+// { image: plat124, title: "Plat 124", description: "Dish 124" },
+// { image: plat125, title: "Plat 125", description: "Dish 125" },
+// { image: plat126, title: "Plat 126", description: "Dish 126" },
+// { image: plat127, title: "Plat 127", description: "Dish 127" },
+// { image: plat128, title: "Plat 128", description: "Dish 128" },
+// { image: plat129, title: "Plat 129", description: "Dish 129" },
+// { image: plat130, title: "Plat 130", description: "Dish 130" },
+{ image: plat131, title: "Plat 131", description: "Stuffed corn feed chicken breast / peeper sauce / spinach almonds sauce / chicken crisp touille" },
+// { image: plat132, title: "Plat 132", description: "Dish 132" },
+// { image: plat133, title: "Plat 133", description: "Dish 133" },
+// { image: plat134, title: "Plat 134", description: "Dish 134" },
+// { image: plat135, title: "Plat 135", description: "Dish 135" },
+// { image: plat136, title: "Plat 136", description: "Dish 136" },
+// { image: plat137, title: "Plat 137", description: "Dish 137" },
+{ image: plat138, title: "", description: "Red carpet- Beets and water melon cubes, nectarine , beet glaze , aged balsamic glaze , goat cheese piping" },
+// { image: plat139, title: "Plat 139", description: "Dish 139" },
+// { image: plat140, title: "Plat 140", description: "Dish 140" },
+// { image: plat141, title: "Plat 141", description: "Dish 141" },
+// { image: plat142, title: "Plat 142", description: "Dish 142" },
+// { image: plat143, title: "Plat 143", description: "Dish 143" },
+// { image: plat144, title: "Plat 144", description: "Dish 144" },
+// { image: plat145, title: "Plat 145", description: "Dish 145" },
+// { image: plat146, title: "Plat 146", description: "Dish 146" },
+{ image: plat147, title: "", description: "Japonaise style seared tuna unagi glaze served with pickled red cabbage , pea puree and fresh sweet pea" },
+{ image: plat148, title: "", description: "Original Ceasar salade" },
+// { image: plat149, title: "Plat 149", description: "Dish 149" },
+// { image: plat150, title: "Plat 150", description: "Dish 150" },
+// { image: plat151, title: "Plat 151", description: "Dish 151" },
+// { image: plat152, title: "Plat 152", description: "Dish 152" },
+// { image: plat153, title: "Plat 153", description: "Dish 153" },
+// { image: plat154, title: "Plat 154", description: "Dish 154" },
+// { image: plat155, title: "Plat 155", description: "Dish 155" },
+// { image: plat156, title: "Plat 156", description: "Dish 156" },
+// { image: plat157, title: "Plat 157", description: "Dish 157" },
+{ image: plat158, title: "", description: "Bleu cheese linguine served with yellow and green zucchini puree / fresh zucchini and stuffed zucchini flour" },
+// { image: plat159, title: "Plat 159", description: "Dish 159" },
+// { image: plat160, title: "Plat 160", description: "Dish 160" },
+{ image: plat161, title: "Plat 161", description: "Dish 161" },
+// { image: plat162, title: "Plat 162", description: "Dish 162" },
+// { image: plat163, title: "Plat 163", description: "Dish 163" },
+// { image: plat164, title: "Plat 164", description: "Dish 164" },
+// { image: plat165, title: "Plat 165", description: "Dish 165" },
+// { image: plat166, title: "Plat 166", description: "Dish 166" },
+// { image: plat167, title: "Plat 167", description: "Dish 167" }
+
 
 ];
 

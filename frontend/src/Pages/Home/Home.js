@@ -15,12 +15,12 @@ import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
  import data_plat from "../../data_plat";
 import logo from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/logo.png"
 const images = [
-  require("../../assets/images_plats/plat87.JPG"),
-  require("../../assets/images_plats/plat92.JPG"),
-  require("../../assets/images_plats/plat97.JPG"),
-  // require("../../assets/images_plats/plat96.JPG"),
-  // require("../../assets/images_plats/plat85.JPG"),
-
+  // require("../../assets/images_plats/plat87.JPG"),
+  // require("../../assets/images_plats/plat92.JPG"),
+  // require("../../assets/images_plats/plat97.JPG"),
+  require("../../assets/images_plats/plat143.jpeg"),
+  require("../../assets/images_plats/plat123.jpeg"),
+  require("../../assets/images_plats/plat155.jpeg"),
 ]
 
 function Home() {

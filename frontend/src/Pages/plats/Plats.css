@@ -1,0 +1,356 @@
+.Chef {
+  text-align: center;
+  background: #fafaf8;
+}
+
+/* ===== HERO ===== */
+.chef-hero {
+  position: relative;
+  height: 65vh;
+  background-image: url("C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_plats/plat106.JPG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chef-hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 50px 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+}
+
+.chef-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.chef-subtitle {
+  font-family: "Montserrat", sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* ===== PLATS CONTAINER ===== */
+.Chef-container {
+  max-width: 1600px;
+  margin: 80px auto;
+  padding: 0 30px;
+}
+
+/* ===== PLAT ITEM (CARD) ===== */
+.Chef-item {
+  background: white;
+  border-radius: 16px;
+  margin-bottom: 100px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Chef-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Chef-item:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== HEADER DU PLAT ===== */
+.Chef-item-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f0ede8;
+}
+
+.Chef-item-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.Chef-item-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+  color: #5a6c7d;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  background: linear-gradient(135deg, #faf8f5 0%, #f5f3ef 100%);
+  border-radius: 10px;
+  border-left: 4px solid #c9a66b;
+}
+
+/* ===== GRILLE D'IMAGES ===== */
+.Chef-item-gallery {
+  display: grid;
+  gap: 20px;
+}
+
+/* Layouts différents selon le nombre d'images */
+
+/* 2 images - Split 50/50 */
+.Chef-item-gallery.images-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* 3 images - 1 grande + 2 petites */
+.Chef-item-gallery.images-3 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 300px);
+}
+
+.Chef-item-gallery.images-3 .Chef-gallery-image:first-child {
+  grid-row: span 2;
+}
+
+/* 4 images - Grid 2x2 */
+.Chef-item-gallery.images-4 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 300px);
+}
+
+/* 5 images - Layout asymétrique */
+.Chef-item-gallery.images-5 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 280px);
+}
+
+.Chef-item-gallery.images-5 .Chef-gallery-image:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* 6 images - Grid 3x2 */
+.Chef-item-gallery.images-6 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 280px);
+}
+
+/* 7 images - Layout complexe */
+.Chef-item-gallery.images-7 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 280px);
+}
+
+.Chef-item-gallery.images-7 .Chef-gallery-image:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* 8+ images - Grid flexible */
+.Chef-item-gallery.images-8,
+.Chef-item-gallery.images-many {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 280px;
+}
+
+.Chef-item-gallery.images-8 .Chef-gallery-image:nth-child(1),
+.Chef-item-gallery.images-many .Chef-gallery-image:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* ===== IMAGE CONTAINER ===== */
+.Chef-gallery-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #f0f0f0;
+}
+
+.Chef-gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Chef-gallery-image:hover img {
+  transform: scale(1.08);
+}
+
+/* Overlay au hover */
+.Chef-gallery-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.4s ease;
+}
+
+.Chef-gallery-image:hover::after {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* ===== IMAGE COUNTER BADGE ===== */
+.Chef-image-count {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .Chef-item-gallery.images-7,
+  .Chef-item-gallery.images-8,
+  .Chef-item-gallery.images-many {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 968px) {
+  .chef-title {
+    font-size: 2.2rem;
+  }
+
+  .Chef-item {
+    padding: 30px 20px;
+    margin-bottom: 60px;
+  }
+
+  .Chef-item-title {
+    font-size: 1.6rem;
+  }
+
+  .Chef-item-description {
+    font-size: 0.95rem;
+    padding: 15px 20px;
+  }
+
+  /* Simplifier les grilles sur tablette */
+  .Chef-item-gallery.images-3,
+  .Chef-item-gallery.images-5,
+  .Chef-item-gallery.images-6,
+  .Chef-item-gallery.images-7,
+  .Chef-item-gallery.images-8,
+  .Chef-item-gallery.images-many {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+  }
+
+  .Chef-item-gallery.images-3 .Chef-gallery-image:first-child,
+  .Chef-item-gallery.images-5 .Chef-gallery-image:nth-child(1),
+  .Chef-item-gallery.images-7 .Chef-gallery-image:nth-child(1),
+  .Chef-item-gallery.images-8 .Chef-gallery-image:nth-child(1),
+  .Chef-item-gallery.images-many .Chef-gallery-image:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .chef-hero {
+    height: 50vh;
+  }
+
+  .chef-title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .chef-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .Chef-container {
+    padding: 0 15px;
+    margin: 50px auto;
+  }
+
+  .Chef-item {
+    padding: 20px 15px;
+    margin-bottom: 50px;
+  }
+
+  .Chef-item-header {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+  }
+
+  .Chef-item-title {
+    font-size: 1.4rem;
+  }
+
+  .Chef-item-description {
+    font-size: 0.9rem;
+    padding: 12px 15px;
+  }
+
+  /* Une seule colonne sur mobile */
+  .Chef-item-gallery {
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: 280px;
+    gap: 15px;
+  }
+
+  .Chef-item-gallery .Chef-gallery-image {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  .Chef-image-count {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* ===== FOOTER ===== */
+.chef-footer {
+  margin-top: 100px;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+}
+
+.chef-footer h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.chef-footer p {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.chef-signature {
+  width: 180px;
+  margin-top: 35px;
+  opacity: 0.85;
+  filter: brightness(0) invert(1);
+}

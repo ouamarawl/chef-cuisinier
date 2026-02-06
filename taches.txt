@@ -1,0 +1,32 @@
+ 1/our hot and cold appetizer: buffet-(20 to 34)
+ Our Banquets and buffets :buffet-(34 to 48)
+ 1/cold and hot appetizer :buffet-(48 to 67)
+ banquet plated dishes :buffet-(67 to 81)
+ buffet and carving station :buffet-(67 to 81)
+
+
+
+ <section className="buffets-section fade-in">
+        <div className="section-header">
+          <h2>Plated Banquet Dishes</h2>
+          <p>
+            Individually plated masterpieces for seated banquets. Each dish is 
+            meticulously crafted and beautifully presented, combining artistry 
+            with exceptional flavor profiles.
+          </p>
+        </div>
+        
+        <div className="buffets-grid">
+          {platedDishesData.map((item, index) => (
+            <article key={index} className="buffet-card">
+              <div className="card-image">
+                <img src={item.image} alt={item.title} />
+              </div>
+              <div className="card-content">
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
