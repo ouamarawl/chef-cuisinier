@@ -103,6 +103,9 @@ function Header() {
           <Link to="/Buffets" onClick={toggleSidebar}>
             Buffets
           </Link>
+          <Link to="/Plats" onClick={toggleSidebar}>
+            Signature Dishes
+          </Link>
         </nav>
       </div>
 

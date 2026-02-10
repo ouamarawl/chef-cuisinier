@@ -82,11 +82,11 @@ const buffets = [
     title: "Buffet Méditerranéen",
     desc: "Un mélange raffiné d'arômes marins et d'épices du sud.",
   },
-  {
-    image: buffet2,
-    title: "Buffet Oriental",
-    desc: "Saveurs envoûtantes inspirées des souks et traditions d'Orient.",
-  },
+  // {
+  //   image: buffet2,
+  //   title: "Buffet Oriental",
+  //   desc: "Saveurs envoûtantes inspirées des souks et traditions d'Orient.",
+  // },
   {
     image: buffet3,
     title: "Buffet Gastronomique",
@@ -218,9 +218,279 @@ const createSectionData = (startIdx, endIdx, titlePrefix) => {
   return data;
 };
 
-const appetizersData = createSectionData(1, 30, "Appetizer");
-const banquetsData = createSectionData(31, 65, "Banquet Service");
-const platedDishesData = createSectionData(66, 71, "Plated Dish");
+const appetizersData = [
+  // 🔥 HOT
+  {
+    id: 29,
+    image: buffet29,
+    title: "Mushroom Vol-au-Vent",
+    desc: "mushroom vol au vent",
+  },
+  {
+    id: 53,
+    image: buffet53,
+    title: "Ratatouille & Feta Tarts",
+    desc: "ratatouille tarts and feta",
+  },
+  {
+    id: 26,
+    image: buffet26,
+    title: "Crab Cake Bites",
+    desc: "crabe cakes bites",
+  },
+
+  // 🌡️ WARM / TEMPERATE
+  {
+    id: 31,
+    image: buffet31,
+    title: "Caviar Cones",
+    desc: "caviar cones",
+  },
+  {
+    id: 32,
+    image: buffet32,
+    title: "Heirloom Tomato Bruschetta Bites",
+    desc: "heirloom tomato bruschetta bites",
+  },
+  {
+    id: 33,
+    image: buffet33,
+    title: "Figs & Foie Gras Bites",
+    desc: "figs fois gras bites",
+  },
+  {
+    id: 39,
+    image: buffet39,
+    title: "Brie Cheese with Raspberry",
+    desc: "Brie cheese framboise",
+  },
+
+  // ❄️ COLD
+  {
+    id: 22,
+    image: buffet22,
+    title: "Lobster Ceviche",
+    desc: "lobster ceviche",
+  },
+  {
+    id: 44,
+    image: buffet44,
+    title: "Shrimp Ceviche",
+    desc: "shrimp ceviche",
+  },
+  {
+    id: 65,
+    image: buffet65,
+    title: "Citrus Sea Scallop Bites",
+    desc: "citrus sea scallops bites",
+  },
+  {
+    id: 67,
+    image: buffet67,
+    title: "Mango Sea Scallops",
+    desc: "mango sea scallops",
+  },
+  {
+    id: 52,
+    image: buffet52,
+    title: "Smoked Salmon & Cream Cheese",
+    desc: "smoked salmon and cream cheese",
+  },
+  {
+    id: 64,
+    image: buffet64,
+    title: "Beef Tartare Bite",
+    desc: "beef Tatar bite",
+  },
+  {
+    id: 50,
+    image: buffet50,
+    title: "Blue Cheese Selection",
+    desc: "bleu and blue",
+  },
+];
+
+
+const platedDishesData = [
+  // 🔥 HOT DISHES
+  {
+    id: 35,
+    image: buffet35,
+    title: "Grilled Bone-In Ribeye",
+    desc: "grilled bone in ribeye , potato ships, Demi glaze",
+  },
+  {
+    id: 42,
+    image: buffet42,
+    title: "Ribeye Au Poivre",
+    desc: "Ribeyes au poivre sauce and asparagus",
+  },
+  {
+    id: 36,
+    image: buffet36,
+    title: "New York Strip Steak",
+    desc: "New York strips , asparagus , muslines",
+  },
+  {
+    id: 37,
+    image: buffet37,
+    title: "Veal Schnitzel",
+    desc: "Veal schnitzel,mix wild berry sauce , mush potato",
+  },
+  {
+    id: 46,
+    image: buffet46,
+    title: "New York Veal",
+    desc: "New York veal Served with Swiss shard and home made teriyaki sauce",
+  },
+  {
+    id: 38,
+    image: buffet38,
+    title: "Lobster with Smoked Bell Pepper Sauce",
+    desc: "Lobster served with smoked belle pepper sauce and gree peas",
+  },
+  {
+    id: 45,
+    image: buffet45,
+    title: "Halibut Al Forno",
+    desc: "Halibut served with alforno sauce",
+  },
+
+  // 🌡️ WARM / LIGHT
+  {
+    id: 34,
+    image: buffet34,
+    title: "Black Sea Bass",
+    desc: "Black Sea,potato muslin, asparagus,",
+  },
+
+  // ❄️ COLD / FRESH
+  {
+    id: 41,
+    image: buffet41,
+    title: "Heirloom Tomato Mozzarella Balls",
+    desc: "Heirloom tomato mozzarella balls balsamic glaze and basil oil",
+  },
+  {
+    id: 54,
+    image: buffet54,
+    title: "Watermelon Feta Salad",
+    desc: "Watermelon feta salad",
+  },
+  {
+    id: 66,
+    image: buffet66,
+    title: "Watermelon Feta Salad",
+    desc: "Watermelon feta salad",
+  },
+  {
+    id: 70,
+    image: buffet70,
+    title: "Oysters and King Crab Legs",
+    desc: "Oysters and king crab legs",
+  },
+];
+
+
+const banquetsData = [
+  // 🔥 HOT / CARVING & LIVE STATIONS
+  {
+    id: 47,
+    image: buffet47,
+    title: "Roasted Whole Lamb Leg Carving",
+    desc: "Roasted  whole lamb leg carving !",
+  },
+  {
+    id: 48,
+    image: buffet48,
+    title: "Lamb Leg and Roasted Beef",
+    desc: "Lamb leg and roasted beef",
+  },
+  {
+    id: 56,
+    image: buffet56,
+    title: "International Omelette Station",
+    desc: "International Omelette station !",
+  },
+
+  // 🌡️ WARM / MIXED
+  {
+    id: 55,
+    image: buffet55,
+    title: "Cheese Pairing and International Salads",
+    desc: "Our cheese pairing and international salades",
+  },
+  {
+    id: 68,
+    image: buffet68,
+    title: "Little International Party",
+    desc: "Little international party !",
+  },
+
+  // ❄️ COLD / SEAFOOD & SWEETS
+  {
+    id: 24,
+    image: buffet24,
+    title: "Caviar and Seafood Selection",
+    desc: "Selections of caviar,shrimp cocktail,oysters and crab",
+  },
+  {
+    id: 60,
+    image: buffet60,
+    title: "Homemade Cakes Selection",
+    desc: "Our homemade cakes selections",
+  },
+  {
+    id: 61,
+    image: buffet61,
+    title: "Mini Desserts and Fruits",
+    desc: "Mini desserts and fruits",
+  },
+
+  // ❌ PAS DE DESCRIPTION FOURNIE → COMMENTÉS
+  // {
+  //   id: 30,
+  //   image: buffet30,
+  //   title: "Crab Cakes",
+  // },
+
+  // {
+  //   id: 28,
+  //   image: buffet28,
+  //   title: "Tuna Carpaccio",
+  // },
+
+  // {
+  //   id: 57,
+  //   image: buffet57,
+  //   title: "Gala Dinner Buffet",
+  // },
+
+  // {
+  //   id: 58,
+  //   image: buffet58,
+  //   title: "Cocktail Reception",
+  // },
+
+  // {
+  //   id: 59,
+  //   image: buffet59,
+  //   title: "Brunch Buffet",
+  // },
+
+  // {
+  //   id: 62,
+  //   image: buffet62,
+  //   title: "Pasta Station",
+  // },
+
+  // {
+  //   id: 63,
+  //   image: buffet63,
+  //   title: "Dessert Buffet",
+  // },
+];
+
 
 const Buffet = () => {
   // État pour l'index du carousel
@@ -324,6 +594,22 @@ const Buffet = () => {
 
       <section className="buffets-section fade-in">
         <div className="section-header">
+          <h2>Plated Banquet Dishes</h2>
+          <p>
+            Individually plated masterpieces for seated banquets. Each dish is
+            meticulously crafted and beautifully presented, combining artistry
+            with exceptional flavor profiles.
+          </p>
+        </div>
+        <div className="buffets-grid">
+          {platedDishesData.map((item) => (
+            <BuffetCard key={item.id} item={item} />
+          ))}
+        </div>
+      </section>
+
+      <section className="buffets-section fade-in">
+        <div className="section-header">
           <h2>Banquets & Buffet Service</h2>
           <p>
             Exquisite buffet experiences designed for celebrations, corporate
@@ -338,21 +624,6 @@ const Buffet = () => {
         </div>
       </section>
 
-      <section className="buffets-section fade-in">
-        <div className="section-header">
-          <h2>Plated Banquet Dishes</h2>
-          <p>
-            Individually plated masterpieces for seated banquets. Each dish is
-            meticulously crafted and beautifully presented, combining artistry
-            with exceptional flavor profiles.
-          </p>
-        </div>
-        <div className="buffets-grid">
-          {platedDishesData.map((item) => (
-            <BuffetCard key={item.id} item={item} />
-          ))}
-        </div>
-      </section>
       {/* GALLERY SECTION */}
       <section className="carousel-container" id="buffet_carousel">
         <button className="prev-btn" onClick={prevSlide}>
