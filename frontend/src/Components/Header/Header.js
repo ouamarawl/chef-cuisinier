@@ -1,35 +1,31 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/logo.png"
+
+
+
+
 
 function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showReservation, setShowReservation] = useState(window.innerWidth > 480);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-  
+  const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
   const location = useLocation();
 
-  // Fermer la sidebar quand la route change
-  useEffect(() => {
-    setIsSidebarOpen(false);
-  }, [location.pathname]);
-
-  // Gérer le scroll
   useEffect(() => {
     const handleScroll = () => {
       if (location.pathname !== "/contact") {
-        setIsScrolled(window.scrollY > 5);
+        if (window.scrollY > 5) setIsScrolled(true);
+        else setIsScrolled(false);
       }
     };
 
     if (
       location.pathname === "/contact" ||
-      location.pathname === "/Athmane_ouamara" ||
+      location.pathname === "/Alain_Passard" ||
       location.pathname === "/Réservation"
     ) {
       setIsScrolled(true);
@@ -40,7 +36,7 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]);
 
-  // Gérer le redimensionnement de la fenêtre
+  // Détecter le redimensionnement de la fenêtre
   useEffect(() => {
     const handleResize = () => {
       setShowReservation(window.innerWidth > 480);
@@ -49,19 +45,6 @@ function Header() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  // Gérer le body overflow quand la sidebar est ouverte
-  useEffect(() => {
-    if (isSidebarOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [isSidebarOpen]);
 
   return (
     <>
@@ -119,9 +102,6 @@ function Header() {
           </Link>
           <Link to="/Buffets" onClick={toggleSidebar}>
             Buffets
-          </Link>
-          <Link to="/Plats" onClick={toggleSidebar}>
-            Signature Dishes
           </Link>
         </nav>
       </div>
