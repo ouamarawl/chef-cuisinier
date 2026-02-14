@@ -10,6 +10,33 @@
   color: white;
 }
 
+/* --- BANNER COMING SOON --- */
+.coming-soon-banner {
+  background: linear-gradient(135deg, #FFB347, #FFCC33);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(255, 179, 71, 0.3);
+}
+
+.coming-soon-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.coming-soon-text {
+  font-size: 14px;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.coming-soon-text strong {
+  color: #1a252f;
+}
+
 /* --- TITRE --- */
 .zenchef-title {
   font-size: 22px;
@@ -34,6 +61,11 @@
   gap: 20px;
 }
 
+.zenchef-form-disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
 .zenchef-form label {
   font-size: 13px;
   font-weight: 500;
@@ -51,6 +83,12 @@
   border-radius: 6px;
   background-color: #fff;
   transition: border-color 0.3s ease;
+}
+
+.zenchef-form input:disabled,
+.zenchef-form select:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
 }
 
 .zenchef-form input:focus,
@@ -77,6 +115,16 @@
   background-color: #e0e0e0;
 }
 
+.zenchef-btn-disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.zenchef-btn-disabled:hover {
+  background-color: #cccccc;
+}
+
 /* --- ZENCHEF --- */
 .zenchef-powered {
   margin-top: 28px;
@@ -96,6 +144,16 @@
     font-size: 18px;
     margin-bottom: 16px;
   }
+  .coming-soon-banner {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+  .coming-soon-icon {
+    font-size: 24px;
+  }
+  .coming-soon-text {
+    font-size: 12px;
+  }
   .zenchef-policy {
     font-size: 12px;
     margin-bottom: 18px;
@@ -113,6 +171,7 @@
     padding: 10px;
   }
 }
+
 @media (max-width: 480px) {
   .zenchef-reservation {
     margin: 120px auto;
@@ -121,6 +180,15 @@
   }
   .zenchef-title {
     font-size: 15px;
+  }
+  .coming-soon-banner {
+    padding: 10px;
+  }
+  .coming-soon-icon {
+    font-size: 20px;
+  }
+  .coming-soon-text {
+    font-size: 10px;
   }
   .zenchef-policy {
     font-size: 10px;

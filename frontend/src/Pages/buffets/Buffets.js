@@ -76,6 +76,9 @@ import buffet68 from "../../assets/Buffets/buffet-68.jpg";
 import buffet69 from "../../assets/Buffets/buffet-69.jpg";
 import buffet70 from "../../assets/Buffets/buffet-70.jpg";
 import buffet71 from "../../assets/Buffets/buffet-71.jpg";
+import buffet72 from "../../assets/Buffets/buffet-72.jpg";
+import buffet73 from "../../assets/Buffets/buffet-73.jpg";
+
 const buffets = [
   {
     image: buffet1,
@@ -197,6 +200,8 @@ const allImages = [
   buffet69,
   buffet70,
   buffet71,
+  buffet72,
+  buffet73,
 ];
 
 // Fonction pour créer les données
@@ -240,6 +245,12 @@ const appetizersData = [
   },
 
   // 🌡️ WARM / TEMPERATE
+    {
+    id: 33,
+    image: buffet33,
+    title: "Figs & Foie Gras Bites",
+    desc: "figs fois gras bites",
+  },
   {
     id: 31,
     image: buffet31,
@@ -252,12 +263,7 @@ const appetizersData = [
     title: "Heirloom Tomato Bruschetta Bites",
     desc: "heirloom tomato bruschetta bites",
   },
-  {
-    id: 33,
-    image: buffet33,
-    title: "Figs & Foie Gras Bites",
-    desc: "figs fois gras bites",
-  },
+
   {
     id: 39,
     image: buffet39,
@@ -325,11 +331,17 @@ const platedDishesData = [
     title: "Ribeye Au Poivre",
     desc: "Ribeyes au poivre sauce and asparagus",
   },
-  {
-    id: 36,
-    image: buffet36,
-    title: "New York Strip Steak",
-    desc: "New York strips , asparagus , muslines",
+    {
+    id: 72,
+    image: buffet72,
+    title: "Salmon Wellington",
+    desc: "Salmon Wellington",
+  },
+    {
+    id: 73,
+    image: buffet73,
+    title: "Veggies lasagna",
+    desc: "Veggies lasagna",
   },
   {
     id: 37,
@@ -389,11 +401,20 @@ const platedDishesData = [
     title: "Oysters and King Crab Legs",
     desc: "Oysters and king crab legs",
   },
+
 ];
 
 
 const banquetsData = [
   // 🔥 HOT / CARVING & LIVE STATIONS
+    {
+    id: 30,
+    image: buffet30,
+    title: "Lobster bisque",
+     desc:'Lobster bisque',
+  },
+
+
   {
     id: 47,
     image: buffet47,
@@ -405,6 +426,12 @@ const banquetsData = [
     image: buffet48,
     title: "Lamb Leg and Roasted Beef",
     desc: "Lamb leg and roasted beef",
+  },
+    {
+    id: 28,
+    image: buffet28,
+    title: "Cauliflower soup",
+   desc:'Cauliflower soup',
   },
   {
     id: 56,
@@ -448,17 +475,7 @@ const banquetsData = [
   },
 
   // ❌ PAS DE DESCRIPTION FOURNIE → COMMENTÉS
-  // {
-  //   id: 30,
-  //   image: buffet30,
-  //   title: "Crab Cakes",
-  // },
 
-  // {
-  //   id: 28,
-  //   image: buffet28,
-  //   title: "Tuna Carpaccio",
-  // },
 
   // {
   //   id: 57,

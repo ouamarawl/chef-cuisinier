@@ -10,7 +10,7 @@ ffmpeg.setFfmpegPath(
 );
 
 const folder =
-  "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/image avent utilisation";
+  "C:\\Users\\L13 YOGA\\OneDrive\\Bureau\\mes_projets\\projet React\\chef-cuisinier\\frontend\\src\\assets\\images-avent-utilisation";
 
 // Créer dossier temporaire pour les fichiers convertis
 const convertedFolder = path.join(folder, "converted");
