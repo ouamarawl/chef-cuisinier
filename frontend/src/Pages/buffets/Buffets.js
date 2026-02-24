@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Buffets.css";
 
-import buffetHero from "../../assets/Buffets/plat74.PNG";
+// import buffetHero from "../../assets/Buffets/plat74.PNG";
 import signature_athmane from "../../assets/signature_athmane.png";
 
 // Import toutes les images
@@ -34,7 +34,7 @@ import buffet26 from "../../assets/Buffets/buffet-26.jpg";
 import buffet27 from "../../assets/Buffets/buffet-27.jpg";
 import buffet28 from "../../assets/Buffets/buffet-28.jpg";
 import buffet29 from "../../assets/Buffets/buffet-29.jpg";
-import buffet30 from "../../assets/Buffets/buffet-30.jpg";
+import buffet30 from "../../assets/Buffets/buffet-30-m.jpg";
 import buffet31 from "../../assets/Buffets/buffet-31.jpg";
 import buffet32 from "../../assets/Buffets/buffet-32.jpg";
 import buffet33 from "../../assets/Buffets/buffet-33.jpg";
@@ -224,6 +224,12 @@ const createSectionData = (startIdx, endIdx, titlePrefix) => {
 };
 
 const appetizersData = [
+  {
+    id: 39,
+    image: buffet39,
+    title: "Brie Cheese with Raspberry",
+    desc: "Brie cheese framboise",
+  },
   // 🔥 HOT
   {
     id: 29,
@@ -245,7 +251,7 @@ const appetizersData = [
   },
 
   // 🌡️ WARM / TEMPERATE
-    {
+  {
     id: 33,
     image: buffet33,
     title: "Figs & Foie Gras Bites",
@@ -264,20 +270,14 @@ const appetizersData = [
     desc: "heirloom tomato bruschetta bites",
   },
 
-  {
-    id: 39,
-    image: buffet39,
-    title: "Brie Cheese with Raspberry",
-    desc: "Brie cheese framboise",
-  },
-
   // ❄️ COLD
   {
-    id: 22,
-    image: buffet22,
-    title: "Lobster Ceviche",
-    desc: "lobster ceviche",
+    id: 50,
+    image: buffet50,
+    title: "Blue Cheese Selection",
+    desc: "bleu and blue",
   },
+
   {
     id: 44,
     image: buffet44,
@@ -290,12 +290,7 @@ const appetizersData = [
     title: "Citrus Sea Scallop Bites",
     desc: "citrus sea scallops bites",
   },
-  {
-    id: 67,
-    image: buffet67,
-    title: "Mango Sea Scallops",
-    desc: "mango sea scallops",
-  },
+
   {
     id: 52,
     image: buffet52,
@@ -309,74 +304,33 @@ const appetizersData = [
     desc: "beef Tatar bite",
   },
   {
-    id: 50,
-    image: buffet50,
-    title: "Blue Cheese Selection",
-    desc: "bleu and blue",
+    id: 22,
+    image: buffet22,
+    title: "Lobster Ceviche",
+    desc: "lobster ceviche",
+  },
+  {
+    id: 67,
+    image: buffet67,
+    title: "Mango Sea Scallops",
+    desc: "mango sea scallops",
   },
 ];
 
-
 const platedDishesData = [
-  // 🔥 HOT DISHES
-  {
-    id: 35,
-    image: buffet35,
-    title: "Grilled Bone-In Ribeye",
-    desc: "grilled bone in ribeye , potato ships, Demi glaze",
-  },
-  {
-    id: 42,
-    image: buffet42,
-    title: "Ribeye Au Poivre",
-    desc: "Ribeyes au poivre sauce and asparagus",
-  },
     {
-    id: 72,
-    image: buffet72,
-    title: "Salmon Wellington",
-    desc: "Salmon Wellington",
+    id: 28,
+    image: buffet28,
+    title: "Cauliflower soup",
+    desc: "Cauliflower soup",
   },
+  // ❄️ COLD STARTERS
     {
-    id: 73,
-    image: buffet73,
-    title: "Veggies lasagna",
-    desc: "Veggies lasagna",
+    id: 30,
+    image: buffet30,
+    title: "Lobster bisque",
+    desc: "Lobster bisque",
   },
-  {
-    id: 37,
-    image: buffet37,
-    title: "Veal Schnitzel",
-    desc: "Veal schnitzel,mix wild berry sauce , mush potato",
-  },
-  {
-    id: 46,
-    image: buffet46,
-    title: "New York Veal",
-    desc: "New York veal Served with Swiss shard and home made teriyaki sauce",
-  },
-  {
-    id: 38,
-    image: buffet38,
-    title: "Lobster with Smoked Bell Pepper Sauce",
-    desc: "Lobster served with smoked belle pepper sauce and gree peas",
-  },
-  {
-    id: 45,
-    image: buffet45,
-    title: "Halibut Al Forno",
-    desc: "Halibut served with alforno sauce",
-  },
-
-  // 🌡️ WARM / LIGHT
-  {
-    id: 34,
-    image: buffet34,
-    title: "Black Sea Bass",
-    desc: "Black Sea,potato muslin, asparagus,",
-  },
-
-  // ❄️ COLD / FRESH
   {
     id: 41,
     image: buffet41,
@@ -389,31 +343,89 @@ const platedDishesData = [
     title: "Watermelon Feta Salad",
     desc: "Watermelon feta salad",
   },
-  {
-    id: 66,
-    image: buffet66,
-    title: "Watermelon Feta Salad",
-    desc: "Watermelon feta salad",
-  },
+  // {
+  //   id: 66,
+  //   image: buffet66,
+  //   title: "Watermelon Feta Salad",
+  //   desc: "Watermelon feta salad",
+  // },
   {
     id: 70,
     image: buffet70,
     title: "Oysters and King Crab Legs",
     desc: "Oysters and king crab legs",
   },
+  
 
+  // 🌡️ WARM STARTERS / FISH
+  {
+    id: 34,
+    image: buffet34,
+    title: "Black Sea Bass",
+    desc: "Black Sea,potato muslin, asparagus,",
+  },
+
+  {
+    id: 45,
+    image: buffet45,
+    title: "Halibut Al Forno",
+    desc: "Halibut served with alforno sauce",
+  },
+  {
+    id: 38,
+    image: buffet38,
+    title: "Lobster with Smoked Bell Pepper Sauce",
+    desc: "Lobster served with smoked belle pepper sauce and gree peas",
+  },
+
+  // 🥩 MAIN COURSES
+  {
+    id: 37,
+    image: buffet37,
+    title: "Veal Schnitzel",
+    desc: "Veal schnitzel,mix wild berry sauce , mush potato",
+  },
+  // {
+  //   id: 46,
+  //   image: buffet46,
+  //   title: "New York Veal",
+  //   desc: "New York veal Served with Swiss shard and home made teriyaki sauce",
+  // },
+
+  {
+    id: 35,
+    image: buffet35,
+    title: "Grilled Bone-In Ribeye",
+    desc: "grilled bone in ribeye , potato ships, Demi glaze",
+  },
+  {
+    id: 73,
+    image: buffet73,
+    title: "Veggies lasagna",
+    desc: "Veggies lasagna",
+  },
+
+  // 🐟 SIGNATURE
+  {
+    id: 72,
+    image: buffet72,
+    title: "Salmon Wellington",
+    desc: "Salmon Wellington",
+  },
+
+  // 🥬 VEGETARIAN
+
+  {
+    id: 42,
+    image: buffet42,
+    title: "Ribeye Au Poivre",
+    desc: "Ribeyes au poivre sauce and asparagus",
+  },
 ];
-
 
 const banquetsData = [
   // 🔥 HOT / CARVING & LIVE STATIONS
-    {
-    id: 30,
-    image: buffet30,
-    title: "Lobster bisque",
-     desc:'Lobster bisque',
-  },
-
+  
 
   {
     id: 47,
@@ -427,12 +439,7 @@ const banquetsData = [
     title: "Lamb Leg and Roasted Beef",
     desc: "Lamb leg and roasted beef",
   },
-    {
-    id: 28,
-    image: buffet28,
-    title: "Cauliflower soup",
-   desc:'Cauliflower soup',
-  },
+
   {
     id: 56,
     image: buffet56,
@@ -476,7 +483,6 @@ const banquetsData = [
 
   // ❌ PAS DE DESCRIPTION FOURNIE → COMMENTÉS
 
-
   // {
   //   id: 57,
   //   image: buffet57,
@@ -507,7 +513,6 @@ const banquetsData = [
   //   title: "Dessert Buffet",
   // },
 ];
-
 
 const Buffet = () => {
   // État pour l'index du carousel
@@ -577,7 +582,7 @@ const Buffet = () => {
   return (
     <div className="buffets-page">
       <section className="buffets-hero">
-        <img src={buffetHero} alt="Luxury Buffets" className="hero-image" />
+        <img src={buffet59} alt="Luxury Buffets" className="hero-image" />
         <div className="hero-overlay">
           <h1>Luxury Buffets by Chef Athmane</h1>
           <p>Elegance, refinement, and unforgettable flavors</p>
