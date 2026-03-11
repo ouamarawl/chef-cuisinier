@@ -1,5 +1,5 @@
 /* ========================================
-   MENU PAGE - GASTRONOMIC FLOW
+   MENU PAGE - BASED ON BUFFETS STRUCTURE
    ======================================== */
 
 :root {
@@ -22,10 +22,6 @@
   --transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ========================================
-   GLOBAL RESET & FIX SCROLLBAR
-   ======================================== */
-
 * {
   margin: 0;
   padding: 0;
@@ -33,71 +29,50 @@
 }
 
 html {
-  overflow-x: hidden;
-  width: 100%;
+  overflow-x: hidden !important;
+  max-width: 100vw;
 }
 
 body {
-  overflow-x: hidden;
-  width: 100%;
+  overflow-x: hidden !important;
+  max-width: 100vw;
 }
 
 .menue-page {
   font-family: var(--font-body);
   background: var(--color-bg-light);
-  overflow-x: hidden;
   width: 100%;
-  max-width: 100%;
-  position: relative;
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
-/* ========================================
-   HERO SECTION
-   ======================================== */
-
+/* ========== HERO (EXACT COMME BUFFETS) ========== */
 .menue-hero {
   position: relative;
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
   height: 70vh;
   overflow: hidden;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
 
 .menue-hero-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.7);
-  animation: slowZoom 20s ease-in-out infinite alternate;
-  display: block;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-@keyframes slowZoom {
-  from { transform: scale(1); }
-  to { transform: scale(1.05); }
+  filter: brightness(0.75);
 }
 
 .menue-hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.3) 0%,
     rgba(0, 0, 0, 0.6) 100%
   );
   z-index: 1;
-  pointer-events: none;
 }
 
 .menue-hero-content {
@@ -105,23 +80,29 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
   text-align: center;
   color: var(--color-white);
   width: 90%;
-  max-width: 900px;
-  padding: 0 20px;
-  box-sizing: border-box;
+  max-width: 1000px;
+  z-index: 2;
 }
 
 .menue-hero-title {
   font-family: var(--font-display);
-  font-size: clamp(42px, 6vw, 68px);
-  font-weight: 300;
-  letter-spacing: 0.18em;
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 400;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   animation: fadeInDown 1s ease-out;
+}
+
+.menue-hero-subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 300;
+  line-height: 1.6;
+  animation: fadeIn 1.2s ease-out 0.3s both;
 }
 
 @keyframes fadeInDown {
@@ -135,49 +116,35 @@ body {
   }
 }
 
-.menue-hero-subtitle {
-  font-family: var(--font-accent);
-  font-size: clamp(16px, 2vw, 22px);
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.6;
-  animation: fadeIn 1.2s ease-out 0.3s both;
-}
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* ========================================
-   PHILOSOPHY SECTION
-   ======================================== */
-
+/* ========== PHILOSOPHY ========== */
 .menue-philosophy {
   text-align: center;
-  padding: clamp(100px, 12vw, 140px) 6%;
+  padding: clamp(80px, 10vw, 120px) 6%;
+  max-width: 900px;
+  margin: 0 auto;
   background: var(--color-bg-light);
-  overflow: hidden;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin: 0;
 }
 
 .philosophy-content {
   max-width: 900px;
   margin: 0 auto;
-  width: 100%;
 }
 
 .philosophy-content h2 {
   font-family: var(--font-display);
-  font-size: clamp(36px, 5vw, 52px);
-  font-weight: 300;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: 0.18em;
   color: var(--color-primary);
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
 }
 
 .philosophy-divider {
@@ -189,23 +156,18 @@ body {
 
 .philosophy-content p {
   font-family: var(--font-body);
-  font-size: clamp(15px, 1.8vw, 18px);
+  font-size: clamp(15px, 1.8vw, 17px);
   line-height: 1.9;
   color: var(--color-text-medium);
+  max-width: 700px;
+  margin: 30px auto 0 auto;
 }
 
-/* ========================================
-   MENU CATEGORY SECTIONS
-   ======================================== */
-
+/* ========== CATEGORY SECTIONS ========== */
 .menu-category-section {
   padding: clamp(80px, 10vw, 120px) 6%;
   background: var(--color-bg-light);
   overflow: hidden;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin: 0;
 }
 
 .menu-category-section:nth-of-type(even) {
@@ -219,7 +181,6 @@ body {
   align-items: center;
   max-width: 1400px;
   margin: 0 auto 80px auto;
-  width: 100%;
 }
 
 .category-number-large {
@@ -256,17 +217,13 @@ body {
   max-width: 600px;
 }
 
-/* ========================================
-   MENU ITEMS GRID
-   ======================================== */
-
+/* ========== GRID (EXACT COMME BUFFETS) ========== */
 .menu-items-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
-  width: 100%;
 }
 
 .menu-item-card {
@@ -275,7 +232,6 @@ body {
   overflow: hidden;
   box-shadow: var(--shadow-subtle);
   transition: all 0.5s var(--transition);
-  width: 100%;
 }
 
 .menu-item-card:hover {
@@ -287,7 +243,6 @@ body {
   width: 100%;
   height: 350px;
   overflow: hidden;
-  position: relative;
 }
 
 .menu-item-image img {
@@ -295,7 +250,6 @@ body {
   height: 100%;
   object-fit: cover;
   transition: transform 0.7s var(--transition);
-  display: block;
 }
 
 .menu-item-card:hover .menu-item-image img {
@@ -306,14 +260,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.7) 0%,
     transparent 50%
   );
-  pointer-events: none;
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -324,95 +277,54 @@ body {
 
 .menu-item-content {
   padding: 30px 25px;
-  width: 100%;
 }
 
 .menu-item-content h3 {
   font-family: var(--font-display);
-  font-size: clamp(22px, 2.5vw, 28px);
+  font-size: clamp(20px, 2.2vw, 24px);
   font-weight: 400;
   letter-spacing: 0.08em;
   color: var(--color-primary);
   margin-bottom: 12px;
   text-transform: capitalize;
-  word-wrap: break-word;
 }
 
 .menu-item-content p {
   font-family: var(--font-body);
-  font-size: clamp(14px, 1.5vw, 16px);
+  font-size: clamp(14px, 1.4vw, 15px);
   line-height: 1.7;
   color: var(--color-text-medium);
-  word-wrap: break-word;
 }
 
-/* ========================================
-   SIGNATURE SECTION - FIXED
-   ======================================== */
-
+/* ========== SIGNATURE ========== */
 .menue-signature {
   text-align: center;
-  padding: clamp(100px, 12vw, 140px) 6%;
+  padding: clamp(80px, 10vw, 120px) 6%;
   background: linear-gradient(135deg, var(--color-bg-cream) 0%, var(--color-bg-light) 100%);
-  overflow: hidden;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin: 0;
 }
 
 .signature-wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .signature-quote {
   font-family: var(--font-accent);
-  font-size: clamp(22px, 3vw, 32px);
+  font-size: clamp(20px, 2.5vw, 28px);
   font-style: italic;
   font-weight: 300;
   line-height: 1.7;
   color: var(--color-text-dark);
-  margin-bottom: 50px;
-  position: relative;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  max-width: 100%;
-  padding: 0 50px;
-  box-sizing: border-box;
-}
-
-.signature-quote::before,
-.signature-quote::after {
-  content: '"';
-  font-size: 60px;
-  color: var(--color-accent);
-  opacity: 0.3;
-  position: absolute;
-  font-family: Georgia, serif;
-  line-height: 0;
-}
-
-.signature-quote::before {
-  top: 10px;
-  left: 10px;
-}
-
-.signature-quote::after {
-  bottom: -20px;
-  right: 10px;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
 }
 
 .signature-img {
-  width: clamp(200px, 30vw, 300px);
+  width: clamp(180px, 25vw, 280px);
   height: auto;
   opacity: 0.85;
-  margin: 30px 0 25px 0;
+  margin: 30px 0 20px 0;
   transition: opacity 0.3s ease;
-  max-width: 100%;
 }
 
 .signature-img:hover {
@@ -421,57 +333,30 @@ body {
 
 .signature-name {
   font-family: var(--font-body);
-  font-size: clamp(14px, 1.6vw, 16px);
+  font-size: clamp(13px, 1.5vw, 15px);
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--color-accent);
 }
 
-/* ========================================
-   CTA SECTION
-   ======================================== */
-
+/* ========== CTA ========== */
 .menue-cta {
-  padding: clamp(120px, 14vw, 160px) 6%;
+  padding: clamp(100px, 12vw, 140px) 6%;
   background: linear-gradient(135deg, #2c3e50 0%, var(--color-primary) 100%);
   text-align: center;
   color: var(--color-white);
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.menue-cta::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: 
-    radial-gradient(circle at 20% 50%, rgba(201, 166, 107, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 50%, rgba(201, 166, 107, 0.1) 0%, transparent 50%);
-  pointer-events: none;
 }
 
 .cta-content {
   max-width: 800px;
   margin: 0 auto;
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .cta-content h2 {
   font-family: var(--font-display);
-  font-size: clamp(36px, 5vw, 52px);
-  font-weight: 300;
+  font-size: clamp(32px, 4.5vw, 48px);
+  font-weight: 400;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 25px;
@@ -479,20 +364,21 @@ body {
 
 .cta-content p {
   font-family: var(--font-body);
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(15px, 1.8vw, 18px);
   line-height: 1.8;
-  margin-bottom: 50px;
+  max-width: 700px;
+  margin: 0 auto 45px auto;
   opacity: 0.95;
 }
 
 .cta-btn {
   display: inline-block;
-  padding: 18px 50px;
+  padding: 16px 45px;
   background: transparent;
   border: 2px solid var(--color-accent);
   color: var(--color-white);
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -524,14 +410,21 @@ body {
   box-shadow: 0 8px 25px rgba(201, 166, 107, 0.3);
 }
 
-/* ========================================
-   ANIMATIONS
-   ======================================== */
+.cta-btn:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
 
+/* ========== ANIMATIONS ========== */
 .fade-up {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s var(--transition);
+}
+
+.fade-up.invisible {
   opacity: 0;
   transform: translateY(40px);
-  transition: all 1s var(--transition);
 }
 
 .fade-up.visible {
@@ -539,13 +432,10 @@ body {
   transform: translateY(0);
 }
 
-/* ========================================
-   RESPONSIVE
-   ======================================== */
-
+/* ========== RESPONSIVE ========== */
 @media (max-width: 1200px) {
   .menu-items-grid {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
   }
   
@@ -579,7 +469,7 @@ body {
   }
   
   .menu-items-grid {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
   
   .menu-item-image {
@@ -605,20 +495,11 @@ body {
   }
   
   .menu-item-image {
-    height: 300px;
+    height: 350px;
   }
   
   .category-number-large {
     font-size: 80px;
-  }
-  
-  .signature-quote {
-    padding: 0 40px;
-  }
-  
-  .signature-quote::before,
-  .signature-quote::after {
-    font-size: 50px;
   }
 }
 
@@ -632,32 +513,20 @@ body {
   }
   
   .menu-item-image {
-    height: 250px;
+    height: 280px;
   }
   
   .menu-item-content {
-    padding: 25px 20px;
+    padding: 20px 18px;
   }
   
   .cta-btn {
-    padding: 16px 40px;
-    font-size: 13px;
-  }
-  
-  .signature-quote {
-    padding: 0 30px;
-  }
-  
-  .signature-quote::before,
-  .signature-quote::after {
-    font-size: 40px;
+    padding: 14px 35px;
+    font-size: 12px;
   }
 }
 
-/* ========================================
-   ACCESSIBILITY
-   ======================================== */
-
+/* ========== ACCESSIBILITY ========== */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -666,9 +535,4 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-
-.cta-btn:focus-visible {
-  outline: 3px solid var(--color-accent);
-  outline-offset: 4px;
 }

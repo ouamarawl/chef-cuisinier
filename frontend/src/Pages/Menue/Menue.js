@@ -83,7 +83,7 @@ const plats = [
 const desserts = [
   { id: 3, image: menue_3, title: "Strawberry Cake", description: "Strawberry cake" },
   { id: 6, image: menue_6, title: "Poached Pear Rocher", description: "Placer la on sous avec tout les dessert ( poached pear rocher )" },
-
+  
 ];
 
   const MenuSection = ({ title, number, description, items }) => (
