@@ -1,6 +1,6 @@
 import "./App.css";
 import Contact from "./Pages/Contact/Contact";
-import Alain_Passard from "./Pages/AlainPassard/Alain_Passard";
+import ChefAthmane from "./Pages/ChefAthmane/ChefAthmane";
 import Réservation from "./Pages/Réservation/Réservation";
 import Larriere_cuisine from "./Pages/larriere_cuisine/Larriere_cuisine";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -19,7 +19,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Athmane_ouamara" element={<Alain_Passard />} />
+        <Route path="/Athmane_ouamara" element={<ChefAthmane />} />
         <Route path="/Réservation" element={<Réservation />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Larriere_cuisinet" element={<Larriere_cuisine />} />

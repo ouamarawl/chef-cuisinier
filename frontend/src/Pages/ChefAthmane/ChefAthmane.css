@@ -1,5 +1,5 @@
-/* Alain_Passard.css */
-.Alain_passard {
+/* ChefAthmane.css */
+.ChefAthmane {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -78,6 +78,7 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.4em;
+  margin: 6vh;
 }
 
 /* section-presentation */

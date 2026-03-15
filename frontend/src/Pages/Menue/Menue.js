@@ -21,7 +21,7 @@ import menue_15 from '../../assets/menue/menue-15.jpg';
 import menue_16 from '../../assets/menue/menue-16.jpg';
 import menue_17 from '../../assets/menue/menue-17.jpg';
 import menue_18 from '../../assets/menue/menue-18.jpg';
-import menue_19 from '../../assets/menue/menue-19.jpg';
+
 import menue_20 from '../../assets/menue/menue-20.jpg';
 import menue_21 from '../../assets/menue/menue-21.jpg';
 import menue_22 from '../../assets/menue/menue-22.jpg';
@@ -52,40 +52,38 @@ function Menue() {
   }, []);
 // ENTRÉES
 const entrees = [
-  { id: 4, image: menue_4, title: "Poached Pear Salad", description: "Poached pear salad" },
-  { id: 11, image: menue_11, title: "Beef Tartar", description: "Beef tartar" },
-  { id: 14, image: menue_14, title: "Greek Style Octopus", description: "Greek style octopus" },
-  { id: 22, image: menue_22, title: "Pan Seared Sea Scallops", description: "Pan seared Sea scallops , ginger, soy sauce, royal white caviar topping" },
-  { id: 24, image: menue_24, title: "Lobster Bisque", description: "Lobster bisque" }
+  { id: 4, image: menue_4, title: "Beef tartar", description: "Beef tenderloin, quill eggs, Dijon, caper’s, charlottes, truffle oil, black truffle, Parmesan shaving, arugula" },
+  { id: 11, image: menue_11, title: "Poached pear salad", description: "Poached pear in red wine, beets glaze, black berry and ras berries" },
+  { id: 14, image: menue_14, title: "Greek style Octopus", description: "Smoked eggplant puree, roasted bell peppers salade, shard lemon" },
+  { id: 22, image: menue_22, title: "Smoked sea scallops", description: "Truffle soy ginger sauce, royal white caviar topping" },
+  { id: 24, image: menue_24, title: "Lobster bisque", description: "Lobster tails, lobster better, lobster stock" }
 ];
 
 // PLATS PRINCIPAUX
 const plats = [
-  { id: 1, image: menue_1, title: "Cod with Black Miso Glaze", description: "Cod with black miso glaze, cabbage jelly , cabbage crumble" },
-  { id: 5, image: menue_5, title: "Filet Medallions", description: "Filet medallions, parsnip turmeric puree, shallots balsamic confit, Demi red wine reduction" },
-  { id: 7, image: menue_7, title: "Vegetables", description: "Vegetables" },
-  { id: 8, image: menue_8, title: "Sole Filet", description: "Sole filet , trio fingering potato , better lemon caper sauce" },
-  { id: 9, image: menue_9, title: "Chicken Hawaiian Style", description: "Chicken Hawaiian style" },
-  { id: 10, image: menue_10, title: "Taco Lamb Shank", description: "Taco lamb shank" },
-  { id: 12, image: menue_12, title: "Chicken Rolled", description: "Chicken rolled" },
-  { id: 13, image: menue_13, title: "Salmon Wellington", description: "Salmon Wellington" },
-  { id: 15, image: menue_15, title: "Black Sea Bass", description: "Black Sea bass , sweet pea foam" },
-  { id: 16, image: menue_16, title: "Wagyu A5", description: "Wagyu A5 , truffle much , red wine reduction" },
-  { id: 17, image: menue_17, title: "Japanese Seared Tuna", description: "Japonaise seared tuna , teriyaki glaze" },
-  { id: 18, image: menue_18, title: "Lasagna", description: "Lasagna" },
-  { id: 19, image: menue_19, title: "Chicken Rolled", description: "Chicken rolled" },
-  { id: 20, image: menue_20, title: "Halibut", description: "Halibut, saffron fish fumet" },
-  { id: 21, image: menue_21, title: "Halibut Island", description: "Halibut island , bure blanc , dill oil" },
-  { id: 23, image: menue_23, title: "Taco Lamb Shank", description: "Taco lamb shank" }
+  { id: 1, image: menue_1, title: "Black miso codfish", description: "Black miso cod, pickled red cabbage, cabbage jelly, cabbage crumble, seaweed" },
+  { id: 2, image: menue_2, title: "Carving lamb taco", description: "Slow cooked lamb shank, tomato onion salsa, crispy taco, ki so frescos, cilantro" },
+  { id: 5, image: menue_5, title: "Tenderloin medallions", description: "Parsnips turmeric puree, parsnips, balsamic confit shallots, red wine reduction Demi" },
+  { id: 7, image: menue_7, title: "Baby longoustine, red snapper risotto", description: "Seafood risotto, baby longoustine, fish fumet" },
+  { id: 8, image: menue_8, title: "Sole fish", description: "Sole cooked with better, baby fingers potato, red, yellow and purple, lemon better caper sauce" },
+  { id: 10, image: menue_10, title: "Hawaiian chicken", description: "Chicken legs boneless, pepper, onion, pineapple, chefs special seasoning" },
+  { id: 12, image: menue_12, title: "Classic chicken rolled", description: "Chicken boneless stuffed with kale, sun-dried tomato, chicken muss, homemade chicken jus, mush potato and green beans, chicken lollipop" },
+  { id: 13, image: menue_13, title: "Beef Wellington", description: "Beef tenderloin, mushrooms moss, homemade Demi glaze, asparagus" },
+  { id: 15, image: menue_15, title: "Black sea bass", description: "Sweet pea, sweet pea Rafael foam, baure blanc sauce" },
+  { id: 16, image: menue_16, title: "A5 Wagyu beef", description: "Truffle potato mousseline, beets au jus, beets chips" },
+  { id: 17, image: menue_17, title: "Japanese style Black sesame seared tuna", description: "Teriyaki sauce, sweet pea puree, pickled radish" },
+  { id: 18, image: menue_18, title: "Vegetable lasagna", description: "Zucchini, eggplant, parm, mozzarella, ricotta, tomato sauce" },
+  { id: 20, image: menue_20, title: "Halibut fish fumet", description: "Fresh turmeric fish fumet, asparagus, spring onion" },
+  { id: 21, image: menue_21, title: "Island halibut", description: "Center cut halibut better and nuts crusted, dill oil, beurre blanc, micro greens salad" },
+  { id: 23, image: menue_23, title: "Salmon Wellington", description: "Wild salmon, fresh dill, shiitake mushrooms, lemon better sauce" }
 ];
 
 // DESSERTS
 const desserts = [
-  { id: 3, image: menue_3, title: "Strawberry Cake", description: "Strawberry cake" },
-  { id: 6, image: menue_6, title: "Poached Pear Rocher", description: "Placer la on sous avec tout les dessert ( poached pear rocher )" },
-  
+  { id: 3, image: menue_3, title: "Strawberries cake", description: "Vanilla Sponch cake, strawberry jelly, strawberry vanilla ganache, dark chocolate, fresh strawberry’s" },
+  { id: 6, image: menue_6, title: "Pear rocher", description: "Pears, dark chocolate, granola topping, pear sauce" },
+  { id: 9, image: menue_9, title: "Sweet potato cream brûlée", description: "Sweet potato cream brûlée with caramelized sugar crust" }
 ];
-
   const MenuSection = ({ title, number, description, items }) => (
     <section className="menu-category-section fade-up">
       <div className="category-header">
@@ -119,12 +117,12 @@ const desserts = [
       
       {/* HERO SECTION */}
       <section className="menue-hero">
-        <img src={menue_1} alt="Menu Hero" className="menue-hero-bg" />
+        <img src={menue_16} alt="Menu Hero" className="menue-hero-bg" />
         <div className="menue-hero-overlay"></div>
         <div className="menue-hero-content">
-          <h1 className="menue-hero-title">Le Menu du Chef</h1>
+          <h1 className="menue-hero-title">The Chef's Menu</h1>
           <p className="menue-hero-subtitle">
-            Un voyage gastronomique en trois actes
+            A gastronomic journey in three acts
           </p>
         </div>
       </section>
@@ -132,30 +130,30 @@ const desserts = [
       {/* PHILOSOPHY */}
       <section className="menue-philosophy fade-up">
         <div className="philosophy-content">
-          <h2>L'Art de la Gastronomie</h2>
+          <h2>The Art of Gastronomy</h2>
           <div className="philosophy-divider"></div>
           <p>
-            Chaque création culinaire est pensée pour éveiller vos sens : 
-            des textures surprenantes, des arômes subtils et des présentations élégantes.
-            Le Chef Athmane met un point d'honneur à allier tradition et modernité 
-            dans chacun de ses plats.
+            Every culinary creation is thoughtfully designed to awaken your senses: 
+            surprising textures, subtle aromas, and elegant presentations.
+            Chef Athmane makes it a point of honor to blend tradition and modernity 
+            in each of his dishes.
           </p>
         </div>
       </section>
 
-      {/* ENTRÉES */}
+      {/* APPETIZERS */}
       <MenuSection 
-        title="Entrées"
+        title="Appetizers"
         number="01"
-        description="Fraîcheur, équilibre et élégance pour commencer votre expérience culinaire"
+        description="Freshness, balance, and elegance to begin your culinary experience"
         items={entrees}
       />
 
-      {/* PLATS PRINCIPAUX */}
+      {/* MAIN COURSES */}
       <MenuSection 
-        title="Plats Principaux"
+        title="Main Courses"
         number="02"
-        description="Des créations gourmandes, mariant saveurs authentiques et techniques modernes"
+        description="Delicious creations that blend authentic flavors with modern techniques"
         items={plats}
       />
 
@@ -163,7 +161,7 @@ const desserts = [
       <MenuSection 
         title="Desserts"
         number="03"
-        description="Douceurs raffinées et finitions parfaites pour conclure en beauté"
+        description="Refined delicacies and perfect finishes to conclude beautifully"
         items={desserts}
       />
 
@@ -171,11 +169,11 @@ const desserts = [
       <section className="menue-signature fade-up">
         <div className="signature-wrapper">
           <p className="signature-quote">
-            "La gastronomie est l'art de transformer la passion en émotion."
+            "Gastronomy is the art of transforming passion into emotion."
           </p>
           <img 
             src={signature_Athmane} 
-            alt="Signature du Chef" 
+            alt="Chef's Signature" 
             className="signature-img"
           />
           <p className="signature-name">Chef Athmane Ouamara</p>
@@ -185,12 +183,12 @@ const desserts = [
       {/* CTA */}
       <section className="menue-cta fade-up">
         <div className="cta-content">
-          <h2>Réservez Votre Table</h2>
+          <h2>Reserve Your Table</h2>
           <p>
-            Découvrez notre menu complet et laissez-vous transporter 
-            par une expérience gastronomique unique
+            Discover our complete menu and let yourself be transported 
+            by a unique gastronomic experience
           </p>
-          <a href="/Contact" className="cta-btn">Contactez-nous</a>
+          <a href="/Contact" className="cta-btn">Contact Us</a>
         </div>
       </section>
 

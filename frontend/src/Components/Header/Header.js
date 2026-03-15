@@ -25,7 +25,7 @@ function Header() {
 
     if (
       location.pathname === "/contact" ||
-      location.pathname === "/Alain_Passard" ||
+      location.pathname === "/Athmane_ouamara" ||
       location.pathname === "/Réservation"
     ) {
       setIsScrolled(true);

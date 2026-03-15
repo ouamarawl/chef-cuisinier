@@ -1,4 +1,4 @@
-import "./Alain_Passard.css";
+import "./ChefAthmane.css";
 import React, { useState, useEffect } from "react";
 import "@fontsource/montserrat/200.css";
 import athmane14 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane14.png";
@@ -19,7 +19,7 @@ import athmane_4 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet Reac
 import athmane_5 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_5.jpg";
 import athmane_10 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_10.jpg";
 import athmane_11 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_11.jpg";
-function Alain_Passard() {
+function ChefAthmane() {
   const location = useLocation();
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function Alain_Passard() {
   console.log("PLATS :", plats);
 
   return (
-    <div className="Alain_passard">
+    <div className="ChefAthmane">
       <div className="chef-section">
         <div className="chefimage"></div>
         <div className="chef-content">
@@ -364,4 +364,4 @@ function Alain_Passard() {
   );
 }
 
-export default Alain_Passard;
+export default ChefAthmane;

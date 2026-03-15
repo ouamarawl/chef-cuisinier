@@ -22,11 +22,11 @@
   z-index: 9999;
 }
 .larriere-cuisine-header img {
-  position: absolute; /* la feuille se positionne librement */
+  position: absolute; /* leaf positions itself freely */
   top: -20%;
   left: 43%;
-  width: 130px; /* taille de la feuille */
-  z-index: 0; /* s'assure qu'elle soit toujours au-dessus */
+  width: 130px; /* leaf size */
+  z-index: 0; /* ensures it's always on top */
   pointer-events: none; /* optionnel : permet de cliquer "à travers" la feuille */
 }
 /*  */

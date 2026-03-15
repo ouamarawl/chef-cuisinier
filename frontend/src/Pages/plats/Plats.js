@@ -31,7 +31,7 @@ function ChefAthmane() {
     return () => observer.disconnect();
   }, []);
 
-  // Fonction pour déterminer la classe CSS selon le nombre d'images
+  // Function to determine CSS class based on number of images
   const getGalleryClass = (imageCount) => {
     if (imageCount === 2) return "images-2";
     if (imageCount === 3) return "images-3";
@@ -48,25 +48,25 @@ function ChefAthmane() {
       {/* HERO */}
       <section className="chef-hero">
         <div className="chef-hero-overlay">
-          <h1 className="chef-title">Les Plats du Chef Athmane</h1>
+          <h1 className="chef-title">Chef Athmane's Dishes</h1>
           <p className="chef-subtitle">
-            Une cuisine raffinée où chaque plat raconte une histoire à travers
-            des saveurs authentiques et une présentation exceptionnelle.
+            Refined cuisine where each dish tells a story through
+            authentic flavors and exceptional presentation.
           </p>
         </div>
       </section>
 
-      {/* PLATS */}
+      {/* DISHES */}
       <div className="Chef-container">
         {dataChef.map((dish) => (
           <article className="Chef-item" key={dish.id}>
-            {/* Header avec titre et description */}
+            {/* Header with title and description */}
             <header className="Chef-item-header">
               <h2 className="Chef-item-title">{dish.title}</h2>
               <p className="Chef-item-description">{dish.description}</p>
             </header>
 
-            {/* Galerie d'images avec layout dynamique */}
+            {/* Image gallery with dynamic layout */}
             <div
               className={`Chef-item-gallery ${getGalleryClass(dish.images.length)}`}
             >
@@ -81,7 +81,7 @@ function ChefAthmane() {
                     alt={`${dish.title} - Photo ${index + 1}`}
                     loading="lazy"
                   />
-                  {/* Badge avec le nombre total d'images (seulement sur la première image) */}
+                  {/* Badge with total number of images (only on first image) */}
                   {index === 0 && dish.images.length > 1 && (
                     <span className="Chef-image-count">
                       {dish.images.length} photos
@@ -100,18 +100,18 @@ function ChefAthmane() {
 
         <div className="carousel-track">
           {plats.map((buffet, i) => {
-            // Calcul de la position relative par rapport à l'index actuel
+            // Calculate relative position based on current index
             let position = "";
             const diff = i - index;
             const totalItems = plats.length;
 
-            // Gestion du wrap-around (circulaire)
+            // Handle wrap-around (circular)
             let distance = diff;
             if (Math.abs(diff) > totalItems / 2) {
               distance = diff > 0 ? diff - totalItems : diff + totalItems;
             }
 
-            // Attribution des classes selon la distance (seulement 3 items visibles)
+            // Assign classes based on distance (only 3 items visible)
             if (distance === 0) {
               position = "center";
             } else if (distance === -1) {
@@ -140,11 +140,11 @@ function ChefAthmane() {
       </section>
       {/* FOOTER */}
       <footer className="chef-footer">
-        <h2>Signature du Chef Athmane</h2>
-        <p>« La gastronomie est une émotion visuelle et gustative. »</p>
+        <h2>Chef Athmane's Signature</h2>
+        <p>"Gastronomy is a visual and gustatory emotion."</p>
         <img
           src={signature_Athmane}
-          alt="Signature du Chef Athmane"
+          alt="Chef Athmane's Signature"
           className="chef-signature"
         />
       </footer>

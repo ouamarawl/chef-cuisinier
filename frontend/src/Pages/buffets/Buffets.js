@@ -82,48 +82,48 @@ import buffet73 from "../../assets/Buffets/buffet-73.jpg";
 const buffets = [
   {
     image: buffet1,
-    title: "Buffet Méditerranéen",
-    desc: "Un mélange raffiné d'arômes marins et d'épices du sud.",
+    title: "Mediterranean Buffet",
+    desc: "A refined blend of marine aromas and southern spices.",
   },
   // {
   //   image: buffet2,
-  //   title: "Buffet Oriental",
-  //   desc: "Saveurs envoûtantes inspirées des souks et traditions d'Orient.",
+  //   title: "Oriental Buffet",
+  //   desc: "Captivating flavors inspired by souks and Oriental traditions.",
   // },
   {
     image: buffet3,
-    title: "Buffet Gastronomique",
-    desc: "Haute cuisine française servie avec élégance et modernité.",
+    title: "Gastronomic Buffet",
+    desc: "French haute cuisine served with elegance and modernity.",
   },
   {
     image: buffet4,
-    title: "Buffet Mariage",
-    desc: "Un festin raffiné pour célébrer l'amour et le partage.",
+    title: "Wedding Buffet",
+    desc: "A refined feast to celebrate love and sharing.",
   },
   {
     image: buffet5,
-    title: "Buffet Royal",
-    desc: "Une expérience luxueuse aux saveurs exceptionnelles.",
+    title: "Royal Buffet",
+    desc: "A luxurious experience with exceptional flavors.",
   },
   {
     image: buffet6,
-    title: "Buffet Moderne",
-    desc: "Créativité et design culinaire au service du goût.",
+    title: "Modern Buffet",
+    desc: "Culinary creativity and design at the service of taste.",
   },
   {
     image: buffet7,
-    title: "Buffet Traditionnel",
-    desc: "L'authenticité des recettes transmises avec passion.",
+    title: "Traditional Buffet",
+    desc: "The authenticity of recipes passed down with passion.",
   },
   {
     image: buffet8,
-    title: "Buffet Gourmet",
-    desc: "Un équilibre entre finesse, texture et intensité aromatique.",
+    title: "Gourmet Buffet",
+    desc: "A balance between refinement, texture, and aromatic intensity.",
   },
   {
     image: buffet9,
-    title: "Buffet d'Entreprise",
-    desc: "Prestige et professionnalisme au cœur de vos événements.",
+    title: "Corporate Buffet",
+    desc: "Prestige and professionalism at the heart of your events.",
   },
 ];
 // Tableau des images
