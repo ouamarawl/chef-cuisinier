@@ -28,6 +28,14 @@ import menue_22 from '../../assets/menue/menue-22.jpg';
 import menue_23 from '../../assets/menue/menue-23.jpg';
 import menue_24 from '../../assets/menue/menue-24.jpg';
 
+import menue_25 from '../../assets/menue/menue-25.jpg';
+import menue_26 from '../../assets/menue/menue-26.jpg';
+import menue_27 from '../../assets/menue/menue-27.jpg';
+import menue_28 from '../../assets/menue/menue-28.jpg';
+import menue_29 from '../../assets/menue/menue-29.jpg';
+import menue_30 from '../../assets/menue/menue-30.jpg';
+import menue_31 from '../../assets/menue/menue-31.jpeg';
+
 
 function Menue() {
   useEffect(() => {
@@ -64,6 +72,7 @@ const plats = [
   { id: 1, image: menue_1, title: "Black miso codfish", description: "Black miso cod, pickled red cabbage, cabbage jelly, cabbage crumble, seaweed" },
   { id: 2, image: menue_2, title: "Carving lamb taco", description: "Slow cooked lamb shank, tomato onion salsa, crispy taco, ki so frescos, cilantro" },
   { id: 5, image: menue_5, title: "Tenderloin medallions", description: "Parsnips turmeric puree, parsnips, balsamic confit shallots, red wine reduction Demi" },
+   { id: 20, image: menue_20, title: "Halibut fish fumet", description: "Fresh turmeric fish fumet, asparagus, spring onion" },
   { id: 7, image: menue_7, title: "Baby longoustine, red snapper risotto", description: "Seafood risotto, baby longoustine, fish fumet" },
   { id: 8, image: menue_8, title: "Sole fish", description: "Sole cooked with better, baby fingers potato, red, yellow and purple, lemon better caper sauce" },
   { id: 10, image: menue_10, title: "Hawaiian chicken", description: "Chicken legs boneless, pepper, onion, pineapple, chefs special seasoning" },
@@ -73,7 +82,7 @@ const plats = [
   { id: 16, image: menue_16, title: "A5 Wagyu beef", description: "Truffle potato mousseline, beets au jus, beets chips" },
   { id: 17, image: menue_17, title: "Japanese style Black sesame seared tuna", description: "Teriyaki sauce, sweet pea puree, pickled radish" },
   { id: 18, image: menue_18, title: "Vegetable lasagna", description: "Zucchini, eggplant, parm, mozzarella, ricotta, tomato sauce" },
-  { id: 20, image: menue_20, title: "Halibut fish fumet", description: "Fresh turmeric fish fumet, asparagus, spring onion" },
+ 
   { id: 21, image: menue_21, title: "Island halibut", description: "Center cut halibut better and nuts crusted, dill oil, beurre blanc, micro greens salad" },
   { id: 23, image: menue_23, title: "Salmon Wellington", description: "Wild salmon, fresh dill, shiitake mushrooms, lemon better sauce" }
 ];
@@ -84,10 +93,10 @@ const desserts = [
   { id: 6, image: menue_6, title: "Pear rocher", description: "Pears, dark chocolate, granola topping, pear sauce" },
   { id: 9, image: menue_9, title: "Sweet potato cream brûlée", description: "Sweet potato cream brûlée with caramelized sugar crust" }
 ];
-  const MenuSection = ({ title, number, description, items }) => (
+  const MenuSection = ({ title,  description, items }) => (
     <section className="menu-category-section fade-up">
       <div className="category-header">
-        <div className="category-number-large">{number}</div>
+        
         <div className="category-title-block">
           <h2>{title}</h2>
           <div className="category-divider"></div>
@@ -143,8 +152,7 @@ const desserts = [
 
       {/* APPETIZERS */}
       <MenuSection 
-        title="Appetizers"
-        number="01"
+        title="Appetizers"       
         description="Freshness, balance, and elegance to begin your culinary experience"
         items={entrees}
       />
@@ -152,7 +160,6 @@ const desserts = [
       {/* MAIN COURSES */}
       <MenuSection 
         title="Main Courses"
-        number="02"
         description="Delicious creations that blend authentic flavors with modern techniques"
         items={plats}
       />
@@ -160,7 +167,6 @@ const desserts = [
       {/* DESSERTS */}
       <MenuSection 
         title="Desserts"
-        number="03"
         description="Refined delicacies and perfect finishes to conclude beautifully"
         items={desserts}
       />

@@ -262,11 +262,11 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.7) 0%,
     transparent 50%
-  );
+  ); */
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -536,3 +536,47 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+
+
+
+/* ========================================
+   ZOOM SPÉCIFIQUE POUR MENUE_14 ET MENUE_22
+   Ajoutez ce code à la fin de votre Menue.css
+   ======================================== */
+
+/* menue_14 - Greek Style Octopus */
+.menu-item-card [src*="menue-14"] {
+  object-fit: cover;
+  object-position: center 100%; /* Ajustez entre 0% et 100% */
+  transform: scale(1); /* Ajustez le zoom (1.0 = normal, 1.5 = 150%) */
+}
+
+
+
+/* menue_22 - Pan Seared Sea Scallops */
+.menu-item-card [src*="menue-22"] {
+  object-fit: cover;
+  object-position: center 40%; /* Ajustez entre 0% et 100% */
+  transform: scale(1); /* Ajustez le zoom (1.0 = normal, 1.5 = 150%) */
+}
+
+
+
+/* ========================================
+   GUIDE D'AJUSTEMENT :
+   
+   object-position: 
+   - center 0%    = Tout en haut de l'image
+   - center 25%   = Vers le haut
+   - center 50%   = Centré (défaut)
+   - center 75%   = Vers le bas
+   - center 100%  = Tout en bas de l'image
+   
+   transform: scale():
+   - scale(1.0)   = Taille normale (100%)
+   - scale(1.2)   = Zoom 120%
+   - scale(1.5)   = Zoom 150%
+   - scale(2.0)   = Zoom 200%
+   ======================================== */

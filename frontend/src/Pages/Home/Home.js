@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./Home.css";
 
-import image5 from "../../assets/images_athmen/image5.JPG";
+import Athmane_45 from "../../assets/images_athmen/athmane_45.jpg";
 import image6 from "../../assets/image6.jpg";
 import image7 from "../../assets/images_plats/plat7.jpg";
 import image8 from "../../assets/image8.jpg";
-import image9 from "../../assets/images_athmen/image9.JPG";
+import Athmane_46 from "../../assets/images_athmen/athmane_46.jpg";
 // import feuille_d from "../../assets/feuille_d.png";
 // import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
 // import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
@@ -77,7 +77,7 @@ function Home() {
       <section className="presentation-section">
         <img
           id="image5"
-          src={image5}
+          src={Athmane_45}
           alt="Chef Athman"
           className="chef-image"
         />
@@ -156,7 +156,7 @@ function Home() {
       {/* Back Kitchen */}
       {/* <img src={feuille_vert_droite} id="feuille_vert_droite_2" /> */}
       <section className="presentation-section">
-        <img src={image9} alt="Back kitchen" className="chef-image" />
+        <img src={Athmane_46} alt="Back kitchen" className="chef-image" />
         <div className="presentation-text">
           <h3>THE BACK KITCHEN</h3>
           <p>

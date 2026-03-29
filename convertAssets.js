@@ -31,7 +31,7 @@ const files = fs.readdirSync(folder);
 
     /* ===== PHOTOS ===== */
     if ([".jpg", ".jpeg", ".png", ".heic", ".dng"].includes(ext)) {
-      const output = path.join(convertedFolder, `menue-${photoIndex}.jpg`);
+      const output = path.join(convertedFolder, `athmane_${photoIndex}.jpg`);
 
       try {
         if (ext === ".heic") {
@@ -87,3 +87,4 @@ const files = fs.readdirSync(folder);
 
   console.log(`✅ Conversion terminée ! Les fichiers sont dans ${convertedFolder}`);
 })();
+
