@@ -7,6 +7,7 @@ import image6 from "../../assets/image6.jpg";
 import image7 from "../../assets/images_plats/plat7.jpg";
 import image8 from "../../assets/image8.jpg";
 import Athmane_46 from "../../assets/images_athmen/athmane_46.jpg";
+import Athmane_12 from "../../assets/images_athmen/athmane_12.jpg";
 // import feuille_d from "../../assets/feuille_d.png";
 // import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
 // import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
@@ -14,6 +15,7 @@ import plat46 from "../../assets/images_plats/plat46.jpg";
 import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
  import data_plat from "../../data_plat";
 import logo from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/logo.png"
+import plat58 from "../../assets/images_plats/plat58.jpg";
 const images = [
   // require("../../assets/images_plats/plat87.JPG"),
   // require("../../assets/images_plats/plat92.JPG"),
@@ -104,7 +106,7 @@ function Home() {
       {/* Experience & Philosophy */}
       {/* <img src={feuille_vert_droite} id="feuille_vert_droite" /> */}
       <section className="presentation-section">
-        <img src={image6} alt="Chef’s cuisine" className="chef-image" />
+        <img src={plat58} alt="Chef’s cuisine" className="chef-image" />
         <div className="presentation-text">
           <h3>AN EXCEPTIONAL CUISINE</h3>
           <p>
@@ -121,7 +123,7 @@ function Home() {
       {/* <img src={feuille_noir_gauche} id="feuille_noir_gauche" /> */}
       {/* <img src={feuille_d} id="feuille_d_2" /> */}
       <section className="presentation-section" id="menu-section">
-        <img src={image7} alt="Chef’s dish" className="chef-image" />
+        <img src={Athmane_46} alt="Chef’s dish" className="chef-image" />
         <div className="presentation-text">
           <h3>OUR MENUS</h3>
           <p>
@@ -141,7 +143,7 @@ function Home() {
       {/* Philosophy */}
       {/* <img src={feuille_d} id="feuille_d_3" /> */}
       <section className="presentation-section">
-        <img src={image8} alt="Chef’s creation" className="chef-image" />
+        <img src={Athmane_12} alt="Chef’s creation" className="chef-image" />
         <div className="presentation-text">
           <h3>HIS PHILOSOPHY</h3>
           <p>
@@ -156,7 +158,7 @@ function Home() {
       {/* Back Kitchen */}
       {/* <img src={feuille_vert_droite} id="feuille_vert_droite_2" /> */}
       <section className="presentation-section">
-        <img src={Athmane_46} alt="Back kitchen" className="chef-image" />
+        <img src={image7} alt="Back kitchen" className="chef-image" />
         <div className="presentation-text">
           <h3>THE BACK KITCHEN</h3>
           <p>

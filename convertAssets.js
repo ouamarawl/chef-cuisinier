@@ -16,7 +16,7 @@ const folder =
 const convertedFolder = path.join(folder, "converted");
 if (!fs.existsSync(convertedFolder)) fs.mkdirSync(convertedFolder);
 
-let photoIndex = 1;
+let photoIndex = 173;
 let videoIndex = 1;
 
 const files = fs.readdirSync(folder);
@@ -31,7 +31,7 @@ const files = fs.readdirSync(folder);
 
     /* ===== PHOTOS ===== */
     if ([".jpg", ".jpeg", ".png", ".heic", ".dng"].includes(ext)) {
-      const output = path.join(convertedFolder, `athmane_${photoIndex}.jpg`);
+      const output = path.join(convertedFolder, `plat${photoIndex}.jpg`);
 
       try {
         if (ext === ".heic") {

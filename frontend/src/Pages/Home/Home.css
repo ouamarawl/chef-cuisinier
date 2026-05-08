@@ -310,10 +310,11 @@
 }
 .contact-section img {
 position: absolute;
-    bottom: 13vh;
-    right: 18vw;
-    width: 21%;
-    height: 65%;
+    bottom: 28%;
+    right: 24%;
+    width: 16%;
+    height: 52%;
+    object-fit: contain;
     z-index: 9999;
 }
 .contact-text {

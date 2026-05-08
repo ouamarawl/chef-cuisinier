@@ -50,10 +50,23 @@ import athmane_43 from "../../assets/images_athmen/athmane_43.jpg";
 import athmane_44 from "../../assets/images_athmen/athmane_44.jpg";
 import athmane_45 from "../../assets/images_athmen/athmane_45.jpg";
 import athmane_46 from "../../assets/images_athmen/athmane_46.jpg";
+import athmane_47 from "../../assets/images_athmen/athmane_47.jpg";
+import athmane_48 from "../../assets/images_athmen/athmane_48.jpg";
+import athmane_49 from "../../assets/images_athmen/athmane_49.jpg";
 
+import athmane_51 from "../../assets/images_athmen/athmane_51.jpg";
+import athmane_52 from "../../assets/images_athmen/athmane_52.jpg";
 import signature_athmane from "../../assets/signature_athmane.png";
 import feille from "../../assets/feuille.png";
 import plats from "../../data_plat";
+import plat173 from "../../assets/images_plats/plat173.jpeg";
+import plat174 from "../../assets/images_plats/plat174.jpg";
+import plat175 from "../../assets/images_plats/plat175.jpg";
+import plat176 from "../../assets/images_plats/plat176.jpg";
+import plat177 from "../../assets/images_plats/plat177.jpg";
+import plat178 from "../../assets/images_plats/plat178.jpg";
+import plat179 from "../../assets/images_plats/plat179.jpeg";
+
 // import EVEIL from "../../assets/images_athmen/EVEIL.JPG";
 import Vegetal from "../../assets/images_plats/Vegetal.jpg";
 
@@ -125,10 +138,11 @@ function ChefAthmane() {
       {/* 🇩🇿 ALGERIA - Grid 4 photos */}
       <section className="presentation-section-A fade-up">
         <div className="photo-grid">
-          <img src={athmane_14} alt="Algeria - Early Days" />
-          <img src={athmane_17} alt="Algeria - Heritage" />
-          <img src={athmane_18} alt="Algeria - Family" />
-          <img src={athmane_19} alt="Algeria - Traditions" />
+          <img src={athmane_22} alt="Algeria - Traditions" />
+          <img src={athmane_32} alt="Algeria - Early Days" />
+          
+          <img src={athmane_26} alt="Algeria - Heritage" />
+          <img src={athmane_31} alt="Algeria - Family" />
         </div>
         <div className="presentation-text">
           <h3>🇩🇿 Algeria — Where It All Began</h3>
@@ -143,10 +157,13 @@ function ChefAthmane() {
       {/* 🇦🇪 DUBAI - Grid 4 photos */}
       <section className="presentation-section-A fade-up">
         <div className="photo-grid">
-          <img src={athmane_44} alt="Dubai - Emaar" />
-          <img src={athmane_20} alt="Dubai - Taj Hotel" />
-          <img src={athmane_21} alt="Dubai - Luxury Service" />
-          <img src={athmane_22} alt="Dubai - VIP Events" />
+          <img src={athmane_28} alt="Dubai - Emaar" />
+          {/* <img src={athmane_33} alt="Dubai - Taj Hotel" />
+          <img src={athmane_16} alt="Dubai - Luxury Service" /> */}
+          <img src={athmane_18} alt="Dubai - VIP Events" />
+          <img src={athmane_13} alt="Dubai - VIP Events" />
+          {/* <img src={athmane_27} alt="Dubai - VIP Events" /> */}
+          <img src={athmane_30} alt="Dubai - VIP Events" />
         </div>
         <div className="presentation-text">
           <h3>🇦🇪 Dubai — A Taste of Luxury</h3>
@@ -161,10 +178,10 @@ function ChefAthmane() {
       {/* 🇺🇸 NEW YORK - Grid 4 photos */}
       <section className="presentation-section-A fade-up">
         <div className="photo-grid">
-          <img src={Vegetal} alt="New York - Jean-Georges" id="vegetal" />
-          <img src={athmane_23} alt="New York - Precision" />
-          <img src={athmane_26} alt="New York - Excellence" />
-          <img src={athmane_27} alt="New York - Michelin" />
+          <img src={athmane_51} alt="New York - Jean-Georges" id="athmane_24" />
+          <img src={athmane_10} alt="New York - Precision" />
+          <img src={athmane_52} alt="New York - Excellence" />
+          <img src={athmane_49} alt="New York - Michelin" />
         </div>
         <div className="presentation-text">
           <h3>🇺🇸 New York — The School of Excellence</h3>
@@ -179,10 +196,10 @@ function ChefAthmane() {
       {/* 🏙️ CHICAGO - Grid 4 photos */}
       <section className="presentation-section-A fade-up">
         <div className="photo-grid">
-          <img src={athmane_15} alt="Chicago - La Salle Hotel" />
-          <img src={athmane_42} alt="Chicago - Fabio Viviani" />
-          <img src={athmane_43} alt="Chicago - Signature Dishes" />
-          <img src={athmane_41} alt="Chicago - Private Chef" />
+          <img src={athmane_38} alt="Chicago - La Salle Hotel" />
+          <img src={athmane_47} alt="Chicago - Fabio Viviani" />
+          <img src={athmane_48} alt="Chicago - Signature Dishes" />
+          <img src={athmane_45} alt="Chicago - Private Chef" />
         </div>
         <div className="presentation-text">
           <h3>🏙️ Chicago — Where the Dream Grows</h3>
@@ -202,7 +219,7 @@ function ChefAthmane() {
 
       {/* SKILLS SECTION 1 */}
       <section className="presentation-section-A fade-up">
-        <img src={athmane_3} alt="Chef Athmane — Art Culinaire" className="chef-image" />
+        <img src={plat179} alt="Chef Athmane — Art Culinaire" className="chef-image" />
         <div className="presentation-text">
           <h3>🎨 Art Culinaire & Innovation</h3>
           <p>
@@ -215,7 +232,7 @@ function ChefAthmane() {
 
       {/* SKILLS SECTION 2 */}
       <section className="presentation-section-A fade-up">
-        <img src={athmane_4} alt="Chef Athmane — Expérience Gastronomique" className="chef-image" />
+        <img src={plat174} alt="Chef Athmane — Expérience Gastronomique" className="chef-image" />
         <div className="presentation-text">
           <h3>🍽️ Expérience Gastronomique de Luxe</h3>
           <p>
@@ -228,7 +245,7 @@ function ChefAthmane() {
 
       {/* SKILLS SECTION 3 */}
       <section className="presentation-section-A fade-up">
-        <img src={athmane_5} alt="Chef Athmane — Leadership" className="chef-image" />
+        <img src={plat175} alt="Chef Athmane — Leadership" className="chef-image" />
         <div className="presentation-text">
           <h3>👨‍🍳 Leadership & Mentorat</h3>
           <p>
@@ -240,7 +257,7 @@ function ChefAthmane() {
 
       {/* SKILLS SECTION 4 */}
       <section className="presentation-section-A fade-up">
-        <img src={athmane_6} alt="Chef Athmane — Maîtrise des Ingrédients" className="chef-image" />
+        <img src={plat176} alt="Chef Athmane — Maîtrise des Ingrédients" className="chef-image" />
         <div className="presentation-text">
           <h3>🥗 Maîtrise des Ingrédients & Création de Menus</h3>
           <p>
@@ -252,7 +269,7 @@ function ChefAthmane() {
 
       {/* SKILLS SECTION 5 */}
       <section className="presentation-section-A fade-up">
-        <img src={athmane_10} alt="Chef Athmane — Création Visuelle" className="chef-image" />
+        <img src={plat177} alt="Chef Athmane — Création Visuelle" className="chef-image" />
         <div className="presentation-text">
           <h3>📸 Création Visuelle & Médiatisation Culinaire</h3>
           <p>
@@ -264,7 +281,7 @@ function ChefAthmane() {
 
       {/* SKILLS SECTION 6 */}
       <section className="presentation-section-A fade-up">
-        <img src={athmane_11} alt="Chef Athmane — Services Privés" className="chef-image" />
+        <img src={plat178} alt="Chef Athmane — Services Privés" className="chef-image" />
         <div className="presentation-text">
           <h3>🌟 Services Privés & pour Célébrités</h3>
           <p>
