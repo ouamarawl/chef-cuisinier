@@ -8,28 +8,50 @@ import plat100 from "../../assets/images_plats/plat100.JPG";
 import signature from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/signature_athmane.png";
 import { useNavigate } from "react-router-dom";
 import athmane_2 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_2.jpg";
+import Athmane_12 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_12.jpg";
 
 function Larriere_cuisine() {
   const navigate = useNavigate();
   return (
     <div className="larriere-cuisine-container">
-      <div className="larriere-cuisine-header">
-        <h3>The Back Kitchen</h3>
-        <img src={feille} />
-      </div>
+      {/* REMPLACEZ les 3 blocs (header + h3 + img signature) par ceci : */}
 
-      <h3 className="larriere-cuisine-titre">
-        I was born into a very artistic family, a family where the hands were
-        everywhere: a grandmother who was a cook, a grandfather who was a
-        sculptor, a mother passionate about sewing, and a father who was a
-        musician.
-      </h3>
-      <img
-        id="signature"
-        src={signature}
-        alt="Chef Athman Signature"
-        className="chef-signature"
-      />
+      <div className="bk-intro">
+        {/* Numéro décoratif en fond */}
+        <span className="bk-intro-num" aria-hidden="true">
+          01
+        </span>
+
+        {/* Colonne gauche : titre stacked */}
+        <div className="bk-intro-left">
+          <p className="bk-intro-tag">— Paris, 75007</p>
+          <h1 className="bk-intro-title">
+            <span>THE</span>
+            <span className="bk-intro-title-mid">BACK</span>
+            <span>KITCHEN</span>
+          </h1>
+        </div>
+
+        {/* Colonne droite : citation + signature */}
+        <div className="bk-intro-right">
+          <div className="bk-intro-vline" />
+          <div className="bk-intro-right-inner">
+            <p className="bk-intro-quote">
+              I was born into a very artistic family — a grandmother who cooked,
+              a grandfather who sculpted, a mother who sewed, a father who
+              played music.
+              <br />
+              <br />
+              Everywhere, hands at work.
+            </p>
+            <img
+              src={signature}
+              alt="Signature Chef Athman"
+              className="bk-intro-sig"
+            />
+          </div>
+        </div>
+      </div>
 
       <section className="section-oeuvres">
         <img src={plat85} id="image15" />
@@ -75,7 +97,7 @@ function Larriere_cuisine() {
           </div>
           <div class="ligne2"></div>
         </div>
-        <img src={athmane_2} />
+        <img src={Athmane_12} />
       </section>
     </div>
   );

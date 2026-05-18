@@ -202,7 +202,7 @@ function Home() {
           </div>
           <div className="ligne"></div>
         </div>
-        <img src={athmane_2} />
+        <img src={Athmane_12} />
       </section>
 
       {/* Instagram */}

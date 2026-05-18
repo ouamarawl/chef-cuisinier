@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.css";
 // import feuille_d from "../../assets/feuille_d.png";
 import feille from "../../assets/feuille.png";
-
+import Athmane_12 from "../../assets/images_athmen/athmane_12.jpg";
 import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
 
 function Contact() {
@@ -12,7 +12,7 @@ function Contact() {
       <img src={feille} id="feuille_contact" />
       <div className="contact-detail">
         <div className="block-g">
-          <img src={athmane_2} />
+          <img src={Athmane_12} />
           <div className="lign"></div>
           <h3>Chef Athmane’s Gourmet Boxes</h3>
           <p>
