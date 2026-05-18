@@ -16,7 +16,7 @@ const folder =
 const convertedFolder = path.join(folder, "converted");
 if (!fs.existsSync(convertedFolder)) fs.mkdirSync(convertedFolder);
 
-let photoIndex = 173;
+let photoIndex = 180;
 let videoIndex = 1;
 
 const files = fs.readdirSync(folder);

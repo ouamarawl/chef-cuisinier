@@ -145,7 +145,7 @@ function ChefAthmane() {
         <img
           src={signature_Athmane}
           alt="Chef Athmane's Signature"
-          className="chef-signature"
+          className="chef-signature-2"
         />
       </footer>
     </div>
