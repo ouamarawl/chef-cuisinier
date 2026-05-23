@@ -1,0 +1,97 @@
+{
+  "categories": [
+    {
+      "id": "signature",
+      "name": "Signature Dishes",
+      "description": "Chef Athmane's signature creations",
+      "icon": "🌟",
+      "color": "#c9a66b"
+    },
+    {
+      "id": "appetizers",
+      "name": "Appetizers",
+      "description": "Starters and small plates",
+      "icon": "🥂",
+      "color": "#d4a574"
+    },
+    {
+      "id": "salads",
+      "name": "Salads",
+      "description": "Fresh and vibrant salads",
+      "icon": "🥗",
+      "color": "#2d5016"
+    },
+    {
+      "id": "seafood",
+      "name": "Seafood",
+      "description": "Premium seafood selections",
+      "icon": "🦐",
+      "color": "#1a5f7a"
+    },
+    {
+      "id": "meat",
+      "name": "Meat & Poultry",
+      "description": "Premium cuts and preparations",
+      "icon": "🥩",
+      "color": "#8b4513"
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta & Risotto",
+      "description": "Italian-inspired dishes",
+      "icon": "🍝",
+      "color": "#c67c4e"
+    },
+    {
+      "id": "vegetarian",
+      "name": "Vegetarian",
+      "description": "Plant-based specialties",
+      "icon": "🥦",
+      "color": "#7cb342"
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "description": "Sweet endings",
+      "icon": "🍰",
+      "color": "#d4a5a5"
+    }
+  ],
+  "dietary": [
+    {
+      "id": "vegetarian",
+      "name": "Vegetarian",
+      "icon": "🥬"
+    },
+    {
+      "id": "vegan",
+      "name": "Vegan",
+      "icon": "🌱"
+    },
+    {
+      "id": "gluten-free",
+      "name": "Gluten-Free",
+      "icon": "🌾"
+    },
+    {
+      "id": "nut-free",
+      "name": "Nut-Free",
+      "icon": "🚫"
+    },
+    {
+      "id": "dairy-free",
+      "name": "Dairy-Free",
+      "icon": "🥛"
+    }
+  ],
+  "allergens": [
+    "gluten",
+    "dairy",
+    "nuts",
+    "shellfish",
+    "fish",
+    "eggs",
+    "soy",
+    "sesame"
+  ]
+}

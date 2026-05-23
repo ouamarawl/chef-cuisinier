@@ -1,0 +1,49 @@
+{
+  "restaurant_menu": [
+    {
+      "id": "m1",
+      "title": "Caesar Salad",
+      "category": "salads",
+      "description": "Chef Athmane's Caesar Salad. Crisp, fresh Romaine lettuce from my home organic garden, tossed in a creamy homemade Caesar dressing. Enhanced with Mediterranean anchovies, freshly aged shaved Parmesan, and crunchy sourdough croutons — every bite is a perfect balance of flavor and texture.",
+      "image": "plat81",
+      "featured": true,
+      "course": "appetizer"
+    },
+    {
+      "id": "m2",
+      "title": "Duck Breast",
+      "category": "meat",
+      "description": "Chef Athmane's Duck Breast. Medium-rare, pan-seared duck breast served with almond-infused sweet potato and finished with a rich cranberry, red wine, and cacao jus — a perfect balance of savory, sweet, and indulgent flavors.",
+      "image": "plat82",
+      "featured": true,
+      "course": "main"
+    },
+    {
+      "id": "m3",
+      "title": "Sea Scallops",
+      "category": "seafood",
+      "description": "Chef Athmane's Sea Scallops. Perfectly pan-seared sea scallops, drizzled with a delicate truffle, soy, and ginger dressing, and topped with golden albino caviar. A dish worthy of a 3-Michelin-star dining experience.",
+      "image": "plat83",
+      "featured": true,
+      "course": "main"
+    },
+    {
+      "id": "m4",
+      "title": "A5 Wagyu Medallion",
+      "category": "meat",
+      "description": "Chef Athmane's A5 Wagyu Medallion. Succulent A5 Wagyu medallions, paired with caramelized shallots in aged balsamic glace, organic baby carrots, and a velvety peach purée, all finished with a 24-hour slow-reduced yuzu jus — a harmony of richness, sweetness, and citrus elegance.",
+      "image": "plat86",
+      "featured": true,
+      "course": "main"
+    },
+    {
+      "id": "m5",
+      "title": "Gorgonzola Linguini",
+      "category": "pasta",
+      "description": "Chef Athmane's Gorgonzola Dolce & Organic Garden Baby Zucchini. Homemade fresh linguini tossed in a rich 6-month aged Gorgonzola sauce, accompanied by roasted organic baby yellow and green zucchini and delicate zucchini purée. Finished with stuffed zucchini flowers filled with a seasoned Gorgonzola mousse — a celebration of freshness, creaminess, and refined flavor.",
+      "image": "plat85",
+      "featured": true,
+      "course": "main"
+    }
+  ]
+}

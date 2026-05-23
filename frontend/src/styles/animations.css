@@ -1,0 +1,130 @@
+/**
+ * Animations et Keyframes Globales
+ * Consolidées et réutilisables
+ */
+
+/* Fade Up Animation - Scroll reveal */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In Animation - Simple apparition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Subtle Pulse */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Hover Lift */
+@keyframes liftHover {
+  to {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Shimmer Loading */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Glow Effect */
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(201, 166, 107, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(201, 166, 107, 0.8);
+  }
+}
+
+/* Styles appliqués par défaut */
+.fade-up {
+  animation: fadeUp var(--transition-normal) ease-out forwards;
+  opacity: 0;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  animation: fadeUp var(--transition-normal) ease-out;
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-normal) ease-out forwards;
+  opacity: 0;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  animation: fadeIn var(--transition-normal) ease-out;
+}
+
+/* Classe pour ajouter l'effet de hover lift */
+.lift-on-hover {
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.lift-on-hover:hover {
+  animation: liftHover var(--transition-normal) ease-out forwards;
+}

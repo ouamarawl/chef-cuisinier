@@ -5,10 +5,10 @@ import plat85 from "../../assets/images_plats/plat85.JPG";
 import plat87 from "../../assets/images_plats/plat87.JPG";
 import plat91 from "../../assets/images_plats/plat91.JPG";
 import plat100 from "../../assets/images_plats/plat100.JPG";
-import signature from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/signature_athmane.png";
+import signature from "../../assets/signature_athmane.png";
 import { useNavigate } from "react-router-dom";
-import athmane_2 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_2.jpg";
-import Athmane_12 from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/images_athmen/athmane_12.jpg";
+import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
+import Athmane_0 from "../../assets/images_athmen/athmane_0-v2.png";
 
 function Larriere_cuisine() {
   const navigate = useNavigate();
@@ -25,11 +25,11 @@ function Larriere_cuisine() {
         {/* Colonne gauche : titre stacked */}
         <div className="bk-intro-left">
           <p className="bk-intro-tag">— Paris, 75007</p>
-          <h1 className="bk-intro-title">
-            <span>THE</span>
-            <span className="bk-intro-title-mid">BACK</span>
-            <span>KITCHEN</span>
-          </h1>
+        <h1 className="bk-intro-title">
+  <span>Athmane’s</span>
+  <span className="bk-intro-title-mid">Little</span>
+  <span>Kitchen</span>
+</h1>
         </div>
 
         {/* Colonne droite : citation + signature */}
@@ -37,12 +37,11 @@ function Larriere_cuisine() {
           <div className="bk-intro-vline" />
           <div className="bk-intro-right-inner">
             <p className="bk-intro-quote">
-              I was born into a very artistic family — a grandmother who cooked,
-              a grandfather who sculpted, a mother who sewed, a father who
-              played music.
+              I was born into a family of farmers — surrounded by the land, hard
+              work, and the simple beauty of nature.
               <br />
               <br />
-              Everywhere, hands at work.
+              From sunrise to sunset, everyone worked with their hands.
             </p>
             <img
               src={signature}
@@ -97,7 +96,7 @@ function Larriere_cuisine() {
           </div>
           <div class="ligne2"></div>
         </div>
-        <img src={Athmane_12} />
+        <img src={Athmane_0} />
       </section>
     </div>
   );

@@ -1,0 +1,120 @@
+/**
+ * Styles pour ContactCard
+ */
+
+.contact-card {
+  background: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-normal);
+  border-left: 4px solid var(--color-accent);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card:hover {
+  box-shadow: var(--shadow-medium);
+  transform: translateY(-5px);
+}
+
+/* Icon */
+.contact-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* Nom */
+.contact-name {
+  font-family: var(--font-display);
+  font-size: 1.5em;
+  color: var(--color-primary);
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+}
+
+/* Description */
+.contact-description {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+/* Détails */
+.contact-details {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.detail {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+
+.detail .label {
+  font-size: 18px;
+  min-width: 24px;
+  flex-shrink: 0;
+}
+
+.detail .value {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-dark);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.detail a.value {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-normal);
+}
+
+.detail a.value:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Bouton */
+.contact-action {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-transform: uppercase;
+}
+
+.contact-action:hover {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 20px;
+  }
+
+  .contact-name {
+    font-size: 1.2em;
+  }
+
+  .detail .value {
+    font-size: 13px;
+  }
+}

@@ -22,10 +22,10 @@ function App() {
         <Route path="/Athmane_ouamara" element={<ChefAthmane />} />
         <Route path="/Réservation" element={<Réservation />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/Larriere_cuisinet" element={<Larriere_cuisine />} />
+        <Route path="/Larriere_cuisine" element={<Larriere_cuisine />} />
         <Route path="/Buffets" element={<Buffets />} />
         <Route path="/Plats" element={<Plats />} />
-         <Route path="/Menue" element={<Menue />} />
+        <Route path="/Menue" element={<Menue />} />
       </Routes>
       <Footer />
     </Router>

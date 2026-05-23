@@ -1,0 +1,260 @@
+{
+  "signature_dishes": [
+    {
+      "id": 1,
+      "title": "Roasted Beet Salad",
+      "category": "salads",
+      "description": "Roasted beet salad / whipped goat cheese / orange segments / beets grumble",
+      "ingredients": [
+        "Roasted beets",
+        "Goat cheese",
+        "Orange segments",
+        "Beet chips",
+        "Greens"
+      ],
+      "dietary": ["vegetarian"],
+      "allergens": ["dairy"],
+      "difficulty": "easy",
+      "servingTime": 15,
+      "images": ["plat112", "plat110", "plat111"],
+      "featured": true,
+      "chef_story": "A classic starter that celebrates the natural sweetness of roasted beets with creamy goat cheese.",
+      "pairing": "Sauvignon Blanc or Dry Riesling"
+    },
+    {
+      "id": 2,
+      "title": "Homemade Spinach Ricotta Ravioli",
+      "category": "pasta",
+      "description": "Ravioli, spinach almonds puree, creamy ricotta cheese, black butter sage",
+      "ingredients": [
+        "Fresh pasta sheets",
+        "Ricotta cheese",
+        "Spinach",
+        "Almonds",
+        "Butter",
+        "Sage",
+        "Black pepper"
+      ],
+      "dietary": ["vegetarian"],
+      "allergens": ["dairy", "nuts", "gluten"],
+      "difficulty": "medium",
+      "servingTime": 30,
+      "images": ["plat116", "plat113", "plat118"],
+      "featured": true,
+      "chef_story": "A homemade pasta masterpiece combining Italian tradition with modern presentation.",
+      "pairing": "Pinot Grigio or light Chianti"
+    },
+    {
+      "id": 3,
+      "title": "Slow Cook Short Ribs",
+      "category": "meat",
+      "description": "Slow cook short ribs / baby carrots / purple mash potatoes / homemade jus",
+      "ingredients": [
+        "Short ribs",
+        "Baby carrots",
+        "Purple potatoes",
+        "Beef stock",
+        "Herbs"
+      ],
+      "dietary": [],
+      "allergens": [],
+      "difficulty": "hard",
+      "servingTime": 180,
+      "images": ["plat120", "plat119", "plat121"],
+      "featured": true,
+      "chef_story": "Tender, melt-in-your-mouth short ribs slow-cooked for hours to perfection with house-made jus.",
+      "pairing": "Cabernet Sauvignon or Côtes du Rhône"
+    },
+    {
+      "id": 4,
+      "title": "Butterfly Pink Prawn",
+      "category": "seafood",
+      "description": "Butterfly pink prawn / lemon potato mousseline / beet jus reduction / beet foam",
+      "ingredients": [
+        "Pink prawns",
+        "Potato mousse",
+        "Lemon",
+        "Beets",
+        "Fish stock"
+      ],
+      "dietary": ["gluten-free"],
+      "allergens": ["shellfish"],
+      "difficulty": "hard",
+      "servingTime": 25,
+      "images": ["plat123", "plat127", "plat122"],
+      "featured": true,
+      "chef_story": "Delicately presented with artistic beet foam and silky potato mousseline.",
+      "pairing": "Chablis or Vermentino"
+    },
+    {
+      "id": 5,
+      "title": "Stuffed Corn Fed Chicken Breast",
+      "category": "meat",
+      "description": "Stuffed corn feed chicken breast / pepper sauce / spinach almonds sauce / chicken crisp touilles",
+      "ingredients": [
+        "Corn-fed chicken breast",
+        "Spinach",
+        "Almonds",
+        "Pepper",
+        "Cream"
+      ],
+      "dietary": [],
+      "allergens": ["nuts", "dairy"],
+      "difficulty": "hard",
+      "servingTime": 45,
+      "images": ["plat129", "plat130", "plat130_v2"],
+      "featured": true,
+      "chef_story": "Premium corn-fed chicken with multiple layers of flavor and elegant presentation.",
+      "pairing": "Côtes du Provence or Pinot Noir"
+    },
+    {
+      "id": 6,
+      "title": "Red Carpet",
+      "category": "salads",
+      "description": "Beets and water melon cubes, nectarine, beet glaze, aged balsamic glaze, goat cheese piping",
+      "ingredients": [
+        "Beets",
+        "Watermelon",
+        "Nectarine",
+        "Goat cheese",
+        "Balsamic vinegar"
+      ],
+      "dietary": ["vegetarian"],
+      "allergens": ["dairy"],
+      "difficulty": "easy",
+      "servingTime": 15,
+      "images": ["plat135", "plat133", "plat138"],
+      "featured": true,
+      "chef_story": "A vibrant, colorful dish that combines sweet and savory elements beautifully.",
+      "pairing": "Rosé or Moscato"
+    },
+    {
+      "id": 7,
+      "title": "Japanese Style Seared Tuna",
+      "category": "seafood",
+      "description": "Japanese style seared tuna unagi glaze served with pickled red cabbage, pea puree and fresh sweet pea",
+      "ingredients": [
+        "Fresh tuna",
+        "Unagi sauce",
+        "Red cabbage",
+        "Peas",
+        "Sesame seeds"
+      ],
+      "dietary": ["gluten-free"],
+      "allergens": ["fish", "sesame"],
+      "difficulty": "hard",
+      "servingTime": 20,
+      "images": ["plat140", "plat142", "plat141"],
+      "featured": true,
+      "chef_story": "Expertly seared tuna with a Japanese twist - perfectly rare and bursting with umami flavors.",
+      "pairing": "Sake or Pinot Noir"
+    },
+    {
+      "id": 8,
+      "title": "Original Caesar Salad",
+      "category": "salads",
+      "description": "Original Caesar salad",
+      "ingredients": [
+        "Romaine lettuce",
+        "Parmesan",
+        "Croutons",
+        "Anchovies",
+        "Caesar dressing"
+      ],
+      "dietary": ["vegetarian"],
+      "allergens": ["dairy", "fish", "gluten"],
+      "difficulty": "easy",
+      "servingTime": 10,
+      "images": ["plat149", "plat153", "plat151"],
+      "featured": false,
+      "chef_story": "A timeless classic executed with precision and premium ingredients.",
+      "pairing": "Sauvignon Blanc or Pinot Grigio"
+    },
+    {
+      "id": 9,
+      "title": "Blue Cheese Linguine",
+      "category": "pasta",
+      "description": "Blue cheese linguine served with yellow and green zucchini puree / fresh zucchini and stuffed zucchini flour",
+      "ingredients": [
+        "Fresh linguine",
+        "Blue cheese",
+        "Zucchini",
+        "Cream",
+        "Herbs"
+      ],
+      "dietary": ["vegetarian"],
+      "allergens": ["dairy", "gluten"],
+      "difficulty": "medium",
+      "servingTime": 25,
+      "images": ["plat155", "plat157", "plat158"],
+      "featured": false,
+      "chef_story": "Bold flavors with creamy blue cheese balanced by fresh zucchini puree.",
+      "pairing": "Gavi or Vermentino"
+    },
+    {
+      "id": 10,
+      "title": "Royal Sushi",
+      "category": "appetizers",
+      "description": "Royal sushi: assorted sushi with tuna, king crab, sardines, avocado cucumber, salmon topping with royal white caviar",
+      "ingredients": [
+        "Sushi rice",
+        "Tuna",
+        "King crab",
+        "Salmon",
+        "Caviar",
+        "Nori",
+        "Avocado"
+      ],
+      "dietary": ["gluten-free"],
+      "allergens": ["fish", "shellfish", "sesame"],
+      "difficulty": "hard",
+      "servingTime": 30,
+      "images": ["plat161", "plat164", "plat167"],
+      "featured": true,
+      "chef_story": "A luxurious sushi selection featuring premium seafood and white caviar.",
+      "pairing": "Sake or Chablis"
+    },
+    {
+      "id": 11,
+      "title": "Blue Cheese Chicken Lollipop",
+      "category": "appetizers",
+      "description": "Blue cheese Chicken lollipop, spiced crunchy baked chicken, creamy bleu cheese sauce, bleu cheese, sliced lime",
+      "ingredients": [
+        "Chicken wings",
+        "Blue cheese",
+        "Bread crumbs",
+        "Spices",
+        "Lime"
+      ],
+      "dietary": [],
+      "allergens": ["dairy", "gluten"],
+      "difficulty": "medium",
+      "servingTime": 35,
+      "images": ["plat168", "plat169", "plat170"],
+      "featured": false,
+      "chef_story": "Crispy on the outside, creamy blue cheese sauce inside - a modern twist on a classic.",
+      "pairing": "IPA or Sauvignon Blanc"
+    },
+    {
+      "id": 12,
+      "title": "Mediterranean Baby Octopus",
+      "category": "seafood",
+      "description": "Mediterranean baby octopus, eggplant puree, corn socotage, balsamic glaze",
+      "ingredients": [
+        "Baby octopus",
+        "Eggplant",
+        "Corn",
+        "Balsamic vinegar",
+        "Olive oil"
+      ],
+      "dietary": ["gluten-free"],
+      "allergens": ["shellfish"],
+      "difficulty": "hard",
+      "servingTime": 45,
+      "images": ["plat173", "plat171", "plat172"],
+      "featured": true,
+      "chef_story": "Tender baby octopus with Mediterranean flavors and artistic plating.",
+      "pairing": "Albariño or Vermentino"
+    }
+  ]
+}

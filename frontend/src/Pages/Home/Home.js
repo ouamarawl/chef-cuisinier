@@ -7,14 +7,14 @@ import Athmane_45 from "../../assets/images_athmen/athmane_45.jpg";
 import image7 from "../../assets/images_plats/plat7.jpg";
 
 import Athmane_46 from "../../assets/images_athmen/athmane_46.jpg";
-import Athmane_12 from "../../assets/images_athmen/athmane_12.jpg";
+import Athmane_0 from "../../assets/images_athmen/athmane_0-v2.png";
 // import feuille_d from "../../assets/feuille_d.png";
 // import feuille_vert_droite from "../../assets/feuille-vert-droite.png";
 // import feuille_noir_gauche from "../../assets/feuille-noir-gauche.png";
 import plat46 from "../../assets/images_plats/plat46.jpg";
 import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
  import data_plat from "../../data_plat";
-import logo from "C:/Users/L13 YOGA/OneDrive/Bureau/mes_projets/projet React/chef-cuisinier/frontend/src/assets/logo.png"
+import logo from "../../assets/logo.png"
 import plat58 from "../../assets/images_plats/plat58.jpg";
 import plat181 from "../../assets/images_plats/plat181.jpg";
 import plat182 from "../../assets/images_plats/plat182.jpg";
@@ -173,7 +173,7 @@ function Home() {
           </p>
           <button
             className="discover-btn"
-            onClick={() => navigate("/Larriere_cuisinet")}
+            onClick={() => navigate("/Larriere_cuisine")}
           >
             DISCOVER
           </button>
@@ -194,7 +194,7 @@ function Home() {
               Available for private dinners, collaborations, and gastronomic
               events. <br />
               <br />
-              Athmane686@gmail.com <br />
+              athmanechef@gmail.com <br />
               2245260067
               <br />
               By appointment only.
@@ -202,7 +202,7 @@ function Home() {
           </div>
           <div className="ligne"></div>
         </div>
-        <img src={Athmane_12} />
+        <img src={Athmane_0} />
       </section>
 
       {/* Instagram */}
