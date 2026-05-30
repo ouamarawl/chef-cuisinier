@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo-2.png"
 
 
 
@@ -97,7 +97,7 @@ function Header() {
           <Link to="/Réservation" onClick={toggleSidebar}>
             Reservation
           </Link>
-          <Link to="/#menu-section" onClick={toggleSidebar}>
+          <Link to="/Menue" onClick={toggleSidebar}>
             Our Menus
           </Link>
           <Link to="/Buffets" onClick={toggleSidebar}>

@@ -1,35 +1,39 @@
 import React from "react";
 import "./Contact.css";
-// import feuille_d from "../../assets/feuille_d.png";
 import feille from "../../assets/feuille.png";
 import Athmane_12 from "../../assets/images_athmen/athmane_12.jpg";
-import athmane_2 from "../../assets/images_athmen/athmane_2.jpg";
+import Athmane_0 from "../../assets/images_athmen/athmane_0-v2.png";
 
 function Contact() {
   return (
     <div className="contact_container">
       <h3>Contact</h3>
-      <img src={feille} id="feuille_contact" />
+     
       <div className="contact-detail">
         <div className="block-g">
-          <img src={Athmane_12} />
+          <img src={Athmane_0} />
           <div className="lign"></div>
-          <h3>Chef Athmane’s Gourmet Boxes</h3>
+
+          <h3>Athmane's Little Kitchen</h3>
           <p>
-            For any request regarding Chef Athmane’s Gourmet Boxes or our gardens: <br />
+            For any request regarding Chef Athmane's creative studio and culinary projects: <br />
+            Chicago, Illinois, USA <br />
+            By appointment only. <br />
             Email: athmanechef@gmail.com
           </p>
           <br />
           <br />
           <br />
           <br />
-          <h3>The Creative Kitchen</h3>
+
+          <h3>Private Dinners & Events</h3>
           <p>
-            For any request concerning the artistic universe of <br />
-            Chef Athmane: “The Creative Kitchen” <br />
-            57 rue de Bourgogne, Paris 7th <br />
-            Monday to Friday, from 10 a.m. to 6 p.m. <br />
-            Email: athmanechef@gmail.com
+            Chef Athmane is available for private dinners, <br />
+            exclusive tastings, and gastronomic events <br />
+            in Chicago and across the United States. <br />
+            Email: athmanechef@gmail.com <br />
+            Phone: 2245260067 <br />
+            By appointment only.
           </p>
           <br />
           <br />
@@ -38,14 +42,13 @@ function Contact() {
         </div>
 
         <div className="block-d">
-          <h3>The Restaurant</h3>
+          <h3>Reservations & Inquiries</h3>
           <p>
             For information requests, reservations, <br />
-            or gift vouchers, our reception team <br />
+            or gift experiences, Chef Athmane's team <br />
             is available Monday to Friday <br />
             from 9:00 a.m. to 5:00 p.m. <br />
-            Restaurant Athmane <br />
-            84 rue de Varenne, Paris 7th <br />
+            Chicago, Illinois, USA <br />
             Phone: 2245260067 <br />
             Email: athmanechef@gmail.com
           </p>
@@ -53,11 +56,12 @@ function Contact() {
           <br />
           <br />
           <br />
+
           <h3>Office</h3>
           <p>
             The office team is available for any inquiry <br />
             regarding: <br />
-            – Events in France and abroad <br />
+            – Events in the USA and abroad <br />
             – Press <br />
             – Communication & Marketing <br />
             – Collaborations & Partnerships <br />
@@ -70,9 +74,10 @@ function Contact() {
           <br />
           <br />
           <br />
+
           <h3>Recruitment</h3>
           <p>
-            Restaurant Athmane is always looking for new talents! <br />
+            Chef Athmane is always looking for new talents! <br />
             Feel free to send us your spontaneous application! <br />
             Email: athmanechef@gmail.com
           </p>
@@ -87,13 +92,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
-
-
-
-
-
-
-
-

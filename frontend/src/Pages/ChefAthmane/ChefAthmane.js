@@ -140,16 +140,17 @@ function ChefAthmane() {
         <div className="photo-grid">
           <img src={athmane_22} alt="Algeria - Traditions" />
           <img src={athmane_32} alt="Algeria - Early Days" />
-          
           <img src={athmane_26} alt="Algeria - Heritage" />
           <img src={athmane_31} alt="Algeria - Family" />
         </div>
         <div className="presentation-text">
           <h3>🇩🇿 Algeria — Where It All Began</h3>
           <p>
-            I was born and raised in Algeria, where the kitchen was the heart of every home. 
-            It's where I learned the essentials: honest flavors, the warmth of family gatherings, 
-            and the discipline behind true hospitality. The beginnings were humble, but the dream was anything but small.
+            I was born into a family of farmers — surrounded by the land, hard work,
+            and the simple beauty of nature. From sunrise to sunset, everyone worked
+            with their hands. It is there, in that honest and grounded world, that I
+            first understood what it means to truly respect an ingredient — and where
+            the dream of cooking was born.
           </p>
         </div>
       </section>
@@ -158,11 +159,8 @@ function ChefAthmane() {
       <section className="presentation-section-A fade-up">
         <div className="photo-grid">
           <img src={athmane_28} alt="Dubai - Emaar" />
-          {/* <img src={athmane_33} alt="Dubai - Taj Hotel" />
-          <img src={athmane_16} alt="Dubai - Luxury Service" /> */}
           <img src={athmane_18} alt="Dubai - VIP Events" />
           <img src={athmane_13} alt="Dubai - VIP Events" />
-          {/* <img src={athmane_27} alt="Dubai - VIP Events" /> */}
           <img src={athmane_30} alt="Dubai - VIP Events" />
         </div>
         <div className="presentation-text">
@@ -219,26 +217,27 @@ function ChefAthmane() {
 
       {/* SKILLS SECTION 1 */}
       <section className="presentation-section-A fade-up">
-        <img src={plat179} alt="Chef Athmane — Art Culinaire" className="chef-image" />
+        <img src={plat179} alt="Chef Athmane — Culinary Art" className="chef-image" />
         <div className="presentation-text">
-          <h3>🎨 Art Culinaire & Innovation</h3>
+          <h3>🎨 Culinary Art & Innovation</h3>
           <p>
-            Chef Athmane allie simplicité et sophistication dans chacun de ses plats. 
-            Sa cuisine célèbre des saveurs franches et audacieuses, sublimées par une technique précise 
-            et une inspiration puisée de l'Algérie aux grandes cuisines de Dubaï, New York et Chicago.
+            Chef Athmane balances simplicity and sophistication in every dish.
+            His cooking celebrates bold, honest flavors elevated by precise technique
+            and an inspiration drawn from Algeria all the way to the great kitchens of
+            Dubai, New York, and Chicago.
           </p>
         </div>
       </section>
 
       {/* SKILLS SECTION 2 */}
       <section className="presentation-section-A fade-up">
-        <img src={plat174} alt="Chef Athmane — Expérience Gastronomique" className="chef-image" />
+        <img src={plat174} alt="Chef Athmane — Gastronomic Experience" className="chef-image" />
         <div className="presentation-text">
-          <h3>🍽️ Expérience Gastronomique de Luxe</h3>
+          <h3>🍽️ Luxury Gastronomic Experience</h3>
           <p>
-            Fort de plusieurs années dans des hôtels cinq étoiles et des restaurants d'inspiration Michelin, 
-            Chef Athmane offre des expériences culinaires mémorables, où chaque service raconte une histoire 
-            d'élégance, d'émotion et d'excellence.
+            With years of experience in five-star hotels and Michelin-inspired restaurants,
+            Chef Athmane delivers memorable culinary experiences where every service
+            tells a story of elegance, emotion, and excellence.
           </p>
         </div>
       </section>
@@ -247,46 +246,48 @@ function ChefAthmane() {
       <section className="presentation-section-A fade-up">
         <img src={plat175} alt="Chef Athmane — Leadership" className="chef-image" />
         <div className="presentation-text">
-          <h3>👨‍🍳 Leadership & Mentorat</h3>
+          <h3>👨‍🍳 Leadership & Mentorship</h3>
           <p>
-            En tant que chef exécutif expérimenté, il guide son équipe avec discipline et créativité, 
-            tout en maintenant les plus hauts standards professionnels en cuisine.
+            As an experienced executive chef, he guides his team with discipline and creativity,
+            while maintaining the highest professional standards in the kitchen.
           </p>
         </div>
       </section>
 
       {/* SKILLS SECTION 4 */}
       <section className="presentation-section-A fade-up">
-        <img src={plat176} alt="Chef Athmane — Maîtrise des Ingrédients" className="chef-image" />
+        <img src={plat176} alt="Chef Athmane — Ingredient Mastery" className="chef-image" />
         <div className="presentation-text">
-          <h3>🥗 Maîtrise des Ingrédients & Création de Menus</h3>
+          <h3>🥗 Ingredient Mastery & Menu Creation</h3>
           <p>
-            De la viande et des fruits de mer de qualité aux herbes et épices délicates, sa connaissance approfondie 
-            des ingrédients lui permet de créer des menus de saison mettant en avant fraîcheur, finesse et saveur.
+            From quality meats and seafood to delicate herbs and spices, his deep knowledge
+            of ingredients allows him to create seasonal menus that highlight freshness,
+            refinement, and bold flavor.
           </p>
         </div>
       </section>
 
       {/* SKILLS SECTION 5 */}
       <section className="presentation-section-A fade-up">
-        <img src={plat177} alt="Chef Athmane — Création Visuelle" className="chef-image" />
+        <img src={plat177} alt="Chef Athmane — Visual Creation" className="chef-image" />
         <div className="presentation-text">
-          <h3>📸 Création Visuelle & Médiatisation Culinaire</h3>
+          <h3>📸 Visual Creation & Culinary Content</h3>
           <p>
-            Chef Athmane combine son art culinaire avec la création de contenu moderne, 
-            capturant la beauté de ses plats par la photographie et la vidéo, et partageant sa passion avec le monde.
+            Chef Athmane combines his culinary art with modern content creation,
+            capturing the beauty of his dishes through photography and video,
+            and sharing his passion with the world.
           </p>
         </div>
       </section>
 
       {/* SKILLS SECTION 6 */}
       <section className="presentation-section-A fade-up">
-        <img src={plat178} alt="Chef Athmane — Services Privés" className="chef-image" />
+        <img src={plat178} alt="Chef Athmane — Private Services" className="chef-image" />
         <div className="presentation-text">
-          <h3>🌟 Services Privés & pour Célébrités</h3>
+          <h3>🌟 Private & Celebrity Chef Services</h3>
           <p>
-            Réputé pour sa discrétion et son élégance, il conçoit des expériences culinaires exclusives 
-            pour des clients de prestige, où chaque repas est parfaitement personnalisé.
+            Known for his discretion and elegance, he crafts exclusive culinary experiences
+            for high-profile clients, where every meal is perfectly tailored to the occasion.
           </p>
         </div>
       </section>
